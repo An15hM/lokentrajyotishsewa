@@ -107,6 +107,77 @@
                 transform: rotate(1turn);
             }
         }
+
+        #service-pagetitle {
+            background-image: url('./img/files/bggif1.gif');
+        }
+
+        .card-body .heading {
+            text-align: left;
+        }
+
+        .card-body .heading .card-title {
+            font-size: 32px;
+            letter-spacing: 0.5px;
+        }
+
+        .card-body .heading strong {
+            display: block;
+        }
+
+        .card-body .heading span {
+            display: inline-block;
+            width: 225px;
+        }
+
+        .card-body .heading span:before {
+            left: 50%;
+            /* transform: none; */
+        }
+
+        .card-body .heading span img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .h-card .card-image {
+            padding: 15px;
+            border-right: 1px solid #eaeaea;
+        }
+
+        .card {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+
+        html,
+        body,
+        p {
+            font-size: 20px;
+            line-height: 1.8;
+        }
+
+        .card-image {
+            height: 100%;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        .card .card-body p {
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card .cta:before {
+            top: 6px;
+        }
     </style>
 
     <!-- Head Libs -->
@@ -2503,11 +2574,12 @@
 
     <div role="main" class="main">
 
-        <section class="page-header page-header-modern bg-color-light-scale-1 page-header-lg position-relative">
+        <section class="page-header page-header-modern bg-color-light-scale-1 page-header-lg position-relative"
+            id="service-pagetitle">
             <div class="service-icon ic1">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
                     <defs></defs>
-                    <circle class="background" cx="60" cy="60" r="70" style="fill: #f7f7f7;"></circle>
+                    <circle class="background" cx="60" cy="60" r="70" style="fill: transparent;"></circle>
                     <g class="eins">
                         <g class="all">
                             <mask id="Mask">
@@ -2515,8 +2587,8 @@
                                 <circle class="xmask" cx="60" cy="60" r="50" fill="#000"></circle>
                             </mask>
                             <g class="group" mask="url(#Mask)">
-                                <circle class="go" cx="60" cy="65" r="48" style="fill: #2860ab"></circle>
-                                <circle class="go" cx="60" cy="55" r="48" style="fill: #2860ab"></circle>
+                                <circle class="go" cx="60" cy="65" r="48" style="fill: #f7f7f7"></circle>
+                                <circle class="go" cx="60" cy="55" r="48" style="fill: #f7f7f7"></circle>
                             </g>
                         </g>
                     </g>
@@ -2524,12 +2596,12 @@
                     <g class="zwei">
                         <g class="all">
                             <mask id="Mask2">
-                                <circle class="xmask" cx="60" cy="60" r="100" fill="#2860ab"></circle>
+                                <circle class="xmask" cx="60" cy="60" r="100" fill="#f7f7f7"></circle>
                                 <circle class="xmask" cx="60" cy="60" r="50" fill="#000"></circle>
                             </mask>
                             <g class="group" style="animation-delay: -0.33s" mask="url(#Mask2)">
-                                <circle class="go" cx="60" cy="65" r="48" style="fill: #2860ab"></circle>
-                                <circle class="go" cx="60" cy="55" r="48" style="fill: #2860ab"></circle>
+                                <circle class="go" cx="60" cy="65" r="48" style="fill: #f7f7f7"></circle>
+                                <circle class="go" cx="60" cy="55" r="48" style="fill: #f7f7f7"></circle>
                             </g>
                         </g>
                     </g>
@@ -2537,32 +2609,32 @@
                     <g class="drei">
                         <g class="all">
                             <mask id="Mask3">
-                                <circle class="xmask" cx="60" cy="60" r="100" fill="#2860ab"></circle>
+                                <circle class="xmask" cx="60" cy="60" r="100" fill="#f7f7f7"></circle>
                                 <circle class="xmask" cx="60" cy="60" r="50" fill="#000"></circle>
                             </mask>
                             <g class="group" style="animation-delay: -0.66s" mask="url(#Mask3)">
-                                <circle class="go" cx="60" cy="65" r="48" style="fill: #2860ab"></circle>
-                                <circle class="go" cx="60" cy="55" r="48" style="fill: #2860ab"></circle>
+                                <circle class="go" cx="60" cy="65" r="48" style="fill: #f7f7f7"></circle>
+                                <circle class="go" cx="60" cy="55" r="48" style="fill: #f7f7f7"></circle>
                             </g>
                         </g>
                     </g>
 
-                    <circle class="go" cx="60" cy="60" r="2" style="fill: #2860ab"></circle>
+                    <circle class="go" cx="60" cy="60" r="2" style="fill: #f7f7f7"></circle>
                 </svg>
             </div>
             <div class="service-icon ic2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
                     <defs></defs>
-                    <circle class="background" cx="60" cy="60" r="70" style="fill: #f7f7f7;"></circle>
+                    <circle class="background" cx="60" cy="60" r="70" style="fill: transparent;"></circle>
                     <g class="eins">
                         <g class="all">
                             <mask id="Mask">
-                                <circle class="xmask" cx="60" cy="60" r="100" fill="#2860ab"></circle>
+                                <circle class="xmask" cx="60" cy="60" r="100" fill="#f7f7f7"></circle>
                                 <circle class="xmask" cx="60" cy="60" r="50" fill="#000"></circle>
                             </mask>
                             <g class="group" mask="url(#Mask)">
-                                <circle class="go" cx="60" cy="65" r="48" style="fill: #2860ab"></circle>
-                                <circle class="go" cx="60" cy="55" r="48" style="fill: #2860ab"></circle>
+                                <circle class="go" cx="60" cy="65" r="48" style="fill: #f7f7f7"></circle>
+                                <circle class="go" cx="60" cy="55" r="48" style="fill: #f7f7f7"></circle>
                             </g>
                         </g>
                     </g>
@@ -2570,12 +2642,12 @@
                     <g class="zwei">
                         <g class="all">
                             <mask id="Mask2">
-                                <circle class="xmask" cx="60" cy="60" r="100" fill="#2860ab"></circle>
+                                <circle class="xmask" cx="60" cy="60" r="100" fill="#f7f7f7"></circle>
                                 <circle class="xmask" cx="60" cy="60" r="50" fill="#000"></circle>
                             </mask>
                             <g class="group" style="animation-delay: -0.33s" mask="url(#Mask2)">
-                                <circle class="go" cx="60" cy="65" r="48" style="fill: #2860ab"></circle>
-                                <circle class="go" cx="60" cy="55" r="48" style="fill: #2860ab"></circle>
+                                <circle class="go" cx="60" cy="65" r="48" style="fill: #f7f7f7"></circle>
+                                <circle class="go" cx="60" cy="55" r="48" style="fill: #f7f7f7"></circle>
                             </g>
                         </g>
                     </g>
@@ -2583,43 +2655,43 @@
                     <g class="drei">
                         <g class="all">
                             <mask id="Mask3">
-                                <circle class="xmask" cx="60" cy="60" r="100" fill="#2860ab"></circle>
+                                <circle class="xmask" cx="60" cy="60" r="100" fill="#f7f7f7"></circle>
                                 <circle class="xmask" cx="60" cy="60" r="50" fill="#000"></circle>
                             </mask>
                             <g class="group" style="animation-delay: -0.66s" mask="url(#Mask3)">
-                                <circle class="go" cx="60" cy="65" r="48" style="fill: #2860ab"></circle>
-                                <circle class="go" cx="60" cy="55" r="48" style="fill: #2860ab"></circle>
+                                <circle class="go" cx="60" cy="65" r="48" style="fill: #f7f7f7"></circle>
+                                <circle class="go" cx="60" cy="55" r="48" style="fill: #f7f7f7"></circle>
                             </g>
                         </g>
                     </g>
 
-                    <circle class="go" cx="60" cy="60" r="2" style="fill: #2860ab"></circle>
+                    <circle class="go" cx="60" cy="60" r="2" style="fill: #f7f7f7"></circle>
                 </svg>
             </div>
             <div class="container">
 
                 <div class="row">
                     <div class="col-md-12 align-self-center p-static order-2 text-center">
-                        <h1 class="text-dark text-uppercase">Our <strong>Servicess</strong></h1>
+                        <h1 class="text-uppercase text-light"> <strong>Our Services</strong></h1>
                     </div>
                     <div class="col-md-12 align-self-center order-1">
                         <ul class="breadcrumb d-block text-center">
-                            <li><a href="#">Home</a></li>
-                            <li class="active">Services</li>
+                            <li><a href="#" class="text-light">Home</a></li>
+                            <li class="active text-light">Services</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="services section-sec">
-            <div class="conainer-fluid custom-container">
-                <div class="row justify-content-center">
-                    <div class="col-sm-8">
+        <div class="services section-sec" style="background-image: none;">
+            <div class="container-fluid custom-container">
+
+                <div class="row">
+                    <div class="col-lg-8">
                         <div class="heading heading-border heading-middle-border-center">
 
-                            <p class="text-center appear-animation" data-appear-animation="fadeInUp"
-                                data-appear-animation-delay="0" data-appear-animation-duration="1s">
+                            <p class="text-justify">
                                 Our service is to provide you all the happiness you deserve in future with right
                                 decision and if have some obstacles we help you to get rid of them. We help you through
                                 Kundali making, prediction of Kundali, Kundali matching for happy family in future,
@@ -2628,340 +2700,460 @@
                                 provide online services.
                             </p>
                         </div>
+                        <div class="card h-card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <div class="card-image">
+                                        <img src="./img/files/services/1.jpg" class="card-img" alt="Services">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="heading heading-border heading-middle-border-center">
+                                            <h2 class="font-weight-normal position-relative card-title ps-0">
+                                                <strong> Kundali Prediction</strong>
+                                                <span>
+                                                    <img src="./img/files/title-icons/service.png" alt="">
+                                                </span>
+                                            </h2>
+                                            <p class="text-justify">
+
+                                                Loknetra Jyotish Sewa’s future predictions software has huge potential
+                                                because it is built based on proper Vedic astrology and provide accurate
+                                                life prediction by date of birth, time of birth (ghadi-palla), place of
+                                                birth, planetary positions in the specific signs in different
+                                                houses.place
+                                                of birth, planetary positions in the specific signs in different houses.
+                                                Your details are converted into your Vedic birth.
+
+                                        </div>
+
+                                        <div class="bdt-interactive-card-button pt-0">
+                                            <a href="#" class="cta">
+                                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                                    <path d="M1,5 L11,5"></path>
+                                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                                </svg>
+                                                <span>Read More</span>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card h-card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <div class="card-image">
+                                        <img src="./img/files/services/2.jpg" class="card-img" alt="Services">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="heading heading-border heading-middle-border-center">
+                                            <h2 class="font-weight-normal position-relative card-title ps-0">
+                                                <strong> Kundali Making</strong>
+                                                <span>
+                                                    <img src="./img/files/title-icons/service.png" alt="">
+                                                </span>
+                                            </h2>
+                                            <p class="text-justify">
+                                                A Birth Chart is often referred to as a map of planetary positions at
+                                                the time of one’s birth which is very helpful to understand many aspects
+                                                of one’s personality, career, relationship and discover what future
+                                                holds.The Kundali of an individual is perhaps the most sought for parts
+                                                of astrology. A Kundali involves the insights concerning the places of
+                                                stars and planets at the time of your birth to the
+
+                                        </div>
+
+                                        <div class="bdt-interactive-card-button pt-0">
+                                            <a href="#" class="cta">
+                                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                                    <path d="M1,5 L11,5"></path>
+                                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                                </svg>
+                                                <span>Read More</span>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card h-card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <div class="card-image">
+                                        <img src="./img/files/services/3.jpg" class="card-img" alt="Services">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="heading heading-border heading-middle-border-center">
+                                            <h2 class="font-weight-normal position-relative card-title ps-0">
+                                                <strong> Kundali Matching</strong>
+                                                <span>
+                                                    <img src="./img/files/title-icons/service.png" alt="">
+                                                </span>
+                                            </h2>
+                                            <p class="text-justify">
+                                                Kundali matching is simple and accurate to match the Kundali of the
+                                                prospective bride and groom. A traditional Vedic Astrology technique for
+                                                determining a couple's compatibility is kundali matching. According to
+                                                Hindu Vedic Astrology, the Ashtakoota method of Guna Milan is used to
+                                                match kundalis. For a pleasant, successful, and long-lasting Hindu
+                                                marriage, a high Gun Milan score
+                                        </div>
+
+                                        <div class="bdt-interactive-card-button pt-0">
+                                            <a href="#" class="cta">
+                                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                                    <path d="M1,5 L11,5"></path>
+                                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                                </svg>
+                                                <span>Read More</span>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card h-card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <div class="card-image">
+                                        <img src="./img/files/services/4.jpg" class="card-img" alt="Services">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="heading heading-border heading-middle-border-center">
+                                            <h2 class="font-weight-normal position-relative card-title ps-0">
+                                                <strong> Gemstones</strong>
+                                                <span>
+                                                    <img src="./img/files/title-icons/service.png" alt="">
+                                                </span>
+                                            </h2>
+                                            <p class="text-justify">
+
+                                                Gemstones are the considered powerful objects in Astrology. They hold
+                                                hidden reserves of energy which can alter the course of your destiny.
+                                                Gemstones can ward off negative influence of malefic planets and boost
+                                                the positive effects of benefic planets, thus help you to fill your life
+                                                with success and happiness.Here you are offered a wide range of primary
+                                                gemstones. You can buy them to
+
+                                        </div>
+
+                                        <div class="bdt-interactive-card-button pt-0">
+                                            <a href="#" class="cta">
+                                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                                    <path d="M1,5 L11,5"></path>
+                                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                                </svg>
+                                                <span>Read More</span>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card h-card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <div class="card-image">
+                                        <img src="./img/files/services/5.jpg" class="card-img" alt="Services">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="heading heading-border heading-middle-border-center">
+                                            <h2 class="font-weight-normal position-relative card-title ps-0">
+                                                <strong> Vashtu Sashtra</strong>
+                                                <span>
+                                                    <img src="./img/files/title-icons/service.png" alt="">
+                                                </span>
+                                            </h2>
+                                            <p class="text-justify">
+
+                                                Life is full of uncertainties and mishaps. Anything can happen at any
+                                                time, but you cannot keep uncertainties away, you can always keep a
+                                                check on them. Many people believe that choosing lucky numbers, crystals
+                                                and lucky stones help in maintaining a balance in life. Constructing a
+                                                home according to the spiritual guidelines brings prosperity, harmony
+                                                and wealth in the house that is
+
+                                        </div>
+
+                                        <div class="bdt-interactive-card-button pt-0">
+                                            <a href="#" class="cta">
+                                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                                    <path d="M1,5 L11,5"></path>
+                                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                                </svg>
+                                                <span>Read More</span>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card h-card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <div class="card-image">
+                                        <img src="./img/files/services/6.jpg" class="card-img" alt="Services">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="heading heading-border heading-middle-border-center">
+                                            <h2 class="font-weight-normal position-relative card-title ps-0">
+                                                <strong> Yantra Service</strong>
+                                                <span>
+                                                    <img src="./img/files/title-icons/service.png" alt="">
+                                                </span>
+                                            </h2>
+                                            <p class="text-justify">
+
+                                                A Yantra is characterized as a supernatural outline, coming from the
+                                                Tantric practices of India. A Yantra should conjure covered up and
+                                                divine powers and improve the destiny of the individual using it. The
+                                                Yantra will surely acquire bliss and heavenly elegance your life. We
+                                                offer Yantras thinking about different elements. You can utilize these
+                                                amazing powerful gadgets to adjust your destiny and get rid
+
+                                        </div>
+
+                                        <div class="bdt-interactive-card-button pt-0">
+                                            <a href="#" class="cta">
+                                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                                    <path d="M1,5 L11,5"></path>
+                                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                                </svg>
+                                                <span>Read More</span>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card h-card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <div class="card-image">
+                                        <img src="./img/files/services/7.jpg" class="card-img" alt="Services">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="heading heading-border heading-middle-border-center">
+                                            <h2 class="font-weight-normal position-relative card-title ps-0">
+                                                <strong> Planetory Body</strong>
+                                                <span>
+                                                    <img src="./img/files/title-icons/service.png" alt="">
+                                                </span>
+                                            </h2>
+                                            <p class="text-justify">
+
+                                                An astrological house refers to the possessing planetary body part and
+                                                location and influence on the planetary master of the associated
+                                                astrological house. Vicious planetary combinations are evaluated. Each
+                                                planet or house is associated with a specific part of the body, so if a
+                                                planet or astrological house is negatively affecting your chart, then
+                                                that particular part of your body may be ...
+                                        </div>
+
+                                        <div class="bdt-interactive-card-button pt-0">
+                                            <a href="#" class="cta">
+                                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                                    <path d="M1,5 L11,5"></path>
+                                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                                </svg>
+                                                <span>Read More</span>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card h-card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <div class="card-image">
+                                        <img src="./img/files/services/8.jpg" class="card-img" alt="Services">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="heading heading-border heading-middle-border-center">
+                                            <h2 class="font-weight-normal position-relative card-title ps-0">
+                                                <strong> Graha Shanti</strong>
+                                                <span>
+                                                    <img src="./img/files/title-icons/service.png" alt="">
+                                                </span>
+                                            </h2>
+                                            <p class="text-justify">
+
+                                                “Graha” refers to all the planetary bodies and “Shanti” refers to the
+                                                peace which means bringing harmony and peace between the individual and
+                                                planetary bodies and suppression of harmful effects shown by the
+                                                planetary bodies. Thus, we can say that the “Graha Shanti” helps you to
+                                                get rid of the negative influences made by the planetary bodies. It is
+                                                performed to remove all the obstacles...
+
+                                        </div>
+
+                                        <div class="bdt-interactive-card-button pt-0">
+                                            <a href="#" class="cta">
+                                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                                    <path d="M1,5 L11,5"></path>
+                                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                                </svg>
+                                                <span>Read More</span>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card h-card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <div class="card-image">
+                                        <img src="./img/files/services/9.jpg" class="card-img" alt="Services">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="heading heading-border heading-middle-border-center">
+                                            <h2 class="font-weight-normal position-relative card-title ps-0">
+                                                <strong> Muhurta Nirdharan</strong>
+                                                <span>
+                                                    <img src="./img/files/title-icons/service.png" alt="">
+                                                </span>
+                                            </h2>
+                                            <p class="text-justify">
+
+                                                Muhurta is a unit of time measurement. Muhurta is a Sanskrit word
+                                                derived from two other words-Muhu and Rta. Muhu means immediate or a
+                                                moment, and Rta refers to an order. In RigVeda, Rta implies the yearly
+                                                order of the different seasons. In modern Nepali, the word is called
+                                                auspicious time to Take Action. By starting work at a convenient time,
+                                                you can achieve the desired results. Every important job we start
+                                                requires us to take care of Muhurta. If you start work at an
+                                                inconvenient time, you will get a fault and the work will fail. It
+                                                doesn't finish on time, there are problems along the way, it costs a lot
+                                                of money but the job doesn't get done, and people even die from
+                                                accidents and injuries. If you would like to perform an important task
+                                                or ceremony, please let us know when it is convenient for you. We
+                                                analyse the state of planets and constellations, including Panchang, to
+                                                help you determine the appropriate Muhurta.
+
+                                        </div>
+
+                                        <div class="bdt-interactive-card-button pt-0">
+                                            <a href="#" class="cta">
+                                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                                    <path d="M1,5 L11,5"></path>
+                                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                                </svg>
+                                                <span>Read More</span>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card h-card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <div class="card-image">
+                                        <img src="./img/files/services/10.jpg" class="card-img" alt="Services">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="heading heading-border heading-middle-border-center">
+                                            <h2 class="font-weight-normal position-relative card-title ps-0">
+                                                <strong> Online Services</strong>
+                                                <span>
+                                                    <img src="./img/files/title-icons/service.png" alt="">
+                                                </span>
+                                            </h2>
+                                            <p class="text-justify">
+
+                                                Loknetra Jyotish Sewa provides you online service where you can know
+                                                your everything about astrology sitting at your home. It makes everyone
+                                                easier even if you are at any country around the globe. If you want to
+                                                know about your life and future join with us. To join you can visit
+                                                here:
+
+                                                Visit us:
+                                                www.jyotishnepal.com
+
+                                        </div>
+
+                                        <div class="bdt-interactive-card-button pt-0">
+                                            <a href="#" class="cta">
+                                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                                    <path d="M1,5 L11,5"></path>
+                                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                                </svg>
+                                                <span>Read More</span>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sidebar-element px-2 border-2">
+                            <img src="https://placehold.co/600x300" alt="" class="img-fluid">
+                        </div>
+                        <div class="box panchanga p-2">
+                            <iframe
+                                src="https://www.ashesh.com.np/panchang/widget.php?header_title=Nepali%20Panchang&amp;header_color=e6e5e2&amp;api=1221z9l415"
+                                frameborder="0" scrolling="no" marginwidth="0" marginheight="0" style="
+                                  border: none;
+                                  overflow: hidden;
+                                  width: 100%;
+                                  height: 365px;
+                                  border-radius: 5px;
+                                " allowtransparency="true">
+                            </iframe>
+                        </div>
+                        <!-- <div class="box">
+                      <div data-mc-src="24a0b344-00e5-4dd8-8249-668a59650b7c#instagram"></div>
+                      <script src="https://cdn2.woxo.tech/a.js#61fccf5681aeb90028157d17" async data-usrc>
+                      </script>
+                    </div> -->
+                        <div class="box rasifal p-2">
+                            <iframe
+                                src="https://www.ashesh.com.np/rashifal/widget.php?header_title=Nepali%20Rashifal&amp;header_color=f0b03f&amp;api=1221z9l471"
+                                frameborder="0" scrolling="yes" marginwidth="0" marginheight="0" style="
+                                  border: none;
+                                  overflow: hidden;
+                                  width: 100%;
+                                  height: 365px;
+                                  border-radius: 5px;
+                                " allowtransparency="true">
+                            </iframe>
+                        </div>
                     </div>
                 </div>
-                <div class="row justify-content-center g-0">
-                    <div class="col-md-6 col-lg-3 appear-animation" data-appear-animation="fadeInUp"
-                        data-appear-animation-delay="0" data-appear-animation-duration="1s">
-                        <div class="service-card">
-                            <div class="service-card-container">
-                                <div class="bdt-grid">
-                                    <div class="bdt-interactive-card-image">
-                                        <img src="./img/files/services/1.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="bdt-interactive-card-content">
 
-
-                                        <h3 class="bdt-interactive-card-title">
-                                            <span>
-                                                1. Kundali Prediction </span>
-                                        </h3>
-
-                                        <div class="bdt-interactive-card-text line-clamp">
-                                            LLoknetra Jyotish Sewa’s future predictions software has huge potential
-                                            because it is built based on proper Vedic astrology and provide accurate
-                                            life prediction by date of birth, time of birth (ghadi-palla), place of
-                                            birth, planetary positions in the specific signs in different houses.place
-                                            of birth, planetary positions in the specific signs in different houses.
-                                            Your details are converted into your Vedic birth.
-                                        </div>
-
-                                        <div class="bdt-interactive-card-button">
-                                            <a href="#" class="cta">
-                                                <svg viewBox="0 0 13 10" height="10px" width="15px">
-                                                    <path d="M1,5 L11,5"></path>
-                                                    <polyline points="8 1 12 5 8 9"></polyline>
-                                                </svg>
-                                                <span>Read More</span>
-
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 appear-animation" data-appear-animation="fadeInUp"
-                        data-appear-animation-delay="0" data-appear-animation-duration="1s">
-                        <div class="service-card">
-                            <div class="service-card-container">
-                                <div class="bdt-grid">
-                                    <div class="bdt-interactive-card-image">
-                                        <img src="./img/files/services/2.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="bdt-interactive-card-content">
-
-
-                                        <h3 class="bdt-interactive-card-title">
-                                            <span>
-                                                2. Kundali Making </span>
-                                        </h3>
-
-                                        <div class="bdt-interactive-card-text line-clamp">
-                                            A Birth Chart is often referred to as a map of planetary positions at the
-                                            time of one’s birth which is very helpful to understand many aspects of
-                                            one’s personality, career, relationship and discover what future holds.The
-                                            Kundali of an individual is perhaps the most sought for parts of astrology.
-                                            A Kundali involves the insights concerning the places of stars and planets
-                                            at the time of your birth to the world dependent on which further
-                                            expectations are made. What's more, with additional expectations we mean
-                                            forecasts about various parts of one's life like love, vocation, wellbeing,
-                                            business, finance and even marriage. Simply, Kundali making is something
-                                            important for any individual and is probably going to further develop their
-                                            dynamic capacities slowly throughout in the course of time </div>
-
-                                        <div class="bdt-interactive-card-button">
-                                            <a href="#" class="cta">
-                                                <svg viewBox="0 0 13 10" height="10px" width="15px">
-                                                    <path d="M1,5 L11,5"></path>
-                                                    <polyline points="8 1 12 5 8 9"></polyline>
-                                                </svg>
-                                                <span>Read More</span>
-
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 appear-animation" data-appear-animation="fadeInUp"
-                        data-appear-animation-delay="0" data-appear-animation-duration="1s">
-                        <div class="service-card">
-                            <div class="service-card-container">
-                                <div class="bdt-grid">
-                                    <div class="bdt-interactive-card-image">
-                                        <img src="./img/files/services/3.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="bdt-interactive-card-content">
-
-
-                                        <h3 class="bdt-interactive-card-title">
-                                            <span>
-                                                3. Kundali Matching </span>
-                                        </h3>
-
-                                        <div class="bdt-interactive-card-text line-clamp">
-                                            Kundali matching is simple and accurate to match the Kundali of the
-                                            prospective bride and groom. A traditional Vedic Astrology technique for
-                                            determining a couple's compatibility is kundali matching. According to Hindu
-                                            Vedic Astrology, the Ashtakoota method of Guna Milan is used to match
-                                            kundalis. For a pleasant, successful, and long-lasting Hindu marriage, a
-                                            high Gun Milan score is essential. Prior to solemnizing a marriage, Kundli
-                                            Milan is a significant rite in Hindu religion. It is the procedure of
-                                            matching the birth charts (or horoscopes) of the bride and groom to
-                                            ascertain whether their stars are compatible for a happy and prosperous
-                                            marriage. </div>
-
-                                        <div class="bdt-interactive-card-button">
-                                            <a href="#" class="cta">
-                                                <svg viewBox="0 0 13 10" height="10px" width="15px">
-                                                    <path d="M1,5 L11,5"></path>
-                                                    <polyline points="8 1 12 5 8 9"></polyline>
-                                                </svg>
-                                                <span>Read More</span>
-
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 appear-animation" data-appear-animation="fadeInUp"
-                        data-appear-animation-delay="0" data-appear-animation-duration="1s">
-                        <div class="service-card">
-                            <div class="service-card-container">
-                                <div class="bdt-grid">
-                                    <div class="bdt-interactive-card-image">
-                                        <img src="./img/files/services/4.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="bdt-interactive-card-content">
-
-
-                                        <h3 class="bdt-interactive-card-title">
-                                            <span>
-                                                4. Gemstone </span>
-                                        </h3>
-
-                                        <div class="bdt-interactive-card-text line-clamp">
-
-                                            Gemstones are the considered powerful objects in Astrology. They hold hidden
-                                            reserves of energy which can alter the course of your destiny. Gemstones can
-                                            ward off negative influence of malefic planets and boost the positive
-                                            effects of benefic planets, thus help you to fill your life with success and
-                                            happiness.Here you are offered a wide range of primary gemstones. You can
-                                            buy them to fix a variety of problems like lack of opportunities, shortage
-                                            of wealth and fortune, or simply to ensure all-round well-being and a surge
-                                            of positivity in your life. </div>
-
-                                        <div class="bdt-interactive-card-button">
-                                            <a href="#" class="cta">
-                                                <svg viewBox="0 0 13 10" height="10px" width="15px">
-                                                    <path d="M1,5 L11,5"></path>
-                                                    <polyline points="8 1 12 5 8 9"></polyline>
-                                                </svg>
-                                                <span>Read More</span>
-
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 appear-animation" data-appear-animation="fadeInUp"
-                        data-appear-animation-delay="0" data-appear-animation-duration="1s">
-                        <div class="service-card">
-                            <div class="service-card-container">
-                                <div class="bdt-grid">
-                                    <div class="bdt-interactive-card-image">
-                                        <img src="./img/files/services/6.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="bdt-interactive-card-content">
-
-
-                                        <h3 class="bdt-interactive-card-title">
-                                            <span>
-                                                5. Yantra Service </span>
-                                        </h3>
-
-                                        <div class="bdt-interactive-card-text line-clamp">
-                                            A Yantra is characterized as a supernatural outline, coming from the Tantric
-                                            practices of India. A Yantra should conjure covered up and divine powers and
-                                            improve the destiny of the individual using it. The Yantra will surely
-                                            acquire bliss and heavenly elegance your life. We offer Yantras thinking
-                                            about different elements. You can utilize these amazing powerful gadgets to
-                                            adjust your destiny and get rid of problems.
-                                        </div>
-
-                                        <div class="bdt-interactive-card-button">
-                                            <a href="#" class="cta">
-                                                <svg viewBox="0 0 13 10" height="10px" width="15px">
-                                                    <path d="M1,5 L11,5"></path>
-                                                    <polyline points="8 1 12 5 8 9"></polyline>
-                                                </svg>
-                                                <span>Read More</span>
-
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 appear-animation" data-appear-animation="fadeInUp"
-                        data-appear-animation-delay="0" data-appear-animation-duration="1s">
-                        <div class="service-card">
-                            <div class="service-card-container">
-                                <div class="bdt-grid">
-                                    <div class="bdt-interactive-card-image">
-                                        <img src="./img/files/services/7.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="bdt-interactive-card-content">
-
-
-                                        <h3 class="bdt-interactive-card-title">
-                                            <span>
-                                                6. Planetory Body </span>
-                                        </h3>
-
-                                        <div class="bdt-interactive-card-text line-clamp">
-
-                                            An astrological house refers to the possessing planetary body part and
-                                            location and influence on the planetary master of the associated
-                                            astrological house. Vicious planetary combinations are evaluated. Each
-                                            planet or house is associated with a specific part of the body, so if a
-                                            planet or astrological house is negatively affecting your chart, then that
-                                            particular part of your body may be affected by a disease or handicap.
-                                        </div>
-
-                                        <div class="bdt-interactive-card-button">
-                                            <a href="#" class="cta">
-                                                <svg viewBox="0 0 13 10" height="10px" width="15px">
-                                                    <path d="M1,5 L11,5"></path>
-                                                    <polyline points="8 1 12 5 8 9"></polyline>
-                                                </svg>
-                                                <span>Read More</span>
-
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 appear-animation" data-appear-animation="fadeInUp"
-                        data-appear-animation-delay="0" data-appear-animation-duration="1s">
-                        <div class="service-card">
-                            <div class="service-card-container">
-                                <div class="bdt-grid">
-                                    <div class="bdt-interactive-card-image">
-                                        <img src="./img/files/services/8.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="bdt-interactive-card-content">
-
-
-                                        <h3 class="bdt-interactive-card-title">
-                                            <span>
-                                                7. Graha Shanti </span>
-                                        </h3>
-
-                                        <div class="bdt-interactive-card-text line-clamp">
-                                            “Graha” refers to all the planetary bodies and “Shanti” refers to the peace
-                                            which means bringing harmony and peace between the individual and planetary
-                                            bodies and suppression of harmful effects shown by the planetary bodies.
-                                            Thus, we can say that the “Graha Shanti” helps you to get rid of the
-                                            negative influences made by the planetary bodies. It is performed to remove
-                                            all the obstacles and bring happiness and prosperity into the lives. Stars
-                                            and planets are believed to have a great influence on our lives, so graha
-                                            shanti is performed to align the Navagra or nine planets so that an
-                                            individual or a couple can live a happy life together.
-                                        </div>
-
-                                        <div class="bdt-interactive-card-button">
-                                            <a href="#" class="cta">
-                                                <svg viewBox="0 0 13 10" height="10px" width="15px">
-                                                    <path d="M1,5 L11,5"></path>
-                                                    <polyline points="8 1 12 5 8 9"></polyline>
-                                                </svg>
-                                                <span>Read More</span>
-
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 appear-animation" data-appear-animation="fadeInUp"
-                        data-appear-animation-delay="0" data-appear-animation-duration="1s">
-                        <div class="service-card">
-                            <div class="service-card-container">
-                                <div class="bdt-grid">
-                                    <div class="bdt-interactive-card-image">
-                                        <img src="./img/files/services/8.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="bdt-interactive-card-content">
-
-
-                                        <h3 class="bdt-interactive-card-title">
-                                            <span>
-                                                8. ONLINE SERVICE </span>
-                                        </h3>
-
-                                        <div class="bdt-interactive-card-text line-clamp">
-                                            you can know your everything about astrology sitting at your home. It makes
-                                            everyone easier even if you are at any country around the globe. If you want
-                                            to know about your life and future join with us
-                                        </div>
-
-                                        <div class="bdt-interactive-card-button">
-                                            <a href="#" class="cta">
-                                                <svg viewBox="0 0 13 10" height="10px" width="15px">
-                                                    <path d="M1,5 L11,5"></path>
-                                                    <polyline points="8 1 12 5 8 9"></polyline>
-                                                </svg>
-                                                <span>Read More</span>
-
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 

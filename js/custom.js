@@ -167,7 +167,7 @@ let day = today.getDate();
 let year = today.getFullYear();
 
 // Format the date as "Month day, year"
-let formattedDate = `${month} ${day}, ${year}`;
+let formattedDate = `${day} ${month}, ${year}`;
 
 // Display the formatted date
 document.getElementById("day-date").innerText = formattedDate;

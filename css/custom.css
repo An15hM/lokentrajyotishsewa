@@ -627,7 +627,7 @@ html .call-to-action.call-to-action-primary p{
     background-position: center;
 }
 .countdown > span{
-    color:#d35656 !important;
+    color:#234567 !important;
     flex-basis: 15%;
     width: 15%;
     max-width: 15%;
@@ -636,7 +636,7 @@ html .call-to-action.call-to-action-primary p{
     border-radius: 8px;
 }
 .countdown > span span{
-    color: #d35656;
+    color: #234567;
 }
 .img-fit{
     width: 100%;
@@ -1792,4 +1792,33 @@ html.side-header #header.side-header .header-nav-main nav > ul > li.dropdown:hov
     color:#131313;
     font-weight: 500;
     line-height: 1.8;
+}
+#premium-menu li a{
+    font-size: 18px !important; 
+}
+
+@media only screen and (max-width:600px){
+    .service-icon{
+        display: none;
+    }
+    html .btn-secondary{
+        padding: 8px 14px;
+    }
+    .bdt-interactive-card-title{
+        font-size: 16px;
+        text-align: center;
+    }
+    .bdt-interactive-card-content{
+        padding: 5px;
+        padding-bottom: 15px;
+    }
+    .gemstone-card .gemstone-content{
+        transform: translateY(0);
+    }
+    .gemstone-card .gemstone-content{
+        position: static;
+    }
+    .business-hours .title{
+        padding: 10px;;
+    }
 }
