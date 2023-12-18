@@ -52,6 +52,12 @@
 	<!-- Theme Custom CSS -->
 	<link rel="stylesheet" href="css/universe.css">
 	<link rel="stylesheet" href="css/custom.css">
+	<style>
+		.jacket-countdown {
+			min-height: 120px;
+			min-width: 285px;
+		}
+	</style>
 
 	<!-- Head Libs -->
 	<script src="vendor/modernizr/modernizr.min.js"></script>
@@ -64,7 +70,7 @@
 		<div class="cursor__circle"></div>
 	</div>
 
-	<!-- <div class="jacket-head">
+	<div class="jacket-head">
 		<div class="jacket-wrapper">
 			<div class="jacket-head-image">
 				<p class="close-jackethead"><i class="fa fa-times"></i></p>
@@ -102,7 +108,7 @@
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>
 
 	<div id="main-navigation">
 		<div class="">
@@ -5658,7 +5664,11 @@
 			},
 		})
 	</script>
-
+	<script>
+		$(".jacket-code").on('click', function (e) {
+			e.stopPropagation();
+		})
+	</script>
 
 
 </body>
