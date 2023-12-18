@@ -1009,6 +1009,8 @@ path.active-country:hover{
 }
 .country-image img{
     height: 90px;
+    display: block;
+    margin: 0 auto;
 }
 .contact-section{
     padding:40px 0;
@@ -1796,7 +1798,17 @@ html.side-header #header.side-header .header-nav-main nav > ul > li.dropdown:hov
 #premium-menu li a{
     font-size: 18px !important; 
 }
-
+.social-icons li a img{
+    height: 32px;
+    width: 32px;
+}
+.connect-us img{
+    width: 24px;
+    height: 24px;
+}
+.keen-slider{
+    margin-bottom: 30px;
+}
 @media only screen and (max-width:600px){
     .service-icon{
         display: none;
@@ -1819,6 +1831,6 @@ html.side-header #header.side-header .header-nav-main nav > ul > li.dropdown:hov
         position: static;
     }
     .business-hours .title{
-        padding: 10px;;
+        padding: 10px;
     }
 }
