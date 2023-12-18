@@ -1266,6 +1266,13 @@ html.side-header #header.side-header .header-nav-main nav > ul > li.dropdown:hov
     max-width: 180px;
 }
 
+.heading-middle-border-start span:before{
+    left: 10%;
+}
+.heading-middle-border-start span img{
+    position: relative;
+    left: 7%;
+}
 @media (min-width: 992px){
     #header .header-nav-main nav > ul > li > a {
         font-size: 14px;

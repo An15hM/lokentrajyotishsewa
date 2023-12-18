@@ -225,299 +225,44 @@
     </style>
 
     <style>
-        .constellation-detail-tree {
-            width: 2px;
-            height: 1000px;
-            background: #ff00d4;
-            margin: 0 auto;
-            position: relative;
+        .icon-card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 30px;
         }
 
-        .constellation-detail-tree .pointround {
-            width: 20px;
-            height: 20px;
-            background: white;
-            border: 6px solid #070770;
-            position: absolute;
-            left: 50%;
-            -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-            border-radius: 50%;
-            z-index: 11;
+        .service-image {
+            border: 38px solid transparent;
+            border-image: url(./img/files/frame1.png) 32 round;
         }
 
-        .constellation-detail-tree .p1 {
-            top: -5px;
+        .icon-card-image img {
+            height: 72px;
+            margin-right: 15px;
         }
 
-        .constellation-detail-tree .p2 {
-            top: 11.2%;
+        .icon-card-content p {
+            text-align: start !important;
+            margin-bottom: 0;
+            line-height: 1;
         }
 
-        .constellation-detail-tree .p3 {
-            top: 22.2%;
-        }
-
-        .constellation-detail-tree .p4 {
-            top: 34.2%;
-        }
-
-        .constellation-detail-tree .p5 {
-            top: 45.2%;
-        }
-
-        .constellation-detail-tree .p6 {
-            top: 57.2%;
-        }
-
-        .constellation-detail-tree .p7 {
-            top: 67.2%;
-        }
-
-        .constellation-detail-tree .p8 {
-            top: 78.2%;
-        }
-
-        .constellation-detail-tree .p9 {
-            top: 89.2%;
-        }
-
-        .constellation-detail-tree .p10 {
-            top: 99.2%;
-        }
-
-        .constellation-detail-tree .bord {
-            width: 100px;
-            height: 2px;
-            background: #ff00d4;
-            position: absolute;
-        }
-
-        .constellation-detail-tree .bord1 {
-            top: 0;
-            right: 0;
-        }
-
-        .constellation-detail-tree .bord2 {
-            top: 23%;
-            right: 0;
-        }
-
-        .constellation-detail-tree .bord3 {
-            top: 46%;
-            right: 0;
-        }
-
-        .constellation-detail-tree .bord4 {
-            top: 68%;
-            right: 0;
-        }
-
-        .constellation-detail-tree .bord5 {
-            top: 90%;
-            right: 0;
-        }
-
-        .constellation-detail-tree .bord6 {
-            top: 12%;
-            left: 0;
-        }
-
-        .constellation-detail-tree .bord7 {
-            top: 35%;
-            left: 0;
-        }
-
-        .constellation-detail-tree .bord8 {
-            top: 58%;
-            left: 0;
-        }
-
-        .constellation-detail-tree .bord9 {
-            top: 79%;
-            left: 0;
-        }
-
-        .constellation-detail-tree .bord10 {
-            top: 100%;
-            left: 0;
-        }
-
-        .constellation-detail-tree .bord-inside {
-            position: relative;
-        }
-
-        .constellation-detail-tree .nak-cont {
-            background: #fff;
-            position: absolute;
-            right: 100%;
-            width: 250px;
-            border-radius: 20px;
-            -webkit-box-shadow: 0 0 10px 0 #757272;
-            box-shadow: 0 0 10px 0 #757272;
-            top: -40px;
-            padding: 18px 20px 8px 50px;
-        }
-
-        .constellation-detail-tree .inner_nak {
-            position: relative;
-            padding-left: 20px;
-            text-align: justify;
-        }
-
-        .constellation-detail-tree .inner_nak .img {
-            width: 110px;
-            height: 110px;
-            background: #fff;
-            position: absolute;
-            border-bottom: 1px solid red;
-            padding: 25px 20px;
-            border-radius: 50%;
-            -webkit-box-shadow: 0 0 20px 0 rgba(131, 129, 129, 0.8);
-            box-shadow: 0 0 20px 0 rgba(131, 129, 129, 0.8);
-            right: 100%;
-            top: -25px;
-        }
-
-        .constellation-detail-tree .inner_nak1 {
-            position: relative;
-            padding-right: 10px;
-        }
-
-        .constellation-detail-tree .nak-cont1 {
-            background: #fff;
-            position: absolute;
-            left: 100%;
-            width: 250px;
-            border-radius: 20px;
-            -webkit-box-shadow: 0 0 10px 0 #757272;
-            box-shadow: 0 0 10px 0 #757272;
-            top: -40px;
-            padding: 20px 40px 8px 20px;
-        }
-
-        .constellation-detail-tree .inner_nak1 .img {
-            background: #fff;
-            position: absolute;
-            width: 110px;
-            height: 110px;
-            border-bottom: 1px solid red;
-            padding: 25px 20px;
-            border-radius: 50%;
-            -webkit-box-shadow: 0 0 20px 0 rgba(131, 129, 129, 0.8);
-            box-shadow: 0 0 20px 0 rgba(131, 129, 129, 0.8);
-            left: 100%;
-            top: -25px;
-        }
-
-        .inner_nak p {
-            line-height: 1.25;
+        .icon-card-content .titles {
+            margin-bottom: 10px;
             font-size: 16px;
         }
 
-        @media (max-width: 1200px) {
-            .constellation-detail-tree .bord {
-                width: 30px !important;
-            }
-
-            .constellation-detail-tree .bord h5,
-            .constellation-detail-tree .bord p {
-                font-size: 0.8rem;
-            }
-
-            .constellation-detail-tree .bord .nak-cont,
-            .constellation-detail-tree .bord .nak-cont1 {
-                width: 190px;
-            }
-
-            .constellation-detail-tree .bord .inner_nak1 .img,
-            .constellation-detail-tree .bord .inner_nak .img {
-                width: 90px;
-                height: 90px;
-                padding: 15px 10px;
-                top: -15px;
-            }
+        #strength ul li {
+            width: 30%;
         }
 
-        @media (max-width: 1200px) and (max-width: 570px) {
-            .constellation-detail-tree {
-                height: 1500px;
-            }
-
-            .constellation-detail-tree .nak-cont,
-            .constellation-detail-tree .nak-cont1 {
-                width: 200px !important;
-            }
-
-            .constellation-detail-tree .pointround {
-                display: none;
-            }
-
-            .constellation-detail-tree .bord {
-                width: 0px !important;
-            }
-
-            .constellation-detail-tree .bord h5,
-            .constellation-detail-tree .bord p {
-                font-size: 0.8rem;
-            }
-
-            .constellation-detail-tree .bord .nak-cont,
-            .constellation-detail-tree .bord .nak-cont1 {
-                left: 50%;
-                -webkit-transform: translateX(-50%);
-                transform: translateX(-50%);
-            }
-
-            .constellation-detail-tree .bord1 {
-                top: 0;
-                right: 0;
-            }
-
-            .constellation-detail-tree .bord2 {
-                top: 22%;
-                right: 0;
-            }
-
-            .constellation-detail-tree .bord3 {
-                top: 44%;
-                right: 0;
-            }
-
-            .constellation-detail-tree .bord4 {
-                top: 66%;
-                right: 0;
-            }
-
-            .constellation-detail-tree .bord5 {
-                top: 88%;
-                right: 0;
-            }
-
-            .constellation-detail-tree .bord6 {
-                top: 11%;
-                left: 0;
-            }
-
-            .constellation-detail-tree .bord7 {
-                top: 33%;
-                left: 0;
-            }
-
-            .constellation-detail-tree .bord8 {
-                top: 55%;
-                left: 0;
-            }
-
-            .constellation-detail-tree .bord9 {
-                top: 77%;
-                left: 0;
-            }
-
-            .constellation-detail-tree .bord10 {
-                top: 99%;
-                left: 0;
-            }
+        #strength ul li p {
+            text-align: start !important;
         }
     </style>
 
@@ -2942,8 +2687,8 @@
             <div class="container-fluid custom-container">
 
                 <div class="row">
-                    <div class="col-md-8">
-                        <div class="heading heading-border heading-middle-border-center">
+                    <div class="col-md-9">
+                        <div class="heading heading-border heading-middle-border-start">
                             <h1 class="font-weight-normal position-relative appear-animation"
                                 data-appear-animation="fadeInUp" data-appear-animation-delay="0"
                                 data-appear-animation-duration="1s">
@@ -2956,7 +2701,7 @@
                             </h1>
                         </div>
                         <div class="row">
-                            <div class="col-sm-6 offset-sm-3">
+                            <div class="col-sm-6">
                                 <div class="service-image">
                                     <img src="./img/files/constellation/20220425-023441496839177.jpg" class="img-fluid"
                                         alt="">
@@ -2989,160 +2734,137 @@
                             </p>
                             <br>
                             <br><br>
-                            <div class="constellation-detail-tree">
-                                <div class="pointround p1"></div>
-                                <div class="pointround p2"></div>
-                                <div class="pointround p3"></div>
-                                <div class="pointround p4"></div>
-                                <div class="pointround p5"></div>
-                                <div class="pointround p6"></div>
-                                <div class="pointround p7"></div>
-                                <div class="pointround p8"></div>
-                                <div class="pointround p9"></div>
-                                <div class="pointround p10"></div>
-                                <div class="bord bord1">
-                                    <div class="bord-inside">
-                                        <div class="nak-cont">
-                                            <div class="inner_nak">
-                                                <h5>Translation</h5>
-                                                <p>"Born of a Horse" or "Horsewoman"</p>
-                                                <div class="img">
-                                                    <img src="./img/files/constellation/20220425-023206494462387.png"
-                                                        class="w-100 h-100">
+                            <div class="icon-cards">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-6 col-sm-6 col-md-4">
+                                            <div class="icon-card">
+                                                <div class="icon-card-image">
+                                                    <img src="./img/files/3dicons/language-translator.png" alt="">
+                                                </div>
+                                                <div class="icon-card-content">
+                                                    <p class="titles">Translation</p>
+                                                    <p class="contents"><strong>"Born of a Horse" or
+                                                            "Horsewoman"</strong>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-sm-6 col-md-4">
+                                            <div class="icon-card">
+                                                <div class="icon-card-image">
+                                                    <img src="./img/files/3dicons/yearn.png" alt="">
+                                                </div>
+                                                <div class="icon-card-content">
+                                                    <p class="titles">Symbol</p>
+                                                    <p class="contents"><strong>"A Horse’s Head</strong>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-sm-6 col-md-4">
+                                            <div class="icon-card">
+                                                <div class="icon-card-image">
+                                                    <img src="./img/files/3dicons/full-volume.png" alt="">
+                                                </div>
+                                                <div class="icon-card-content">
+                                                    <p class="titles">Seed Sounds</p>
+                                                    <p class="contents"><strong>Chu, Che, Cho, La (Padas of
+                                                            Ashwini)</strong>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-sm-6 col-md-4">
+                                            <div class="icon-card">
+                                                <div class="icon-card-image">
+                                                    <img src="./img/files/3dicons/planets.png" alt="">
+                                                </div>
+                                                <div class="icon-card-content">
+                                                    <p class="titles">Controlling Planet</p>
+                                                    <p class="contents"><strong>Ketu</strong>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-sm-6 col-md-4">
+                                            <div class="icon-card">
+                                                <div class="icon-card-image">
+                                                    <img src="./img/files/3dicons/star.png" alt="">
+                                                </div>
+                                                <div class="icon-card-content">
+                                                    <p class="titles">Star Energy</p>
+                                                    <p class="contents"><strong>Shidravyapani Shakti</strong>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-sm-6 col-md-4">
+                                            <div class="icon-card">
+                                                <div class="icon-card-image">
+                                                    <img src="./img/files/3dicons/shining-star.png" alt="">
+                                                </div>
+                                                <div class="icon-card-content">
+                                                    <p class="titles">Constellation</p>
+                                                    <p class="contents"><strong>3</strong>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-sm-6 col-md-4">
+                                            <div class="icon-card">
+                                                <div class="icon-card-image">
+                                                    <img src="./img/files/3dicons/earth.png" alt="">
+                                                </div>
+                                                <div class="icon-card-content">
+                                                    <p class="titles">Element</p>
+                                                    <p class="contents"><strong>Earth</strong>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-sm-6 col-md-4">
+                                            <div class="icon-card">
+                                                <div class="icon-card-image">
+                                                    <img src="./img/files/3dicons/forest.png" alt="">
+                                                </div>
+                                                <div class="icon-card-content">
+                                                    <p class="titles">Nature</p>
+                                                    <p class="contents"><strong>Deva (God-like)</strong>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-sm-6 col-md-4">
+                                            <div class="icon-card">
+                                                <div class="icon-card-image">
+                                                    <img src="./img/files/3dicons/color-palette.png" alt="">
+                                                </div>
+                                                <div class="icon-card-content">
+                                                    <p class="titles">Color</p>
+                                                    <p class="contents"><strong>Blood Red</strong>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-sm-6 col-md-4">
+                                            <div class="icon-card">
+                                                <div class="icon-card-image">
+                                                    <img src="./img/files/3dicons/cardano.png" alt="">
+                                                </div>
+                                                <div class="icon-card-content">
+                                                    <p class="titles">Dosha</p>
+                                                    <p class="contents"><strong>Vata</strong>
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="bord2 bord">
-                                    <div class="bord-inside">
-                                        <div class="nak-cont">
-                                            <div class="inner_nak">
-                                                <h5>Seed Sounds</h5>
-                                                <p>Chu, Che, Cho, La (Padas of Ashwini)</p>
-                                                <div class="img">
-                                                    <img src="./img/files/constellation/20220425-023206595678744.png"
-                                                        class="w-100 h-100">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bord3 bord">
-                                    <div class="bord-inside">
-                                        <div class="nak-cont">
-                                            <div class="inner_nak">
-                                                <h5>Star Energy</h5>
-                                                <p>Shidravyapani Shakti</p>
-                                                <div class="img">
-                                                    <img src="./img/files/constellation/20220425-023206758362664.png"
-                                                        class="w-100 h-100">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bord4 bord">
-                                    <div class="bord-inside">
-                                        <div class="nak-cont">
-                                            <div class="inner_nak">
-                                                <h5>Element</h5>
-                                                <p>Earth</p>
-                                                <div class="img">
-                                                    <img src="./img/files/constellation/20220425-023206450636422.png"
-                                                        class="w-100 h-100">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bord5 bord">
-                                    <div class="bord-inside">
-                                        <div class="nak-cont">
-                                            <div class="inner_nak">
-                                                <h5>Color</h5>
-                                                <p>Blood Red</p>
-                                                <div class="img">
-                                                    <img src="./img/files/constellation/20220425-023206108710329.png"
-                                                        class="w-100 h-100">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bord10 bord">
-                                    <div class="bord-inside">
-                                        <div class="nak-cont1">
-                                            <div class="inner_nak1">
-                                                <h5>Dosha</h5>
-                                                <p>Vata</p>
-                                                <div class="img">
-                                                    <img src="./img/files/constellation/20220425-023206977672820.png"
-                                                        class="w-100 h-100">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bord6 bord">
-                                    <div class="bord-inside">
-                                        <div class="nak-cont1">
-                                            <div class="inner_nak1">
-                                                <h5>Symbol</h5>
-                                                <p>A Horse’s Head</p>
-                                                <div class="img">
-                                                    <img src="./img/files/constellation/20220425-023206494934713.png"
-                                                        class="w-100 h-100">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bord7 bord">
-                                    <div class="bord-inside">
-                                        <div class="nak-cont1">
-                                            <div class="inner_nak1">
-                                                <h5>Controlling Planet</h5>
-                                                <p>Ketu</p>
-                                                <div class="img">
-                                                    <img src="./img/files/constellation/20220425-023206268781427.png"
-                                                        class="w-100 h-100">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bord8 bord">
-                                    <div class="bord-inside">
-                                        <div class="nak-cont1">
-                                            <div class="inner_nak1">
-                                                <h5>Constellation</h5>
-                                                <p>3</p>
-                                                <div class="img">
-                                                    <img src="./img/files/constellation/20220425-023206730001664.png"
-                                                        class="w-100 h-100">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bord9 bord">
-                                    <div class="bord-inside">
-                                        <div class="nak-cont1">
-                                            <div class="inner_nak1">
-                                                <h5>Nature</h5>
-                                                <p>Deva (God-like)</p>
-                                                <div class="img">
-                                                    <img src="./img/files/constellation/20220425-02320650233136.png"
-                                                        class="w-100 h-100">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
-                            <br><br><br>
+                            <br>
+
+
                             <div class="tabs tabs-primary mt-5">
                                 <ul class="nav nav-tabs">
                                     <li class="nav-item">
@@ -3166,224 +2888,354 @@
                                     <div id="names" class="tab-pane active">
                                         <ul class="list-unstyled">
                                             <li>
-                                                <p class="mb-0"><i class="fa-solid fa-fan"></i>&nbsp;You possess the
-                                                    quality of good
-                                                    decision making.</p>
+                                                <p class="mb-0 d-flex align-items-start justify-content-start"><span><i
+                                                            class="fa-solid fa-fan me-2"></i>&nbsp;</span><span>You
+                                                        possess
+                                                        the
+                                                        quality of good
+                                                        decision making.</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0"><i class="fa-solid fa-fan"></i>&nbsp;You are not
-                                                    influenced by others
-                                                    and remain firm on your own decisions.</p>
+                                                <p class="mb-0 d-flex align-items-start justify-content-start"><span><i
+                                                            class="fa-solid fa-fan me-2"></i>&nbsp;</span><span>You are
+                                                        not
+                                                        influenced by others
+                                                        and remain firm on your own decisions.</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0"><i class="fa-solid fa-fan"></i>&nbsp;You have an
-                                                    interest in things
-                                                    like occult, and religion because of your mysterious nature.</p>
+                                                <p class="mb-0 d-flex align-items-start justify-content-start"><span><i
+                                                            class="fa-solid fa-fan me-2"></i>&nbsp;</span><span>You have
+                                                        an
+                                                        interest in things
+                                                        like occult, and religion because of your mysterious
+                                                        nature.</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0"><i class="fa-solid fa-fan"></i>&nbsp;You are a person
-                                                    who can do
-                                                    anything for your loved ones and are always ready to help others.
+                                                <p class="mb-0 d-flex align-items-start justify-content-start"><span><i
+                                                            class="fa-solid fa-fan me-2"></i>&nbsp;</span><span>You are
+                                                        a
+                                                        person
+                                                        who can do
+                                                        anything for your loved ones and are always ready to help
+                                                        others.</span>
                                                 </p>
                                             </li>
                                             <li>
-                                                <p class="mb-0"><i class="fa-solid fa-fan"></i>&nbsp;You are active,
-                                                    energetic and
-                                                    full of enthusiasm. You have a passion and zest for everything in
-                                                    life.</p>
+                                                <p class="mb-0 d-flex align-items-start justify-content-start"><span><i
+                                                            class="fa-solid fa-fan me-2"></i>&nbsp;</span><span>You are
+                                                        active,
+                                                        energetic and
+                                                        full of enthusiasm. You have a passion and zest for everything
+                                                        in
+                                                        life.</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0"><i class="fa-solid fa-fan"></i>&nbsp;It is quite
-                                                    difficult to
-                                                    dominate or control you. Neither pressure nor power can make you
-                                                    change your stand.</p>
+                                                <p class="mb-0 d-flex align-items-start justify-content-start"><span><i
+                                                            class="fa-solid fa-fan me-2"></i>&nbsp;</span><span>It is
+                                                        quite
+                                                        difficult to
+                                                        dominate or control you. Neither pressure nor power can make you
+                                                        change your stand.</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0"><i class="fa-solid fa-fan"></i>&nbsp;You do not have a
-                                                    control over
-                                                    your anger but you are bestowed with traits like being courageous
-                                                    and fearless.</p>
+                                                <p class="mb-0 d-flex align-items-start justify-content-start"><span><i
+                                                            class="fa-solid fa-fan me-2"></i>&nbsp;</span><span>You do
+                                                        not
+                                                        have a
+                                                        control over
+                                                        your anger but you are bestowed with traits like being
+                                                        courageous
+                                                        and fearless.</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0"><i class="fa-solid fa-fan"></i>&nbsp;You are in a habit
-                                                    to finish up
-                                                    the things in a quick manner. Activeness, energy, and speed are your
-                                                    inherent traits.</p>
+                                                <p class="mb-0 d-flex align-items-start justify-content-start"><span><i
+                                                            class="fa-solid fa-fan me-2"></i>&nbsp;</span><span>You are
+                                                        in a
+                                                        habit
+                                                        to finish up
+                                                        the things in a quick manner. Activeness, energy, and speed are
+                                                        your
+                                                        inherent traits.</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0"><i class="fa-solid fa-fan"></i>&nbsp;You always make
-                                                    sure that all
-                                                    your ideas are implemented in the quickest time possible. You are
-                                                    quite intelligent.</p>
+                                                <p class="mb-0 d-flex align-items-start justify-content-start"><span><i
+                                                            class="fa-solid fa-fan me-2"></i>&nbsp;</span><span>You
+                                                        always
+                                                        make
+                                                        sure that all
+                                                        your ideas are implemented in the quickest time possible. You
+                                                        are
+                                                        quite intelligent.</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0"><i class="fa-solid fa-fan"></i>&nbsp;You are not
-                                                    satisfied with basic
-                                                    things and are always on the lookout for something different and big
-                                                    which can give you a feeling of satisfaction, achievement, and
-                                                    victory.</p>
+                                                <p class="mb-0 d-flex align-items-start justify-content-start"><span><i
+                                                            class="fa-solid fa-fan me-2"></i>&nbsp;</span><span>You are
+                                                        not
+                                                        satisfied with basic
+                                                        things and are always on the lookout for something different and
+                                                        big
+                                                        which can give you a feeling of satisfaction, achievement, and
+                                                        victory.</span></p>
                                             </li>
                                         </ul>
                                     </div>
                                     <div id="strength" class="tab-pane">
-                                        <ul>
+                                        <ul
+                                            class="list-unstyled d-flex align-items-center justify-content-start flex-wrap gap-3 ">
                                             <li>
-                                                <p class="mb-0">Helpful</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>Helpful</span>
+                                                </p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Ageless</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>Ageless</span>
+                                                </p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Fearless</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>Fearless</span>
+                                                </p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Intuitive</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>Intuitive</span>
+                                                </p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Traveler</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>Traveler</span>
+                                                </p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Idealistic</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>Idealistic</span>
+                                                </p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Youthful</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>Youthful</span>
+                                                </p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Powerful</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>Powerful</span>
+                                                </p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Charming</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>Charming</span>
+                                                </p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Intelligent</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>Intelligent</span>
+                                                </p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Independent</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>Independent</span>
+                                                </p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Adventurous</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>Adventurous</span>
+                                                </p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Loves family</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>Loves
+                                                        family</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Well dressed</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>Well
+                                                        dressed</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Playful nature</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>Playful
+                                                        nature</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Natural healer</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>Natural
+                                                        healer</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Self-sufficient</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>Self-sufficient</span>
+                                                </p>
                                             </li>
                                             <li>
-                                                <p class="mb-0"> Good finances</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span> Good
+                                                        finances</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Moderate habits</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>Moderate
+                                                        habits</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Filled with agility</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>Filled
+                                                        with agility</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Competent worker</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>Competent
+                                                        worker</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Spiritually inclined</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>Spiritually
+                                                        inclined</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0"> Motivation to initiate new activities</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>
+                                                        Motivation to initiate new activities</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Drawn to activities of healing or self-improvement</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-dumbbell me-2"></i></span><span>Drawn to
+                                                        activities of healing or self-improvement</span></p>
                                             </li>
                                         </ul>
                                     </div>
                                     <div id="weak" class="tab-pane">
-                                        <ul>
+                                        <ul class="list-unstyled">
                                             <li>
-                                                <p class="mb-0">Arrogant</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-spa me-2"></i></span><span>Arrogant</span>
+                                                </p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Stubborn</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-spa me-2"></i></span><span>Stubborn</span>
+                                                </p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Impulsive</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-spa me-2"></i></span><span>Impulsive</span>
+                                                </p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Aggressive</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-spa me-2"></i></span><span>Aggressive</span>
+                                                </p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Dissatisfied</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-spa me-2"></i></span><span>Dissatisfied</span>
+                                                </p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Overly passionate</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-spa me-2"></i></span><span>Overly
+                                                        passionate</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Lack of mental quietude</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-spa me-2"></i></span><span>Lack of mental
+                                                        quietude</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Does not take advice well</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-spa me-2"></i></span><span>Does not take
+                                                        advice well</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Wants to do things their own way</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-spa me-2"></i></span><span>Wants to do
+                                                        things their own way</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Hastiness in action compromises efficiency</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-spa me-2"></i></span><span>Hastiness in
+                                                        action compromises efficiency</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Disappointed when things do not go as planned</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-spa me-2"></i></span><span>Disappointed
+                                                        when things do not go as planned</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">Desire to pursue new experiences in life causes a
-                                                    weakness in finishing
-                                                    things</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-spa me-2"></i></span><span>Desire to
+                                                        pursue new experiences in life causes a
+                                                        weakness in finishing
+                                                        things</span></p>
                                             </li>
                                         </ul>
                                     </div>
                                     <div id="character" class="tab-pane">
-                                        <ul>
+                                        <ul class="list-unstyled">
                                             <li>
-                                                <p class="mb-0">You possess the quality of good decision making.</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-rocket me-2"></i></span><span>You possess
+                                                        the quality of good decision making.</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">You are not influenced by others and remain firm on your
-                                                    own decisions.</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-rocket me-2"></i></span><span>You are not
+                                                        influenced by others and remain firm on your
+                                                        own decisions.</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">You have an interest in things like occult, and religion
-                                                    because of your mysterious nature.</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-rocket me-2"></i></span><span>You have an
+                                                        interest in things like occult, and religion
+                                                        because of your mysterious nature.</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">You are a person who can do anything for your loved ones
-                                                    and are always ready to help others.</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-rocket me-2"></i></span><span>You are a
+                                                        person who can do anything for your loved ones
+                                                        and are always ready to help others.</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">You are active, energetic and full of enthusiasm. You
-                                                    have a passion and zest for everything in life.</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-rocket me-2"></i></span><span>You are
+                                                        active, energetic and full of enthusiasm. You
+                                                        have a passion and zest for everything in life.</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">It is quite difficult to dominate or control you.
-                                                    Neither pressure nor power can make you change your stand.</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-rocket me-2"></i></span><span>It is quite
+                                                        difficult to dominate or control you.
+                                                        Neither pressure nor power can make you change your
+                                                        stand.</span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">You do not have a control over your anger but you are
-                                                    bestowed with traits like being courageous and fearless.</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-rocket me-2"></i></span><span>You do not
+                                                        have a control over your anger but you are
+                                                        bestowed with traits like being courageous and fearless.</span>
+                                                </p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">You are in a habit to finish up the things in a quick
-                                                    manner. Activeness, energy, and speed are your inherent traits.</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-rocket me-2"></i></span><span><span>You
+                                                            are in a habit to finish up the things in a quick
+                                                            manner. Activeness, energy, and speed are your inherent
+                                                            traits.</span></span></p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">You always make sure that all your ideas are implemented
-                                                    in the quickest time possible. You are quite intelligent.</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-rocket me-2"></i></span><span>You always
+                                                        make sure that all your ideas are implemented
+                                                        in the quickest time possible. You are quite intelligent.</span>
+                                                </p>
                                             </li>
                                             <li>
-                                                <p class="mb-0">You are not satisfied with basic things and are always
-                                                    on the lookout for something different and big which can give you a
-                                                    feeling of satisfaction, achievement, and victory.</p>
+                                                <p class="mb-0 d-flex align-items-start"><span><i
+                                                            class="fa-solid fa-rocket me-2"></i></span><span>You are not
+                                                        satisfied with basic things and are always
+                                                        on the lookout for something different and big which can give
+                                                        you a
+                                                        feeling of satisfaction, achievement, and victory.</span></p>
                                             </li>
                                         </ul>
                                     </div>
@@ -3391,7 +3243,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="sidebar-element px-2 border-2">
                             <img src="https://placehold.co/600x300" alt="" class="img-fluid">
                         </div>

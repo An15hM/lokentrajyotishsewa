@@ -156,6 +156,11 @@
             }
         }
 
+        .card {
+            border: 20px solid transparent;
+            border-image: url('./img/files/frame1.png') 30 round;
+        }
+
         .card-body .heading {
             text-align: left;
         }
@@ -186,12 +191,10 @@
         }
 
         .h-card .card-image {
-            padding: 15px;
-            border-right: 1px solid #eaeaea;
-        }
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
 
-        .card {
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         }
 
         html,
@@ -2644,8 +2647,8 @@
         <div class="services section-sec" style="background-image: none;">
             <div class="container-fluid custom-container">
 
-                <div class="row">
-                    <div class="col-lg-8">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
                         <div class="heading heading-border heading-middle-border-center">
                             <h1 class="font-weight-normal position-relative ">
                                 <strong class="d-block">Constellations And Their Meaning</strong>
@@ -2684,7 +2687,7 @@
                                     <div class="card-body">
                                         <div class="heading heading-border heading-middle-border-center">
                                             <h2 class="font-weight-normal position-relative card-title ps-0">
-                                                <strong> Ashwini (अश्विनी)</strong>
+                                                <strong> Ashwini </strong>
                                                 <span>
                                                     <img src="./img/files/title-icons/star-constellation.png" alt="">
                                                 </span>
@@ -2728,7 +2731,7 @@
                                     <div class="card-body">
                                         <div class="heading heading-border heading-middle-border-center">
                                             <h2 class="font-weight-normal position-relative card-title ps-0">
-                                                <strong>Bharani (भरणी)</strong>
+                                                <strong>Bharani </strong>
                                                 <span>
                                                     <img src="./img/files/title-icons/star-constellation.png" alt="">
                                                 </span>
@@ -2772,7 +2775,7 @@
                                     <div class="card-body">
                                         <div class="heading heading-border heading-middle-border-center">
                                             <h2 class="font-weight-normal position-relative card-title ps-0">
-                                                <strong>Krittika (कृत्तिका)</strong>
+                                                <strong>Krittika </strong>
                                                 <span>
                                                     <img src="./img/files/title-icons/star-constellation.png" alt="">
                                                 </span>
@@ -2816,7 +2819,7 @@
                                     <div class="card-body">
                                         <div class="heading heading-border heading-middle-border-center">
                                             <h2 class="font-weight-normal position-relative card-title ps-0">
-                                                <strong>Rohini (रोहिणी)</strong>
+                                                <strong>Rohini </strong>
                                                 <span>
                                                     <img src="./img/files/title-icons/star-constellation.png" alt="">
                                                 </span>
@@ -2859,7 +2862,7 @@
                                     <div class="card-body">
                                         <div class="heading heading-border heading-middle-border-center">
                                             <h2 class="font-weight-normal position-relative card-title ps-0">
-                                                <strong> Mrigashira (मृगशिरा)</strong>
+                                                <strong> Mrigashira </strong>
                                                 <span>
                                                     <img src="./img/files/title-icons/star-constellation.png" alt="">
                                                 </span>
@@ -2894,40 +2897,7 @@
 
 
                     </div>
-                    <div class="col-md-4">
-                        <div class="sidebar-element px-2 border-2">
-                            <img src="https://placehold.co/600x300" alt="" class="img-fluid">
-                        </div>
-                        <div class="box panchanga p-2">
-                            <iframe
-                                src="https://www.ashesh.com.np/panchang/widget.php?header_title=Nepali%20Panchang&amp;header_color=e6e5e2&amp;api=1221z9l415"
-                                frameborder="0" scrolling="no" marginwidth="0" marginheight="0" style="
-                                  border: none;
-                                  overflow: hidden;
-                                  width: 100%;
-                                  height: 365px;
-                                  border-radius: 5px;
-                                " allowtransparency="true">
-                            </iframe>
-                        </div>
-                        <!-- <div class="box">
-                      <div data-mc-src="24a0b344-00e5-4dd8-8249-668a59650b7c#instagram"></div>
-                      <script src="https://cdn2.woxo.tech/a.js#61fccf5681aeb90028157d17" async data-usrc>
-                      </script>
-                    </div> -->
-                        <div class="box rasifal p-2">
-                            <iframe
-                                src="https://www.ashesh.com.np/rashifal/widget.php?header_title=Nepali%20Rashifal&amp;header_color=f0b03f&amp;api=1221z9l471"
-                                frameborder="0" scrolling="yes" marginwidth="0" marginheight="0" style="
-                                  border: none;
-                                  overflow: hidden;
-                                  width: 100%;
-                                  height: 365px;
-                                  border-radius: 5px;
-                                " allowtransparency="true">
-                            </iframe>
-                        </div>
-                    </div>
+
                 </div>
 
             </div>

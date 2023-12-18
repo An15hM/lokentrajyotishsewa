@@ -1,12 +1,12 @@
-$(document).scroll(function() {
-    var y = $(this).scrollTop();
-    if (y > 200) {
-        $('#main-navigation').addClass("sticky");
-    } 
-    else{
-        $('#main-navigation').removeClass("sticky");
-    }
-});
+// $(document).scroll(function() {
+//     var y = $(this).scrollTop();
+//     if (y > 200) {
+//         $('#main-navigation').addClass("sticky");
+//     } 
+//     else{
+//         $('#main-navigation').removeClass("sticky");
+//     }
+// });
 
 
 
@@ -167,7 +167,7 @@ let day = today.getDate();
 let year = today.getFullYear();
 
 // Format the date as "Month day, year"
-let formattedDate = `${day} ${month}, ${year}`;
+let formattedDate = `${day} ${month} ${year}`;
 
 // Display the formatted date
 document.getElementById("day-date").innerText = formattedDate;
