@@ -41,6 +41,9 @@
     <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
     <link rel="stylesheet" href="vendor/bootstrap-star-rating/css/star-rating.min.css">
     <link rel="stylesheet" href="vendor/bootstrap-star-rating/themes/krajee-fas/theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+        integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="css/theme.css">
@@ -108,13 +111,13 @@
             }
         }
 
-        #horoscope-pagetitle {
+        #planet-pagetitle {
             position: relative;
             background-color: #000;
             overflow: hidden;
         }
 
-        #horoscope-pagetitle:before {
+        #planet-pagetitle:before {
             content: '';
             position: absolute;
             top: 0;
@@ -129,11 +132,6 @@
             transform-origin: center;
             animation: kenburns 20s ease-in-out infinite alternate;
             /* animation: rotate 50s linear infinite; */
-        }
-
-        .service-icon img {
-            animation: rotate 50s linear infinite;
-            width: 300px;
         }
 
         @keyframes rotate {
@@ -156,47 +154,6 @@
             }
         }
 
-        .card-image {
-            border: 35px solid transparent;
-            border-image: url('./img/files/frame5.png') 75 round;
-        }
-
-        .card-body .heading {
-            text-align: left;
-        }
-
-        .card-body .heading .card-title {
-            font-size: 32px;
-            letter-spacing: 0.5px;
-        }
-
-        .card-body .heading strong {
-            display: block;
-        }
-
-        .card-body .heading span {
-            display: inline-block;
-            width: 225px;
-        }
-
-        .card-body .heading span:before {
-            left: 50%;
-            /* transform: none; */
-        }
-
-        .card-body .heading span img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .h-card .card-image {
-            position: relative;
-            border-radius: 8px;
-            overflow: hidden;
-
-        }
-
         html,
         body,
         p {
@@ -204,26 +161,71 @@
             line-height: 1.8;
         }
 
-        .card-image {
-            height: 100%;
+        .filter_dream {
+            overflow-x: scroll;
+            scrollbar-width: thin;
         }
 
-        .card-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            object-position: center;
+        .filter_dream::-webkit-scrollbar {
+            width: 14px;
+            /* Set the width of the scrollbar */
         }
 
-        .card .card-body p {
-            display: -webkit-box;
-            -webkit-line-clamp: 5;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
+        /* Customize the appearance of the scrollbar handle */
+        .filter_dream::-webkit-scrollbar-thumb {
+            background-color: #eaeaea;
+            /* Set the color of the scrollbar handle */
+            border-radius: 4px;
+            /* Set the border-radius to make it rounded */
         }
 
-        .card .cta:before {
-            top: 6px;
+        /* Customize the appearance of the scrollbar track on hover */
+        .filter_dream::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
+            /* Set the background color of the scrollbar track */
+        }
+
+        .swiper-slide button {
+            background: transparent;
+            border-radius: 0;
+            border: 1px solid #eaeaea;
+            transition: none;
+            width: 60px;
+            padding: 0;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            height: 45px;
+        }
+
+        .swiper-slide button:hover {
+            border: 1px solid #eaeaea;
+            background-color: #eaeaea;
+            color: #131313;
+        }
+
+        .swiper-slide-thumb-active button {
+            background-color: #2860ab;
+            color: #fff;
+        }
+
+        .swiper-fade .swiper-slide {
+            opacity: 0 !important;
+        }
+
+        .swiper-fade .swiper-slide-active {
+            opacity: 1 !important;
+        }
+
+        .dream-box {
+            padding: 50px 35px;
+            border: 1px solid #eaeaea;
+            border-radius: 6px;
+            margin: 14px;
+        }
+
+        .dream-box h5 {
+            font-size: 24px;
         }
     </style>
 
@@ -2621,288 +2623,133 @@
 
     <div role="main" class="main">
 
-        <section class="page-header page-header-modern page-header-lg position-relative" id="horoscope-pagetitle">
+        <section class="page-header page-header-modern page-header-lg position-relative mb-0" id="planet-pagetitle">
             <div class="service-icon ic1">
-                <img src="./img/files/pngegg.png" alt="">
+                <img src="./img/files/phone-ringing.gif" alt="">
             </div>
             <div class="service-icon ic2">
-                <img src="./img/files/pngegg.png" alt="">
+                <img src="./img/files/phone-ringing.gif" alt="">
             </div>
             <div class="container">
 
                 <div class="row">
                     <div class="col-md-12 align-self-center p-static order-2 text-center">
-                        <h1 class="text-uppercase text-light"> <strong>Constellations</strong></h1>
+                        <h1 class="text-uppercase text-light"> <strong>Contact Us</strong></h1>
                     </div>
                     <div class="col-md-12 align-self-center order-1">
                         <ul class="breadcrumb d-block text-center">
                             <li><a href="#" class="text-light">Home</a></li>
-                            <li class="active text-light">Constellations</li>
+                            <li class="active text-light">Contact Us</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="services section-sec" style="background-image: none;">
-            <div class="container-fluid custom-container">
-
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="heading heading-border heading-middle-border-center">
-                            <h1 class="font-weight-normal position-relative ">
-                                <strong class="d-block">Constellations And Their Meaning</strong>
-                                <span style="display: inline-block;width: 50%;">
-                                    <img src="./img/files/title-icons/star-constellation.png" class="d-block mx-auto"
-                                        alt="">
-                                </span>
-                            </h1>
-                            <p class="text-justify">
-                                Nakshatra or Constellation is a combination of two words – Naks meaning sky and Shetra
-                                meaning region or an area. A Nakshatra is a region or area of the sky. They are
-                                divisions of 13 degrees 20 minutes each starting from zero Aries and ending at 30 degree
-                                Pisces. Together they comprise of 360 degrees. They are sub divisions of the zodiac
-                                signs and are further sub-divided into 4 Padas or quarters each. Each Pada has a span of
-                                3 degrees 20 minutes. Each sign or rashi contains 9 padas. Just as the Sun rules the
-                                zodiac signs, the Nakshatras are ruled by the moon. The moon resides in each Nakshatra
-                                for one day as it moves approximately 13 degrees 20 minutes in that period. The
-                                Nakshatras are classified under three main groups-Deva (divine), Manusha (Human),
-                                Rakshasa (Demonic). They are further divided on the basis of gender and ruling deity and
-                                gunas. The presence of the planets and deities in these Nakshatras determine the true
-                                nature of an individual. These Nakshatras are read by astrologers to find out auspicious
-                                dates for cultural or religion related events. The Nakshatra in which the moon is
-                                present at the time of our birth is called the Janma Nakshatra. Readings are done
-                                keeping on the basis of that.
-                            </p>
-                        </div>
-
-                        <div class="card h-card mb-3">
-                            <div class="row no-gutters">
-                                <div class="col-md-4">
-                                    <div class="card-image d-flex flex-column justify-content-center">
-                                        <img src="./img/files/constellation/20220425-023441496839177.jpg" alt="">
+        <div class="contact-wrapper">
+            <div class="container-fluid custom-container position-relative">
+                <div class="row justify-content-between">
+                    <div class="col-sm-5">
+                        <p class="mb-0">Get In Touch</p>
+                        <h2><strong>Contact us for any other information you need.</strong></h2>
+                        <ul class="contact-info">
+                            <li>
+                                <div class="feature-box">
+                                    <div class="feature-box-icon">
+                                        <i class="fa fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="feature-box-info">
+                                        <h4 class="mb-2 text-dark">Address</h4>
+                                        <p class="mb-4 text-dark">
+                                            Lalitpur-23 Dhapakhel, Nepal (Behind the Sumeru Hospital and Gems School)
+                                            Milan Tole Marg, House No 234
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <div class="heading heading-border heading-middle-border-center">
-                                            <h2 class="font-weight-normal position-relative card-title ps-0">
-                                                <strong> Ashwini </strong>
-                                                <span>
-                                                    <img src="./img/files/title-icons/star-constellation.png" alt="">
-                                                </span>
-                                            </h2>
-
-                                            <ul class="ps-0 m-0">
-                                                <li class="d-flex">
-                                                    <p class="me-2 mb-0">Translation: </p>
-                                                    <p class="mb-0"><strong>"Born of a Horse" or "Horsewoman"</strong>
-                                                    </p>
-                                                </li>
-                                                <li class="d-flex">
-                                                    <p class="me-2 mb-0">Symbol: </p>
-                                                    <p class="mb-0"><strong>A Horse’s Head</strong></p>
-                                                </li>
-                                                <li class="d-flex">
-                                                    <p class="me-2 mb-0">Seed Sounds:</p>
-                                                    <p class="mb-0"><strong>Chu, Che, Cho, La (Padas of
-                                                            Ashwini)</strong>
-                                                    </p>
-                                                </li>
-                                            </ul>
-
-                                        </div>
-
-                                        <a href="#" class="btn btn-secondary mb-0">Learn More&nbsp;&nbsp;<i
-                                                class="fa fa-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <div class="feature-box">
+                                    <div class="feature-box-icon">
+                                        <i class="fa fa-phone"></i>
                                     </div>
+                                    <div class="feature-box-info">
+                                        <h4 class="mb-2 text-dark">Contact Number</h4>
+                                        <a href="tel:+977-9801775055" class="d-inline-block mb-2">+977-9801775055</a>
+                                        <br>
+                                        <a href="tel:+977-9761799899" class="d-inline-block mb-2">+977-9761799899</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-box">
+                                    <div class="feature-box-icon">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <div class="feature-box-info">
+                                        <h4 class="mb-2 text-dark">Email Address</h4>
+                                        <a href="mailto:jyotishnepal2@gmail.com"
+                                            class="d-inline-block mb-2">jyotishnepal2@gmail.com</a><br>
+
+                                        <a href="mailto:loknetrajyotishsewa@gmail.com"
+                                            class="d-inline-block mb-2">loknetrajyotishsewa@gmail.com</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+
+                        <h2 class="font-weight-bold text-7 mt-2 mb-0">Write to Us</h2>
+                        <p class="mb-4">Feel free to ask for details, don't save any questions!</p>
+
+                        <form class="contact-form-recaptcha-v3" action="">
+
+                            <div class="row">
+                                <div class="form-group col-lg-6">
+                                    <label class="form-label mb-1 text-2">Full Name</label>
+                                    <input type="text" value="" data-msg-required="Please enter your name."
+                                        maxlength="100" class="form-control text-3 h-auto py-2" name="name" required="">
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label class="form-label mb-1 text-2">Email Address</label>
+                                    <input type="email" value="" data-msg-required="Please enter your email address."
+                                        data-msg-email="Please enter a valid email address." maxlength="100"
+                                        class="form-control text-3 h-auto py-2" name="email" required="">
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="card h-card mb-3">
-                            <div class="row no-gutters">
-                                <div class="col-md-4">
-                                    <div class="card-image d-flex flex-column justify-content-center">
-                                        <img src="./img/files/constellation/20220425-02570198061096.jpg" alt="">
-                                    </div>
+                            <div class="row">
+                                <div class="form-group col-lg-6">
+                                    <label class="form-label mb-1 text-2">Phone Number</label>
+                                    <input type="text" value="" data-msg-required="Please enter the phone number."
+                                        maxlength="100" class="form-control text-3 h-auto py-2" name="Phone"
+                                        required="">
                                 </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <div class="heading heading-border heading-middle-border-center">
-                                            <h2 class="font-weight-normal position-relative card-title ps-0">
-                                                <strong>Bharani </strong>
-                                                <span>
-                                                    <img src="./img/files/title-icons/star-constellation.png" alt="">
-                                                </span>
-                                            </h2>
-
-                                            <ul class="ps-0 m-0">
-                                                <li class="d-flex">
-                                                    <p class="me-2 mb-0">Translation: </p>
-                                                    <p class="mb-0"><strong>"The Woman who Bears"</strong>
-                                                    </p>
-                                                </li>
-                                                <li class="d-flex">
-                                                    <p class="me-2 mb-0">Symbol: </p>
-                                                    <p class="mb-0"><strong>The Yoni, Female Reproductive
-                                                            Organs</strong></p>
-                                                </li>
-                                                <li class="d-flex">
-                                                    <p class="me-2 mb-0">Seed Sounds:</p>
-                                                    <p class="mb-0"><strong>Li, Lu, Le, Lo (Padas of Bharani)</strong>
-                                                    </p>
-                                                </li>
-                                            </ul>
-
-                                        </div>
-
-                                        <a href="#" class="btn btn-secondary mb-0">Learn More&nbsp;&nbsp;<i
-                                                class="fa fa-arrow-right"></i></a>
-                                    </div>
+                                <div class="form-group col-lg-6">
+                                    <label class="form-label mb-1 text-2">Subject</label>
+                                    <input type="text" value="" data-msg-required="Please enter the subject."
+                                        maxlength="100" class="form-control text-3 h-auto py-2" name="subject"
+                                        required="">
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="card h-card mb-3">
-                            <div class="row no-gutters">
-                                <div class="col-md-4">
-                                    <div class="card-image d-flex flex-column justify-content-center">
-                                        <img src="./img/files/constellation/20220425-090213156181759.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <div class="heading heading-border heading-middle-border-center">
-                                            <h2 class="font-weight-normal position-relative card-title ps-0">
-                                                <strong>Krittika </strong>
-                                                <span>
-                                                    <img src="./img/files/title-icons/star-constellation.png" alt="">
-                                                </span>
-                                            </h2>
-
-                                            <ul class="ps-0 m-0">
-                                                <li class="d-flex">
-                                                    <p class="me-2 mb-0">Translation: </p>
-                                                    <p class="mb-0"><strong>"The Cutter"</strong>
-                                                    </p>
-                                                </li>
-                                                <li class="d-flex">
-                                                    <p class="me-2 mb-0">Symbol: </p>
-                                                    <p class="mb-0"><strong>Razor, Axe or Flame</strong></p>
-                                                </li>
-                                                <li class="d-flex">
-                                                    <p class="me-2 mb-0">Seed Sounds:</p>
-                                                    <p class="mb-0"><strong>Seed Sounds: Ah, Ee, Oo, Ay (Padas of
-                                                            Kriitika)</strong>
-                                                    </p>
-                                                </li>
-                                            </ul>
-
-                                        </div>
-
-                                        <a href="#" class="btn btn-secondary mb-0">Learn More&nbsp;&nbsp;<i
-                                                class="fa fa-arrow-right"></i></a>
-                                    </div>
+                            <div class="row">
+                                <div class="form-group col">
+                                    <label class="form-label mb-1 text-2">Message</label>
+                                    <textarea maxlength="5000" data-msg-required="Please enter your message." rows="5"
+                                        class="form-control text-3 h-auto py-2" name="message" required=""></textarea>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="card h-card mb-3">
-                            <div class="row no-gutters">
-                                <div class="col-md-4">
-                                    <div class="card-image d-flex flex-column justify-content-center">
-                                        <img src="./img/files/constellation/20220425-09165338283514.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <div class="heading heading-border heading-middle-border-center">
-                                            <h2 class="font-weight-normal position-relative card-title ps-0">
-                                                <strong>Rohini </strong>
-                                                <span>
-                                                    <img src="./img/files/title-icons/star-constellation.png" alt="">
-                                                </span>
-                                            </h2>
-
-                                            <ul class="ps-0 m-0">
-                                                <li class="d-flex">
-                                                    <p class="me-2 mb-0">Translation: </p>
-                                                    <p class="mb-0"><strong> "Reddish One" or "Growing One"</strong>
-                                                    </p>
-                                                </li>
-                                                <li class="d-flex">
-                                                    <p class="me-2 mb-0">Symbol: </p>
-                                                    <p class="mb-0"><strong>An Ox Cart; Chariot</strong></p>
-                                                </li>
-                                                <li class="d-flex">
-                                                    <p class="me-2 mb-0">Seed Sounds:</p>
-                                                    <p class="mb-0"><strong>O, Ba, Bi, Bu (Padas of Rohini)</strong>
-                                                    </p>
-                                                </li>
-                                            </ul>
-
-                                        </div>
-
-                                        <a href="#" class="btn btn-secondary mb-0">Learn More&nbsp;&nbsp;<i
-                                                class="fa fa-arrow-right"></i></a>
-                                    </div>
+                            <div class="row">
+                                <div class="form-group col">
+                                    <input type="submit" value="Send Message" class="btn btn-primary btn-modern"
+                                        data-loading-text="Loading...">
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="card h-card mb-3">
-                            <div class="row no-gutters">
-                                <div class="col-md-4">
-                                    <div class="card-image d-flex flex-column justify-content-center">
-                                        <img src="./img/files/constellation/20220425-120648833628415.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <div class="heading heading-border heading-middle-border-center">
-                                            <h2 class="font-weight-normal position-relative card-title ps-0">
-                                                <strong> Mrigashira </strong>
-                                                <span>
-                                                    <img src="./img/files/title-icons/star-constellation.png" alt="">
-                                                </span>
-                                            </h2>
-
-                                            <ul class="ps-0 m-0">
-                                                <li class="d-flex">
-                                                    <p class="me-2 mb-0">Translation: </p>
-                                                    <p class="mb-0"><strong>"Deer’s Head” or “The Benevolent"</strong>
-                                                    </p>
-                                                </li>
-                                                <li class="d-flex">
-                                                    <p class="me-2 mb-0">Symbol: </p>
-                                                    <p class="mb-0"><strong>Antelope’s Head</strong></p>
-                                                </li>
-                                                <li class="d-flex">
-                                                    <p class="me-2 mb-0">Seed Sounds:</p>
-                                                    <p class="mb-0"><strong>Be, Bo, Ka, Ki (Padas of Mrigasira)</strong>
-                                                    </p>
-                                                </li>
-                                            </ul>
-
-                                        </div>
-
-                                        <a href="#" class="btn btn-secondary mb-0">Learn More&nbsp;&nbsp;<i
-                                                class="fa fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
+                        </form>
 
                     </div>
-
                 </div>
-
             </div>
         </div>
-
 
     </div>
 
@@ -3162,6 +3009,9 @@
     <script src="vendor/bootstrap-star-rating/js/star-rating.min.js"></script>
     <script src="vendor/bootstrap-star-rating/themes/krajee-fas/theme.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+        integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Theme Base, Components and Settings -->
     <script src="js/theme.js"></script>
@@ -3181,7 +3031,25 @@
     <!-- Theme Custom -->
     <script src="js/custom.js"></script>
 
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 0,
+            slidesPerView: 25,
 
+            watchSlidesProgress: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            spaceBetween: 0,
+            effect: "fade",
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    </script>
 
 </body>
 

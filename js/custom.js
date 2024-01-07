@@ -1,12 +1,12 @@
-// $(document).scroll(function() {
-//     var y = $(this).scrollTop();
-//     if (y > 200) {
-//         $('#main-navigation').addClass("sticky");
-//     } 
-//     else{
-//         $('#main-navigation').removeClass("sticky");
-//     }
-// });
+$(document).scroll(function() {
+    var y = $(this).scrollTop();
+    if (y > 200) {
+        $('#main-navigation').addClass("sticky");
+    } 
+    else{
+        $('#main-navigation').removeClass("sticky");
+    }
+});
 
 
 
