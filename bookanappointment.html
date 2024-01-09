@@ -44,7 +44,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
         integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="js/nepali.datepicker.v4.0.1.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+        integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Theme CSS -->
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/theme-elements.css">
@@ -2647,101 +2651,814 @@
         </section>
 
         <div class="book-wrapper">
-            <div class="container">
+            <div class="container-fluid. custom-container">
                 <div class="row align-items-stretch">
-                    <div class="col-lg-4">
+                    <div class="col-lg-3 d-none d-lg-block">
                         <div class="tabs tabs-vertical tabs-right tabs-navigation tabs-navigation-simple">
                             <ul class="nav nav-tabs col-sm-3" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link active" href="#tabsNavigationVertSimple1" data-bs-toggle="tab"
-                                        aria-selected="true" role="tab">Service selection</a>
+                                <li class="nav-item" id="service-selection" role="presentation">
+                                    <a class="nav-link active">1. Service selection</a>
                                 </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link" href="#tabsNavigationVertSimple2" data-bs-toggle="tab"
-                                        aria-selected="false" tabindex="-1" role="tab">HTML5 / CSS3 / JS</a>
+                                <li class="nav-item" id="datetime-selector" role="presentation">
+                                    <a class="nav-link">2, Date & Time Selection</a>
                                 </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link" href="#tabsNavigationVertSimple3" data-bs-toggle="tab"
-                                        aria-selected="false" tabindex="-1" role="tab">500+ Google Fonts</a>
+                                <li class="nav-item" id="personal-info" role="presentation">
+                                    <a class="nav-link">3. Personal Information</a>
                                 </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link" href="#tabsNavigationVertSimple4" data-bs-toggle="tab"
-                                        aria-selected="false" tabindex="-1" role="tab">Colors</a>
+                                <li class="nav-item" id="address-info" role="presentation">
+                                    <a class="nav-link">4. Address</a>
                                 </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link" href="#tabsNavigationVertSimple5" data-bs-toggle="tab"
-                                        aria-selected="false" tabindex="-1" role="tab">Sliders</a>
+                                <li class="nav-item" id="payment-info" role="presentation">
+                                    <a class="nav-link">5. Payment</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-8">
-                        <div class="tab-pane tab-pane-navigation active" id="tabsNavigationVertSimple1" role="tabpanel">
-                            <h4>Customer Support</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque
-                                eget diam posuere porta. Quisque ut nulla at nunc <a href="#">vehicula</a> lacinia.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque
-                                eget diam posuere porta. Quisque ut nulla at nunc <a href="#">vehicula</a> lacinia.
-                                Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis
-                                faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et
-                                ultrices posuere cubilia Curae; In eu libero ligula. Fusce eget metus lorem, ac viverra
-                                leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices
-                                sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque ligula mollis
-                                lobortis.</p>
-                        </div>
-                        <div class="tab-pane tab-pane-navigation" id="tabsNavigationVertSimple2" role="tabpanel">
-                            <h4>HTML5 / CSS3 / JS</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque
-                                eget diam posuere porta. Quisque ut nulla at nunc <a href="#">vehicula</a> lacinia.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque
-                                eget diam posuere porta. Quisque ut nulla at nunc <a href="#">vehicula</a> lacinia.
-                                Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis
-                                faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et
-                                ultrices posuere cubilia Curae; In eu libero ligula. Fusce eget metus lorem, ac viverra
-                                leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices
-                                sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque ligula mollis
-                                lobortis.</p>
-                        </div>
-                        <div class="tab-pane tab-pane-navigation" id="tabsNavigationVertSimple3" role="tabpanel">
-                            <h4>500+ Google Fonts</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque
-                                eget diam posuere porta. Quisque ut nulla at nunc <a href="#">vehicula</a> lacinia.</p>
-                            <img class="float-start" width="200" src="img/device.png" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque
-                                eget diam posuere porta. Quisque ut nulla at nunc <a href="#">vehicula</a> lacinia.
-                                Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis
-                                faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et
-                                ultrices posuere cubilia Curae; In eu libero ligula. Fusce eget metus lorem, ac viverra
-                                leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices
-                                sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque ligula mollis
-                                lobortis.</p>
-                        </div>
-                        <div class="tab-pane tab-pane-navigation" id="tabsNavigationVertSimple4" role="tabpanel">
-                            <h4>Colors</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque
-                                eget diam posuere porta. Quisque ut nulla at nunc <a href="#">vehicula</a> lacinia.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque
-                                eget diam posuere porta. Quisque ut nulla at nunc <a href="#">vehicula</a> lacinia.
-                                Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis
-                                faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et
-                                ultrices posuere cubilia Curae; In eu libero ligula. Fusce eget metus lorem, ac viverra
-                                leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices
-                                sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque ligula mollis
-                                lobortis.</p>
-                        </div>
-                        <div class="tab-pane tab-pane-navigation" id="tabsNavigationVertSimple5" role="tabpanel">
-                            <h4>Sliders</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque
-                                eget diam posuere porta. Quisque ut nulla at nunc <a href="#">vehicula</a> lacinia.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque
-                                eget diam posuere porta. Quisque ut nulla at nunc <a href="#">vehicula</a> lacinia.
-                                Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis
-                                faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et
-                                ultrices posuere cubilia Curae; In eu libero ligula. Fusce eget metus lorem, ac viverra
-                                leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices
-                                sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque ligula mollis
-                                lobortis.</p>
-                        </div>
+                        <form action="">
+                            <div class="tab-pane tab-pane-navigation active" id="tabsNavigationVertSimple1"
+                                role="tabpanel">
+                                <h4 class="mb-4">Select the service you want to book</h4>
+                                <ul
+                                    class="list-unstyled d-flex align-items-stretch justify-content-start flex-wrap service-selector">
+                                    <li>
+                                        <input type="radio" hidden name="service-selection" id="service-1">
+                                        <label class="service-item" for="service-1">
+                                            <i class="fa fa-check"></i>
+                                            <img src="./img/files/menuicons/services/20220405-113419946220549.png"
+                                                width="20px">
+                                            <div>
+                                                <p class="title">
+                                                    Kundali Prediction
+                                                </p>
+                                                <p class="duration">
+                                                    45 minutes
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" hidden name="service-selection" id="service-2">
+                                        <label class="service-item" for="service-2">
+                                            <i class="fa fa-check"></i>
+                                            <img src="./img/files/menuicons/services/20220405-113346598577064.png"
+                                                width="20px">
+                                            <div>
+                                                <p class="title">
+                                                    Kundali Making
+                                                </p>
+                                                <p class="duration">
+                                                    45 minutes
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" hidden name="service-selection" id="service-10">
+                                        <label class="service-item" for="service-10">
+                                            <i class="fa fa-check"></i>
+                                            <img src="./img/files/menuicons/services/20220405-113409471470123.png"
+                                                width="20px">
+                                            <div>
+                                                <p class="title">
+                                                    Kundali Matching
+                                                </p>
+                                                <p class="duration">
+                                                    45 minutes
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" hidden name="service-selection" id="service-3">
+                                        <label class="service-item" for="service-3">
+                                            <i class="fa fa-check"></i>
+                                            <img src="./img/files/menuicons/services/20220405-113452660206025.png"
+                                                width="20px">
+                                            <div>
+                                                <p class="title">
+                                                    Gemstone
+                                                </p>
+                                                <p class="duration">
+                                                    45 minutes
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" hidden name="service-selection" id="service-4">
+                                        <label class="service-item" for="service-4">
+                                            <i class="fa fa-check"></i>
+                                            <img src="./img/files/menuicons/services/20220405-093220497958073.png"
+                                                width="20px">
+                                            <div>
+                                                <p class="title">
+                                                    Vastu Shastra
+                                                </p>
+                                                <p class="duration">
+                                                    45 minutes
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" hidden name="service-selection" id="service-5">
+                                        <label class="service-item" for="service-5">
+                                            <i class="fa fa-check"></i>
+                                            <img src="./img/files/menuicons/services/20220405-083928815629887.png"
+                                                width="20px">
+                                            <div>
+                                                <p class="title">
+                                                    Yantra Service
+                                                </p>
+                                                <p class="duration">
+                                                    45 minutes
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" hidden name="service-selection" id="service-6">
+                                        <label class="service-item" for="service-6">
+                                            <i class="fa fa-check"></i>
+                                            <img src="./img/files/menuicons/services/20220405-122401468942095.png"
+                                                width="20px">
+                                            <div>
+                                                <p class="title">
+                                                    Planetary Body
+                                                </p>
+                                                <p class="duration">
+                                                    45 minutes
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" hidden name="service-selection" id="service-7">
+                                        <label class="service-item" for="service-7">
+                                            <i class="fa fa-check"></i>
+                                            <img src="./img/files/menuicons/services/20220405-122245604724674.png"
+                                                width="20px">
+                                            <div>
+                                                <p class="title">
+                                                    Graha Shanti
+                                                </p>
+                                                <p class="duration">
+                                                    45 minutes
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" hidden name="service-selection" id="service-8">
+                                        <label class="service-item" for="service-8">
+                                            <i class="fa fa-check"></i>
+                                            <img src="./img/files/menuicons/services/20220405-122336629894273.png"
+                                                width="20px">
+                                            <div>
+                                                <p class="title">
+                                                    Muhurta Nirdharan
+                                                </p>
+                                                <p class="duration">
+                                                    45 minutes
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" hidden name="service-selection" id="service-9">
+                                        <label class="service-item" for="service-9">
+                                            <i class="fa fa-check"></i>
+                                            <img src="./img/files/menuicons/services/20220405-122349121099816.png"
+                                                width="20px">
+                                            <div>
+                                                <p class="title">
+                                                    Online Service
+                                                </p>
+                                                <p class="duration">
+                                                    45 minutes
+                                                </p>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-alt btn-lg btn-primary" id="next-datetime" type="button">
+                                    Next &nbsp;&nbsp; <small><i class="fa fa-arrow-right"></i></small>
+                                </button>
+                            </div>
+                            <div class="tab-pane tab-pane-navigation" id="tabsNavigationVertSimple2" role="tabpanel">
+                                <h4>Date & Time Selector</h4>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="date">
+                                                <label for="" class="d-block">Select Appointment Date:</label>
+                                                <input class="form-control" type="text" id="nepali-appointment-date">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="time">
+                                                <label for="" class="d-block">Select Appointment Date:</label>
+                                                <select class="form-control time-list valid"
+                                                    placeholder="Select Timeslot" name="time_id" required="" require=""
+                                                    aria-invalid="false">
+                                                    <option time="" value="2">8:00am-8:45am</option>
+                                                    <option time="" value="17">8:45am-9:30am</option>
+                                                    <option time="" value="18">9:30am-10:15am</option>
+                                                    <option time="" value="19">10:15am-11:00am</option>
+                                                    <option time="" value="20">11:00am-11:45am</option>
+                                                    <option time="" value="25">11:45am-12:30pm</option>
+                                                    <option time="" value="26">12:30pm-1:15pm</option>
+                                                    <option time="" value="27">1:15pm-2:00pm</option>
+                                                    <option time="" value="28">2:00pm-2:45pm</option>
+                                                    <option time="" value="29">2:45pm-3:30pm</option>
+                                                    <option time="" value="30">3:30pm-4:15pm</option>
+                                                    <option time="" value="31">4:15pm-5:00pm</option>
+                                                    <option time="" value="32">5:00pm-5:45pm</option>
+                                                    <option time="" value="33">5:45pm-6:30pm</option>
+                                                    <option time="" value="34">6:30pm-7:15pm</option>
+                                                    <option time="" value="35">7:15pm-8:00pm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-2 mt-5 ps-2">
+                                    <button class="btn btn-alt btn-lg btn-secondary" type="button"
+                                        id="back-serviceselection">
+                                        <small><i class="fa fa-arrow-left"></i></small> &nbsp;&nbsp; Back
+                                    </button>
+                                    <button class="btn btn-alt btn-lg btn-primary" type="button" id="next-personalinfo">
+                                        Next &nbsp;&nbsp; <small><i class="fa fa-arrow-right"></i></small>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="tab-pane tab-pane-navigation" id="tabsNavigationVertSimple3" role="tabpanel">
+                                <h4>Add Your Personal Information</h4>
+                                <p><small>Fields with * are required</small></p>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-6 mb-3">
+                                            <label for="" class="d-block">Full Name *</label>
+                                            <input type="text" class="form-control" placeholder="Enter Your Full Name">
+                                        </div>
+                                        <div class="col-sm-6 mb-3">
+                                            <label for="" class="d-block">Email Address *</label>
+                                            <input type="text" class="form-control"
+                                                placeholder="Enter Your Email Address">
+                                        </div>
+                                        <div class="col-sm-6 mb-3">
+                                            <label for="" class="d-block">Phone Number *</label>
+
+                                            <div class="input-div">
+                                                <input type="tel" name="phone" id="phone" value="+977"
+                                                    placeholder="Phone Number" class="form-control" required require />
+                                            </div>
+
+                                        </div>
+                                        <div class="col-sm-6 mb-3">
+                                            <label for="" class="d-block">Landline Number</label>
+                                            <input type="text" class="form-control"
+                                                placeholder="Enter Your LandLine number">
+                                        </div>
+
+                                        <div class="col-sm-4 mb-3">
+                                            <label for="" class="d-block">DOB (in BS)</label>
+                                            <input type="text" class="form-control" id="dobpicker">
+                                        </div>
+
+                                        <div class="col-sm-4 mb-3">
+                                            <label for="" class="d-block">DOB (in AD)</label>
+                                            <input type="text" class="form-control" id="dobADpicker">
+                                        </div>
+
+                                        <div class="col-sm-4 mb-3">
+                                            <label for="" class="d-block">Birth Time</label>
+                                            <input type="time" class="form-control" id="dotime">
+                                        </div>
+
+                                        <div class="col-sm-4 mb-3">
+                                            <label for="" class="d-block">Gender</label>
+                                            <select name="" id="" class="form-control">
+                                                <option value="default" disabled selected>Select an option</option>
+                                                <option value="m">Male</option>
+                                                <option value="f">Female</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex gap-2 mt-5 ps-2">
+                                        <button class="btn btn-alt btn-lg btn-secondary" type="button"
+                                            id="back-datetime">
+                                            <small><i class="fa fa-arrow-left"></i></small> &nbsp;&nbsp; Back
+                                        </button>
+                                        <button class="btn btn-alt btn-lg btn-primary" type="button" id="next-address">
+                                            Next &nbsp;&nbsp; <small><i class="fa fa-arrow-right"></i></small>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane tab-pane-navigation" id="tabsNavigationVertSimple4" role="tabpanel">
+                                <h4>Address Details</h4>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label for="" class="d-block">Country</label>
+                                        <select class="form-control py-3" id="countries"
+                                            style="width: 100%;padding: 8px 12px">
+                                            <option value="AF" data-capital="Kabul">Afghanistan</option>
+                                            <option value="AX" data-capital="Mariehamn">Aland Islands</option>
+                                            <option value="AL" data-capital="Tirana">Albania</option>
+                                            <option value="DZ" data-capital="Algiers">Algeria</option>
+                                            <option value="AS" data-capital="Pago Pago">American Samoa</option>
+                                            <option value="AD" data-capital="Andorra la Vella">Andorra</option>
+                                            <option value="AO" data-capital="Luanda">Angola</option>
+                                            <option value="AI" data-capital="The Valley">Anguilla</option>
+                                            <option value="AG" data-capital="St. John's">Antigua and Barbuda</option>
+                                            <option value="AR" data-capital="Buenos Aires">Argentina</option>
+                                            <option value="AM" data-capital="Yerevan">Armenia</option>
+                                            <option value="AW" data-capital="Oranjestad">Aruba</option>
+                                            <option value="AU" data-capital="Canberra">Australia</option>
+                                            <option value="AT" data-capital="Vienna">Austria</option>
+                                            <option value="AZ" data-capital="Baku">Azerbaijan</option>
+                                            <option value="BS" data-capital="Nassau">Bahamas</option>
+                                            <option value="BH" data-capital="Manama">Bahrain</option>
+                                            <option value="BD" data-capital="Dhaka">Bangladesh</option>
+                                            <option value="BB" data-capital="Bridgetown">Barbados</option>
+                                            <option value="BY" data-capital="Minsk">Belarus</option>
+                                            <option value="BE" data-capital="Brussels">Belgium</option>
+                                            <option value="BZ" data-capital="Belmopan">Belize</option>
+                                            <option value="BJ" data-capital="Porto-Novo">Benin</option>
+                                            <option value="BM" data-capital="Hamilton">Bermuda</option>
+                                            <option value="BT" data-capital="Thimphu">Bhutan</option>
+                                            <option value="BO" data-capital="Sucre">Bolivia</option>
+                                            <option value="BA" data-capital="Sarajevo">Bosnia and Herzegovina</option>
+                                            <option value="BW" data-capital="Gaborone">Botswana</option>
+                                            <option value="BR" data-capital="Brasília">Brazil</option>
+                                            <option value="IO" data-capital="Diego Garcia">British Indian Ocean
+                                                Territory</option>
+                                            <option value="BN" data-capital="Bandar Seri Begawan">Brunei Darussalam
+                                            </option>
+                                            <option value="BG" data-capital="Sofia">Bulgaria</option>
+                                            <option value="BF" data-capital="Ouagadougou">Burkina Faso</option>
+                                            <option value="BI" data-capital="Bujumbura">Burundi</option>
+                                            <option value="CV" data-capital="Praia">Cabo Verde</option>
+                                            <option value="KH" data-capital="Phnom Penh">Cambodia</option>
+                                            <option value="CM" data-capital="Yaoundé">Cameroon</option>
+                                            <option value="CA" data-capital="Ottawa">Canada</option>
+                                            <option value="KY" data-capital="George Town">Cayman Islands</option>
+                                            <option value="CF" data-capital="Bangui">Central African Republic</option>
+                                            <option value="TD" data-capital="N'Djamena">Chad</option>
+                                            <option value="CL" data-capital="Santiago">Chile</option>
+                                            <option value="CN" data-capital="Beijing">China</option>
+                                            <option value="CX" data-capital="Flying Fish Cove">Christmas Island</option>
+                                            <option value="CC" data-capital="West Island">Cocos (Keeling) Islands
+                                            </option>
+                                            <option value="CO" data-capital="Bogotá">Colombia</option>
+                                            <option value="KM" data-capital="Moroni">Comoros</option>
+                                            <option value="CK" data-capital="Avarua">Cook Islands</option>
+                                            <option value="CR" data-capital="San José">Costa Rica</option>
+                                            <option value="HR" data-capital="Zagreb">Croatia</option>
+                                            <option value="CU" data-capital="Havana">Cuba</option>
+                                            <option value="CW" data-capital="Willemstad">Curaçao</option>
+                                            <option value="CY" data-capital="Nicosia">Cyprus</option>
+                                            <option value="CZ" data-capital="Prague">Czech Republic</option>
+                                            <option value="CI" data-capital="Yamoussoukro">Côte d'Ivoire</option>
+                                            <option value="CD" data-capital="Kinshasa">Democratic Republic of the Congo
+                                            </option>
+                                            <option value="DK" data-capital="Copenhagen">Denmark</option>
+                                            <option value="DJ" data-capital="Djibouti">Djibouti</option>
+                                            <option value="DM" data-capital="Roseau">Dominica</option>
+                                            <option value="DO" data-capital="Santo Domingo">Dominican Republic</option>
+                                            <option value="EC" data-capital="Quito">Ecuador</option>
+                                            <option value="EG" data-capital="Cairo">Egypt</option>
+                                            <option value="SV" data-capital="San Salvador">El Salvador</option>
+                                            <option value="GQ" data-capital="Malabo">Equatorial Guinea</option>
+                                            <option value="ER" data-capital="Asmara">Eritrea</option>
+                                            <option value="EE" data-capital="Tallinn">Estonia</option>
+                                            <option value="ET" data-capital="Addis Ababa">Ethiopia</option>
+                                            <option value="FK" data-capital="Stanley">Falkland Islands</option>
+                                            <option value="FO" data-capital="Tórshavn">Faroe Islands</option>
+                                            <option value="FM" data-capital="Palikir">Federated States of Micronesia
+                                            </option>
+                                            <option value="FJ" data-capital="Suva">Fiji</option>
+                                            <option value="FI" data-capital="Helsinki">Finland</option>
+                                            <option value="MK" data-capital="Skopje">Former Yugoslav Republic of
+                                                Macedonia</option>
+                                            <option value="FR" data-capital="Paris">France</option>
+                                            <option value="PF" data-capital="Papeete">French Polynesia</option>
+                                            <option value="GA" data-capital="Libreville">Gabon</option>
+                                            <option value="GM" data-capital="Banjul">Gambia</option>
+                                            <option value="GE" data-capital="Tbilisi">Georgia</option>
+                                            <option value="DE" data-capital="Berlin">Germany</option>
+                                            <option value="GH" data-capital="Accra">Ghana</option>
+                                            <option value="GI" data-capital="Gibraltar">Gibraltar</option>
+                                            <option value="GR" data-capital="Athens">Greece</option>
+                                            <option value="GL" data-capital="Nuuk">Greenland</option>
+                                            <option value="GD" data-capital="St. George's">Grenada</option>
+                                            <option value="GU" data-capital="Hagåtña">Guam</option>
+                                            <option value="GT" data-capital="Guatemala City">Guatemala</option>
+                                            <option value="GG" data-capital="Saint Peter Port">Guernsey</option>
+                                            <option value="GN" data-capital="Conakry">Guinea</option>
+                                            <option value="GW" data-capital="Bissau">Guinea-Bissau</option>
+                                            <option value="GY" data-capital="Georgetown">Guyana</option>
+                                            <option value="HT" data-capital="Port-au-Prince">Haiti</option>
+                                            <option value="VA" data-capital="Vatican City">Holy See</option>
+                                            <option value="HN" data-capital="Tegucigalpa">Honduras</option>
+                                            <option value="HK" data-capital="Hong Kong">Hong Kong</option>
+                                            <option value="HU" data-capital="Budapest">Hungary</option>
+                                            <option value="IS" data-capital="Reykjavik">Iceland</option>
+                                            <option value="IN" data-capital="New Delhi">India</option>
+                                            <option value="ID" data-capital="Jakarta">Indonesia</option>
+                                            <option value="IR" data-capital="Tehran">Iran</option>
+                                            <option value="IQ" data-capital="Baghdad">Iraq</option>
+                                            <option value="IE" data-capital="Dublin">Ireland</option>
+                                            <option value="IM" data-capital="Douglas">Isle of Man</option>
+                                            <option value="IL" data-capital="Jerusalem">Israel</option>
+                                            <option value="IT" data-capital="Rome">Italy</option>
+                                            <option value="JM" data-capital="Kingston">Jamaica</option>
+                                            <option value="JP" data-capital="Tokyo">Japan</option>
+                                            <option value="JE" data-capital="Saint Helier">Jersey</option>
+                                            <option value="JO" data-capital="Amman">Jordan</option>
+                                            <option value="KZ" data-capital="Astana">Kazakhstan</option>
+                                            <option value="KE" data-capital="Nairobi">Kenya</option>
+                                            <option value="KI" data-capital="South Tarawa">Kiribati</option>
+                                            <option value="KW" data-capital="Kuwait City">Kuwait</option>
+                                            <option value="KG" data-capital="Bishkek">Kyrgyzstan</option>
+                                            <option value="LA" data-capital="Vientiane">Laos</option>
+                                            <option value="LV" data-capital="Riga">Latvia</option>
+                                            <option value="LB" data-capital="Beirut">Lebanon</option>
+                                            <option value="LS" data-capital="Maseru">Lesotho</option>
+                                            <option value="LR" data-capital="Monrovia">Liberia</option>
+                                            <option value="LY" data-capital="Tripoli">Libya</option>
+                                            <option value="LI" data-capital="Vaduz">Liechtenstein</option>
+                                            <option value="LT" data-capital="Vilnius">Lithuania</option>
+                                            <option value="LU" data-capital="Luxembourg City">Luxembourg</option>
+                                            <option value="MO" data-capital="Macau">Macau</option>
+                                            <option value="MG" data-capital="Antananarivo">Madagascar</option>
+                                            <option value="MW" data-capital="Lilongwe">Malawi</option>
+                                            <option value="MY" data-capital="Kuala Lumpur">Malaysia</option>
+                                            <option value="MV" data-capital="Malé">Maldives</option>
+                                            <option value="ML" data-capital="Bamako">Mali</option>
+                                            <option value="MT" data-capital="Valletta">Malta</option>
+                                            <option value="MH" data-capital="Majuro">Marshall Islands</option>
+                                            <option value="MQ" data-capital="Fort-de-France">Martinique</option>
+                                            <option value="MR" data-capital="Nouakchott">Mauritania</option>
+                                            <option value="MU" data-capital="Port Louis">Mauritius</option>
+                                            <option value="MX" data-capital="Mexico City">Mexico</option>
+                                            <option value="MD" data-capital="Chișinău">Moldova</option>
+                                            <option value="MC" data-capital="Monaco">Monaco</option>
+                                            <option value="MN" data-capital="Ulaanbaatar">Mongolia</option>
+                                            <option value="ME" data-capital="Podgorica">Montenegro</option>
+                                            <option value="MS" data-capital="Little Bay, Brades, Plymouth">Montserrat
+                                            </option>
+                                            <option value="MA" data-capital="Rabat">Morocco</option>
+                                            <option value="MZ" data-capital="Maputo">Mozambique</option>
+                                            <option value="MM" data-capital="Naypyidaw">Myanmar</option>
+                                            <option value="NA" data-capital="Windhoek">Namibia</option>
+                                            <option value="NR" data-capital="Yaren District">Nauru</option>
+                                            <option value="NP" data-capital="Kathmandu">Nepal</option>
+                                            <option value="NL" data-capital="Amsterdam">Netherlands</option>
+                                            <option value="NZ" data-capital="Wellington">New Zealand</option>
+                                            <option value="NI" data-capital="Managua">Nicaragua</option>
+                                            <option value="NE" data-capital="Niamey">Niger</option>
+                                            <option value="NG" data-capital="Abuja">Nigeria</option>
+                                            <option value="NU" data-capital="Alofi">Niue</option>
+                                            <option value="NF" data-capital="Kingston">Norfolk Island</option>
+                                            <option value="KP" data-capital="Pyongyang">North Korea</option>
+                                            <option value="MP" data-capital="Capitol Hill">Northern Mariana Islands
+                                            </option>
+                                            <option value="NO" data-capital="Oslo">Norway</option>
+                                            <option value="OM" data-capital="Muscat">Oman</option>
+                                            <option value="PK" data-capital="Islamabad">Pakistan</option>
+                                            <option value="PW" data-capital="Ngerulmud">Palau</option>
+                                            <option value="PA" data-capital="Panama City">Panama</option>
+                                            <option value="PG" data-capital="Port Moresby">Papua New Guinea</option>
+                                            <option value="PY" data-capital="Asunción">Paraguay</option>
+                                            <option value="PE" data-capital="Lima">Peru</option>
+                                            <option value="PH" data-capital="Manila">Philippines</option>
+                                            <option value="PN" data-capital="Adamstown">Pitcairn</option>
+                                            <option value="PL" data-capital="Warsaw">Poland</option>
+                                            <option value="PT" data-capital="Lisbon">Portugal</option>
+                                            <option value="PR" data-capital="San Juan">Puerto Rico</option>
+                                            <option value="QA" data-capital="Doha">Qatar</option>
+                                            <option value="CG" data-capital="Brazzaville">Republic of the Congo</option>
+                                            <option value="RO" data-capital="Bucharest">Romania</option>
+                                            <option value="RU" data-capital="Moscow">Russia</option>
+                                            <option value="RW" data-capital="Kigali">Rwanda</option>
+                                            <option value="BL" data-capital="Gustavia">Saint Barthélemy</option>
+                                            <option value="KN" data-capital="Basseterre">Saint Kitts and Nevis</option>
+                                            <option value="LC" data-capital="Castries">Saint Lucia</option>
+                                            <option value="VC" data-capital="Kingstown">Saint Vincent and the Grenadines
+                                            </option>
+                                            <option value="WS" data-capital="Apia">Samoa</option>
+                                            <option value="SM" data-capital="San Marino">San Marino</option>
+                                            <option value="ST" data-capital="São Tomé">Sao Tome and Principe</option>
+                                            <option value="SA" data-capital="Riyadh">Saudi Arabia</option>
+                                            <option value="SN" data-capital="Dakar">Senegal</option>
+                                            <option value="RS" data-capital="Belgrade">Serbia</option>
+                                            <option value="SC" data-capital="Victoria">Seychelles</option>
+                                            <option value="SL" data-capital="Freetown">Sierra Leone</option>
+                                            <option value="SG" data-capital="Singapore">Singapore</option>
+                                            <option value="SX" data-capital="Philipsburg">Sint Maarten</option>
+                                            <option value="SK" data-capital="Bratislava">Slovakia</option>
+                                            <option value="SI" data-capital="Ljubljana">Slovenia</option>
+                                            <option value="SB" data-capital="Honiara">Solomon Islands</option>
+                                            <option value="SO" data-capital="Mogadishu">Somalia</option>
+                                            <option value="ZA" data-capital="Pretoria">South Africa</option>
+                                            <option value="KR" data-capital="Seoul">South Korea</option>
+                                            <option value="SS" data-capital="Juba">South Sudan</option>
+                                            <option value="ES" data-capital="Madrid">Spain</option>
+                                            <option value="LK" data-capital="Sri Jayawardenepura Kotte, Colombo">Sri
+                                                Lanka</option>
+                                            <option value="PS" data-capital="Ramallah">State of Palestine</option>
+                                            <option value="SD" data-capital="Khartoum">Sudan</option>
+                                            <option value="SR" data-capital="Paramaribo">Suriname</option>
+                                            <option value="SZ" data-capital="Lobamba, Mbabane">Swaziland</option>
+                                            <option value="SE" data-capital="Stockholm">Sweden</option>
+                                            <option value="CH" data-capital="Bern">Switzerland</option>
+                                            <option value="SY" data-capital="Damascus">Syrian Arab Republic</option>
+                                            <option value="TW" data-capital="Taipei">Taiwan</option>
+                                            <option value="TJ" data-capital="Dushanbe">Tajikistan</option>
+                                            <option value="TZ" data-capital="Dodoma">Tanzania</option>
+                                            <option value="TH" data-capital="Bangkok">Thailand</option>
+                                            <option value="TL" data-capital="Dili">Timor-Leste</option>
+                                            <option value="TG" data-capital="Lomé">Togo</option>
+                                            <option value="TK" data-capital="Nukunonu, Atafu,Tokelau">Tokelau</option>
+                                            <option value="TO" data-capital="Nukuʻalofa">Tonga</option>
+                                            <option value="TT" data-capital="Port of Spain">Trinidad and Tobago</option>
+                                            <option value="TN" data-capital="Tunis">Tunisia</option>
+                                            <option value="TR" data-capital="Ankara">Turkey</option>
+                                            <option value="TM" data-capital="Ashgabat">Turkmenistan</option>
+                                            <option value="TC" data-capital="Cockburn Town">Turks and Caicos Islands
+                                            </option>
+                                            <option value="TV" data-capital="Funafuti">Tuvalu</option>
+                                            <option value="UG" data-capital="Kampala">Uganda</option>
+                                            <option value="UA" data-capital="Kiev">Ukraine</option>
+                                            <option value="AE" data-capital="Abu Dhabi">United Arab Emirates</option>
+                                            <option value="GB" data-capital="London">United Kingdom</option>
+                                            <option value="US" data-capital="Washington, D.C.">United States of America
+                                            </option>
+                                            <option value="UY" data-capital="Montevideo">Uruguay</option>
+                                            <option value="UZ" data-capital="Tashkent">Uzbekistan</option>
+                                            <option value="VU" data-capital="Port Vila">Vanuatu</option>
+                                            <option value="VE" data-capital="Caracas">Venezuela</option>
+                                            <option value="VN" data-capital="Hanoi">Vietnam</option>
+                                            <option value="VG" data-capital="Road Town">Virgin Islands (British)
+                                            </option>
+                                            <option value="VI" data-capital="Charlotte Amalie">Virgin Islands (U.S.)
+                                            </option>
+                                            <option value="EH" data-capital="Laayoune">Western Sahara</option>
+                                            <option value="YE" data-capital="Sana'a">Yemen</option>
+                                            <option value="ZM" data-capital="Lusaka">Zambia</option>
+                                            <option value="ZW" data-capital="Harare">Zimbabwe</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="" class="d-block">Province</label>
+                                        <select name="province" class="form-control js-example-basic-single js-states ">
+
+                                            <option value="Province1">Province1
+                                            </option>
+                                            <option value="Madhesh Pradesh">
+                                                Madhesh Pradesh</option>
+                                            <option value="Bagmati Pradesh">
+                                                Bagmati Pradesh</option>
+                                            <option value="Gandaki Pradesh">
+                                                Gandaki Pradesh</option>
+                                            <option value="Lumbini Pradesh">
+                                                Lumbini Pradesh</option>
+                                            <option value="Karnali Pradesh">
+                                                Karnali Pradesh</option>
+                                            <option value="Sudurpashchim Pradesh">Sudurpashchim Pradesh</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="" class="d-block">City</label>
+                                        <select name="District" class="form-control js-example-basic-single js-states ">
+                                            <option value="" hidden="" selected="selected">
+                                                Select Province First
+                                            </option>
+                                            <option value="Bhaktapur">Bhaktapur
+                                            </option>
+                                            <option value="Chitwan">Chitwan
+                                            </option>
+                                            <option value="Dhading">Dhading
+                                            </option>
+                                            <option value="Dolakha">Dolakha
+                                            </option>
+                                            <option value="Kathmandu">Kathmandu
+                                            </option>
+                                            <option value="Kavrepalanchok">
+                                                Kavrepalanchok</option>
+                                            <option value="Lalitpur">Lalitpur
+                                            </option>
+                                            <option value="Makwanpur">Makwanpur
+                                            </option>
+                                            <option value="Nuwakot">Nuwakot
+                                            </option>
+                                            <option value="Ramechhap">Ramechhap
+                                            </option>
+                                            <option value="Rasuwa">Rasuwa
+                                            </option>
+                                            <option value="Sindhuli">Sindhuli
+                                            </option>
+                                            <option value="Sindhupalchok">
+                                                Sindhupalchok</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="" class="d-block">Town</label>
+                                        <select name="Municipality"
+                                            class="form-control js-example-basic-single js-states ">
+
+                                            <option value="Kirtipur Municipality">Kirtipur Municipality</option>
+                                            <option value="Shankharapur Municipality">Shankharapur Municipality</option>
+                                            <option value="	Nagarjun Municipality"> Nagarjun Municipality</option>
+                                            <option value="Kageshwori Manahora Municipality">Kageshwori Manahora
+                                                Municipality
+                                            </option>
+                                            <option value="Dakshinkali Municipality">Dakshinkali Municipality
+                                            </option>
+                                            <option value="Budhanilakantha Municipality">Budhanilakantha Municipality
+                                            </option>
+                                            <option value="Tarakeshwor Municipality">Tarakeshwor Municipality
+                                            </option>
+                                            <option value="Kathmandu Metropolitan City">Kathmandu Metropolitan City
+                                            </option>
+                                            <option value="Tokha Municipality">
+                                                Tokha Municipality</option>
+                                            <option value="Chandragiri Municipality">Chandragiri Municipality
+                                            </option>
+                                            <option value="Gokarneshwor Municipality">Gokarneshwor Municipality
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="">City/Town</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="">Ward No:</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="">You found us through:</label>
+                                        <select name="" id="" class="form-control">
+                                            <option value="">Facebook</option>
+                                            <option value="">Instagram</option>
+                                            <option value="">Twitter</option>
+                                            <option value="">Google</option>
+                                            <option value="">Relatives</option>
+                                            <option value="">Friend</option>
+                                            <option value="">Advertisement</option>
+                                            <option value="">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="">Coupon Code (if available)</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-2 mt-5 ps-2">
+                                    <button class="btn btn-alt btn-lg btn-secondary" type="button" id="back-personal">
+                                        <small><i class="fa fa-arrow-left"></i></small> &nbsp;&nbsp; Back
+                                    </button>
+                                    <button class="btn btn-alt btn-lg btn-primary" type="button" id="next-payment">
+                                        Next &nbsp;&nbsp; <small><i class="fa fa-arrow-right"></i></small>
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane tab-pane-navigation" id="tabsNavigationVertSimple5" role="tabpanel">
+                                <h4>Payment Options</h4>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="form-check d-flex align-items-center gap-3">
+                                                <input class="form-check-input" type="radio" name="payment-options"
+                                                    id="cash-on-delivery" value="option1" checked="">
+                                                <label class="form-check-label" for="cash-on-delivery">
+                                                    Cash On Delivery
+                                                </label>
+                                            </div>
+                                            <div class="form-check d-flex align-items-center gap-3">
+                                                <input class="form-check-input" type="radio" name="payment-options"
+                                                    id="digital-wallet" value="option2">
+                                                <label class="form-check-label" for="digital-wallet">
+                                                    Digital Wallet
+                                                </label>
+                                            </div>
+                                            <div class="digital-wallet-options ps-3">
+                                                <div class="form-check d-flex align-items-center gap-3">
+                                                    <input class="form-check-input" type="radio" name="digital-options"
+                                                        id="esewa" value="option1">
+                                                    <label class="form-check-label" for="esewa">
+                                                        <div class="d-flex gap-2 align-items-center">
+                                                            <img src="./img/files/Esewa-2.jpg" height="18px"
+                                                                alt=""><span>Esewa</span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex align-items-center gap-3">
+                                                    <input class="form-check-input" type="radio" name="digital-options"
+                                                        id="khalti" value="option2">
+                                                    <label class="form-check-label" for="khalti">
+                                                        <div class="d-flex gap-2 align-items-center">
+                                                            <img src="./img/files/Khalti-2.jpg" height="18px"
+                                                                alt=""><span>Khalti</span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-check d-flex align-items-center gap-3">
+                                                <input class="form-check-input" type="radio" name="payment-options"
+                                                    id="bank-transfer" value="option3">
+                                                <label class="form-check-label" for="bank-transfer">
+                                                    Bank Transfer
+                                                </label>
+                                            </div>
+                                            <div class="bank-options ps-3">
+                                                <div class="form-check d-flex align-items-center gap-3">
+                                                    <input class="form-check-input" type="radio" name="bank-options"
+                                                        id="global-bank" value="option1">
+                                                    <label class="form-check-label" for="global-bank">
+                                                        <div class="d-flex gap-2 align-items-center">
+                                                            <img src="./img/files/Global-IME-Bank-4.jpg" height="18px"
+                                                                alt=""><span>Global
+                                                                IME Bank</span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex align-items-center gap-3">
+                                                    <input class="form-check-input" type="radio" name="bank-options"
+                                                        id="machapuchre-bank" value="option2">
+                                                    <label class="form-check-label" for="machapuchre-bank">
+                                                        <div class="d-flex gap-2 align-items-center">
+                                                            <img src="./img/files/Machhapuchchhre-Bank-Limited-2.jpg"
+                                                                height="18px" alt=""><span>Machhapuchre Bank Ltd.</span>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-8 ps-4">
+                                            <div class="esewa-qr qrcode" id="esewaqr">
+                                                <p class="mb-1">Esewa ID: <strong>9801775055</strong></p>
+                                                <p class="mb-1">ID Holder: <strong>NABIN UPADHAYA</strong></p>
+                                                <img src="./img/files/eSewaqr.jpg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="esewa-qr qrcode" id="khaltiqr">
+                                                <p class="mb-1">Khalti ID: <strong>9801775055</strong></p>
+                                                <p class="mb-1">ID Holder: <strong>NABIN UPADHAYA</strong></p>
+                                                <img src="./img/files/Khaltiqr.jpg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="fonepay-qr qrcode" id="fonepay">
+                                                <p>
+                                                    Machhapuchhre Bank <br>
+                                                    Global IME Bank <br>
+                                                    Nepal SBI Bank <br>
+                                                    Number:- <strong>9801775055</strong>
+                                                </p>
+                                            </div>
+
+                                            <div class="macha qrcode" id="machabank">
+                                                <p class="mb-1">Bank Name: <strong>MACHHAPUCHCHHRE BANK</strong></p>
+                                                <p class="mb-1">A/C Holder Name: <strong>NABIN UPADHAYA</strong></p>
+                                                <p class="mb-1">Account Number: <strong>0390077253700019</strong></p>
+                                                <p class="mb-1">Bank Branch: <strong>LAZIMPAT</strong></p>
+                                                <img src="./img/files/machhaqr.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="global qrcode" id="globalbank">
+                                                <p class="mb-1">Bank Name: <strong>Global IME Bank</strong></p>
+                                                <p class="mb-1">A/C Holder Name: <strong>NABIN UPADHAYA</strong></p>
+                                                <p class="mb-1">Account Number: <strong>4007010006949</strong></p>
+                                                <p class="mb-1">Bank Branch: <strong>SATDOBATO</strong></p>
+                                                <img src="./img/files/globalqr.jpg" alt="" class="img-fluid">
+                                            </div>
+
+                                            <div class="sbi qrcode" id="sbibank">
+                                                <p class="mb-1">Bank Name: <strong>Nepal SBI Bank</strong></p>
+                                                <p class="mb-1">A/C Holder Name: <strong>NABIN UPADHAYA</strong></p>
+                                                <p class="mb-1">Account Number: <strong>17715241416695</strong></p>
+                                                <p class="mb-1">Bank Branch: <strong>DARBARMARG</strong></p>
+                                                <img src="" alt="" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-2 mt-5 ps-2">
+                                        <button class="btn btn-alt btn-lg btn-secondary" type="button"
+                                            id="back-address">
+                                            <small><i class="fa fa-arrow-left"></i></small> &nbsp;&nbsp; Back
+                                        </button>
+                                        <button class="btn btn-alt btn-lg btn-primary">
+                                            Next &nbsp;&nbsp; <small><i class="fa fa-arrow-right"></i></small>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -3012,6 +3729,17 @@
     <!-- Theme Base, Components and Settings -->
     <script src="js/theme.js"></script>
     <script src="vendor/jquery.countdown/jquery.countdown.min.js"></script>
+    <script src="js/nepali.datepicker.v4.0.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+    <script>
+        const input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
+        integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         $("#service-toggle").on('click', function (e) {
             $('#header').toggleClass("show")
@@ -3026,6 +3754,57 @@
 
     <!-- Theme Custom -->
     <script src="js/custom.js"></script>
+
+    <script>
+        var elm = document.getElementById("nepali-appointment-date");
+        var elm2 = document.getElementById("dobpicker");
+
+        var todayIs = NepaliFunctions.GetCurrentBsDate('YYYY-MM-DD')
+        console.log(todayIs)
+        /* Initialize Datepicker with options */
+        elm.nepaliDatePicker({
+            ndpYear: true,
+            ndpMonth: true,
+            ndpYearCount: 2,
+            disableBefore: todayIs,
+        });
+        elm2.nepaliDatePicker({
+            ndpYear: true,
+            ndpMonth: true,
+            ndpYearCount: 100,
+        });
+    </script>
+
+    <script>
+        function format(item, state) {
+            if (!item.id) {
+                return item.text;
+            }
+            var countryUrl = "https://hatscripts.github.io/circle-flags/flags/";
+            var stateUrl = "https://oxguy3.github.io/flags/svg/us/";
+            var url = state ? stateUrl : countryUrl;
+            var img = $("<img>", {
+                class: "img-flag",
+                width: 26,
+                src: url + item.element.value.toLowerCase() + ".svg"
+            });
+            var span = $("<span>", {
+                text: " " + item.text
+            });
+            span.prepend(img);
+            return span;
+        }
+
+        $(document).ready(function () {
+            $("#countries").select2({
+                templateResult: function (item) {
+                    return format(item, false);
+                }
+            });
+
+        });
+
+    </script>
 
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -3045,6 +3824,121 @@
                 swiper: swiper,
             },
         });
+    </script>
+
+    <script>
+        $("#next-datetime").on('click', function (e) {
+            e.preventDefault();
+            $("#service-selection").find("a").removeClass('active')
+            $("#datetime-selector").find("a").addClass('active')
+            $("#tabsNavigationVertSimple1").removeClass('active')
+            $("#tabsNavigationVertSimple2").addClass('active')
+        })
+
+        $("#back-serviceselection").on('click', function (e) {
+            e.preventDefault();
+            $("#service-selection").find("a").addClass('active')
+            $("#datetime-selector").find("a").removeClass('active')
+            $("#tabsNavigationVertSimple1").addClass('active')
+            $("#tabsNavigationVertSimple2").removeClass('active')
+        })
+
+        $("#next-personalinfo").on('click', function (e) {
+            e.preventDefault();
+            $("#personal-info").find("a").addClass('active')
+            $("#datetime-selector").find("a").removeClass('active')
+            $("#tabsNavigationVertSimple3").addClass('active')
+            $("#tabsNavigationVertSimple2").removeClass('active')
+        })
+
+        $("#back-datetime").on('click', function (e) {
+            e.preventDefault();
+            $("#personal-info").find("a").removeClass('active')
+            $("#datetime-selector").find("a").addClass('active')
+            $("#tabsNavigationVertSimple3").removeClass('active')
+            $("#tabsNavigationVertSimple2").addClass('active')
+        })
+
+
+        $("#next-address").on('click', function (e) {
+            e.preventDefault();
+            $("#address-info").find("a").addClass('active')
+            $("#personal-info").find("a").removeClass('active')
+            $("#tabsNavigationVertSimple4").addClass('active')
+            $("#tabsNavigationVertSimple3").removeClass('active')
+        })
+
+        $("#back-personal").on('click', function (e) {
+            e.preventDefault();
+            $("#address-info").find("a").removeClass('active')
+            $("#personal-info").find("a").addClass('active')
+            $("#tabsNavigationVertSimple4").removeClass('active')
+            $("#tabsNavigationVertSimple3").addClass('active')
+        })
+
+        $("#next-payment").on('click', function (e) {
+            e.preventDefault();
+            $("#address-info").find("a").removeClass('active')
+            $("#payment-info").find("a").removeClass('active')
+            $("#tabsNavigationVertSimple5").addClass('active')
+            $("#tabsNavigationVertSimple4").removeClass('active')
+        })
+
+        $("#back-address").on('click', function (e) {
+            e.preventDefault();
+            $("#address-info").find("a").addClass('active')
+            $("#payment-info").find("a").removeClass('active')
+            $("#tabsNavigationVertSimple5").removeClass('active')
+            $("#tabsNavigationVertSimple4").addClass('active')
+        })
+
+        $(document).ready(function () {
+            // Initially hide digital and bank options
+            $(".digital-wallet-options, .bank-options").hide();
+
+            // Show/hide options based on the selected payment option
+            $('input[name="payment-options"]').change(function () {
+                $('input[name="digital-options"]').attr('checked', false)
+                if (this.value === 'option2') {
+                    $(".digital-wallet-options").show();
+                    $(".bank-options").hide();
+                } else if (this.value === 'option3') {
+                    $(".digital-wallet-options").hide();
+                    $(".bank-options").show();
+                    $(".qrcode").hide();
+                } else {
+                    $(".digital-wallet-options, .bank-options").hide();
+                    $(".qrcode").hide();
+                }
+            });
+
+            $('input[name="digital-options"]').change(function () {
+                if (this.value === 'option1') {
+                    $(".qrcode").hide();
+                    $("#esewaqr").show();
+                } else if (this.value === 'option2') {
+                    $(".qrcode").hide();
+                    $("#khaltiqr").show();
+                } else {
+                    $(".qrcode").hide();
+                }
+            });
+
+            $('input[name="bank-options"]').change(function () {
+                if (this.value === 'option2') {
+                    $(".qrcode").hide();
+                    $("#machabank").show();
+                } else if (this.value === 'option1') {
+                    $(".qrcode").hide();
+                    $("#globalbank").show();
+                } else {
+                    $(".qrcode").hide();
+                }
+            });
+
+
+        });
+
     </script>
 
 </body>
