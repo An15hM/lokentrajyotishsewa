@@ -373,7 +373,8 @@ a:not(.btn):hover {
     width: 100%;
     padding:4px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.75);
+    /* background-color: rgba(0, 0, 0, 0.75); */
+    background-image: linear-gradient(to right, #2b4c9d 0%, #ed1821 51%, #2b4c9d 100%);
     transform: translateY(100%);
     transition: all 0.35s ease-in-out;
 }
