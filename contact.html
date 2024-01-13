@@ -229,6 +229,17 @@
         }
     </style>
 
+    <style>
+        .feature-box .feature-box-icon {
+            padding: 14px;
+            width: 96px;
+            height: 96px;
+            background-color: transparent;
+            top: 0;
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        }
+    </style>
+
     <!-- Head Libs -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
 
@@ -2656,13 +2667,17 @@
                             <li>
                                 <div class="feature-box">
                                     <div class="feature-box-icon">
-                                        <i class="fa fa-map-marker-alt"></i>
+                                        <img src="./img/files/location.png" class="img-fluid" alt="">
                                     </div>
                                     <div class="feature-box-info">
                                         <h4 class="mb-2 text-dark">Address</h4>
                                         <p class="mb-4 text-dark">
-                                            Lalitpur-23 Dhapakhel, Nepal (Behind the Sumeru Hospital and Gems School)
-                                            Milan Tole Marg, House No 234
+                                            <a href="https://www.google.com/maps?ll=27.642312,85.324728&z=16&t=m&hl=en&gl=NP&mapclient=embed&q=Milan+Tole+Marg+Lalitpur+44700"
+                                                target="_blank">
+                                                Lalitpur-23 Dhapakhel, Nepal (Behind the Sumeru Hospital and Gems
+                                                School)
+                                                Milan Tole Marg, House No 234
+                                            </a>
                                         </p>
                                     </div>
                                 </div>
@@ -2670,20 +2685,34 @@
                             <li>
                                 <div class="feature-box">
                                     <div class="feature-box-icon">
-                                        <i class="fa fa-phone"></i>
+                                        <img src="./img/files/phone-location.png" class="img-fluid" alt="">
                                     </div>
                                     <div class="feature-box-info">
-                                        <h4 class="mb-2 text-dark">Contact Number</h4>
-                                        <a href="tel:+977-9801775055" class="d-inline-block mb-2">+977-9801775055</a>
-                                        <br>
-                                        <a href="tel:+977-9761799899" class="d-inline-block mb-2">+977-9761799899</a>
+                                        <div class="d-flex">
+                                            <div class="me-lg-4 pe-lg-4" style="border-right: 1px solid #eaeaea;">
+                                                <h4 class="mb-2 text-dark">Contact Number</h4>
+                                                <a href="tel:+977-9801775055"
+                                                    class="d-inline-block mb-2">+977-9801775055</a>
+                                                <br>
+                                                <a href="tel:+977-9761799899"
+                                                    class="d-inline-block mb-2">+977-9761799899</a>
+                                            </div>
+                                            <div>
+                                                <h4 class="mb-2 text-dark">Hotline Number</h4>
+                                                <a href="tel:+977-9801775055"
+                                                    class="d-inline-block mb-2">+977-9801775055</a>
+                                                <br>
+                                                <a href="tel:+977-9761799899"
+                                                    class="d-inline-block mb-2">+977-9761799899</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="feature-box">
                                     <div class="feature-box-icon">
-                                        <i class="fa fa-envelope"></i>
+                                        <img src="./img/files/mail.png" class="img-fluid" alt="">
                                     </div>
                                     <div class="feature-box-info">
                                         <h4 class="mb-2 text-dark">Email Address</h4>
@@ -2749,6 +2778,13 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="map-wrapper">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.425086724902!2d85.32215307605594!3d27.64231702835565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb176e36d0a803%3A0x52d55ffeee30eb0b!2sMilan%20Tole%20Marg%2C%20Lalitpur%2044700!5e0!3m2!1sen!2snp!4v1704811780814!5m2!1sen!2snp"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
     </div>

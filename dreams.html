@@ -227,6 +227,10 @@
         .dream-box h5 {
             font-size: 24px;
         }
+
+        .dream-box h5 {
+            color: #2860ab;
+        }
     </style>
 
     <!-- Head Libs -->
@@ -5542,7 +5546,7 @@
         var swiper = new Swiper(".mySwiper", {
             spaceBetween: 0,
             slidesPerView: 25,
-
+            slidesPerGroup: 25,
             watchSlidesProgress: true,
             navigation: {
                 nextEl: ".dream-button-next",
@@ -5552,24 +5556,29 @@
                 0: {
                     slidesPerView: 10,
                     spaceBetween: 0,
+                    slidesPerGroup: 10,
                 },
                 640: {
                     slidesPerView: 10,
                     spaceBetween: 0,
+                    slidesPerGroup: 10,
                 },
                 768: {
                     slidesPerView: 12,
                     spaceBetween: 0,
+                    slidesPerGroup: 12,
                 },
                 1024: {
                     slidesPerView: 25,
                     spaceBetween: 0,
+                    slidesPerGroup: 25,
                 },
             },
         });
         var swiper2 = new Swiper(".mySwiper2", {
             spaceBetween: 0,
             effect: "fade",
+            allowTouchMove: false,
             thumbs: {
                 swiper: swiper,
             },

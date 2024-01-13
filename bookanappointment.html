@@ -58,6 +58,98 @@
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
     <style>
+        /* animations */
+
+        @-webkit-keyframes checkmark {
+            0% {
+                stroke-dashoffset: 50px
+            }
+
+            100% {
+                stroke-dashoffset: 0
+            }
+        }
+
+        @-ms-keyframes checkmark {
+            0% {
+                stroke-dashoffset: 50px
+            }
+
+            100% {
+                stroke-dashoffset: 0
+            }
+        }
+
+        @keyframes checkmark {
+            0% {
+                stroke-dashoffset: 50px
+            }
+
+            100% {
+                stroke-dashoffset: 0
+            }
+        }
+
+        @-webkit-keyframes checkmark-circle {
+            0% {
+                stroke-dashoffset: 240px
+            }
+
+            100% {
+                stroke-dashoffset: 480px
+            }
+        }
+
+        @-ms-keyframes checkmark-circle {
+            0% {
+                stroke-dashoffset: 240px
+            }
+
+            100% {
+                stroke-dashoffset: 480px
+            }
+        }
+
+        @keyframes checkmark-circle {
+            0% {
+                stroke-dashoffset: 240px
+            }
+
+            100% {
+                stroke-dashoffset: 480px
+            }
+        }
+
+        /* other styles */
+        /* .svg svg {
+    display: none
+}
+ */
+        .inlinesvg .svg svg {
+            display: inline
+        }
+
+        /* .svg img {
+    display: none
+} */
+
+        .animated .icon--order-success svg path {
+            -webkit-animation: checkmark 0.25s ease-in-out 0.7s backwards;
+            animation: checkmark 0.25s ease-in-out 0.7s backwards;
+            -webkit-animation-delay: 3s;
+            /* Safari 4.0 - 8.0 */
+            animation-delay: 3s;
+        }
+
+        .animated .icon--order-success svg circle {
+            -webkit-animation: checkmark-circle 0.6s ease-in-out backwards;
+            animation: checkmark-circle 0.6s ease-in-out backwards;
+            -webkit-animation-delay: 2s;
+            /* Safari 4.0 - 8.0 */
+            animation-delay: 2s;
+        }
+
+
         html.side-header #header.side-header {
             transform: translateX(-150%);
         }
@@ -2671,13 +2763,15 @@
                                 <li class="nav-item" id="payment-info" role="presentation">
                                     <a class="nav-link">5. Payment</a>
                                 </li>
+                                <li class="nav-item" id="confirm-info" role="presentation">
+                                    <a class="nav-link">6. Confirm Appointment</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-8">
-                        <form action="">
-                            <div class="tab-pane tab-pane-navigation active" id="tabsNavigationVertSimple1"
-                                role="tabpanel">
+                    <div class="col-lg-9">
+                        <form action="" id="appointmentForm">
+                            <div class="tab-pane tab-pane-navigation " id="tabsNavigationVertSimple1" role="tabpanel">
                                 <h4 class="mb-4">Select the service you want to book</h4>
                                 <ul
                                     class="list-unstyled d-flex align-items-stretch justify-content-start flex-wrap service-selector">
@@ -2689,7 +2783,7 @@
                                                 width="20px">
                                             <div>
                                                 <p class="title">
-                                                    Kundali Prediction
+                                                    Kundali Prediction (Nepal)
                                                 </p>
                                                 <p class="duration">
                                                     45 minutes
@@ -2701,11 +2795,11 @@
                                         <input type="radio" hidden name="service-selection" id="service-2">
                                         <label class="service-item" for="service-2">
                                             <i class="fa fa-check"></i>
-                                            <img src="./img/files/menuicons/services/20220405-113346598577064.png"
+                                            <img src="./img/files/menuicons/services/20220405-113419946220549.png"
                                                 width="20px">
                                             <div>
                                                 <p class="title">
-                                                    Kundali Making
+                                                    Kundali Prediction (Foreign)
                                                 </p>
                                                 <p class="duration">
                                                     45 minutes
@@ -2717,11 +2811,11 @@
                                         <input type="radio" hidden name="service-selection" id="service-10">
                                         <label class="service-item" for="service-10">
                                             <i class="fa fa-check"></i>
-                                            <img src="./img/files/menuicons/services/20220405-113409471470123.png"
+                                            <img src="./img/files/menuicons/services/20220405-113346598577064.png"
                                                 width="20px">
                                             <div>
                                                 <p class="title">
-                                                    Kundali Matching
+                                                    Kundali Making (Nepal)
                                                 </p>
                                                 <p class="duration">
                                                     45 minutes
@@ -2733,107 +2827,11 @@
                                         <input type="radio" hidden name="service-selection" id="service-3">
                                         <label class="service-item" for="service-3">
                                             <i class="fa fa-check"></i>
-                                            <img src="./img/files/menuicons/services/20220405-113452660206025.png"
+                                            <img src="./img/files/menuicons/services/20220405-113346598577064.png"
                                                 width="20px">
                                             <div>
                                                 <p class="title">
-                                                    Gemstone
-                                                </p>
-                                                <p class="duration">
-                                                    45 minutes
-                                                </p>
-                                            </div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" hidden name="service-selection" id="service-4">
-                                        <label class="service-item" for="service-4">
-                                            <i class="fa fa-check"></i>
-                                            <img src="./img/files/menuicons/services/20220405-093220497958073.png"
-                                                width="20px">
-                                            <div>
-                                                <p class="title">
-                                                    Vastu Shastra
-                                                </p>
-                                                <p class="duration">
-                                                    45 minutes
-                                                </p>
-                                            </div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" hidden name="service-selection" id="service-5">
-                                        <label class="service-item" for="service-5">
-                                            <i class="fa fa-check"></i>
-                                            <img src="./img/files/menuicons/services/20220405-083928815629887.png"
-                                                width="20px">
-                                            <div>
-                                                <p class="title">
-                                                    Yantra Service
-                                                </p>
-                                                <p class="duration">
-                                                    45 minutes
-                                                </p>
-                                            </div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" hidden name="service-selection" id="service-6">
-                                        <label class="service-item" for="service-6">
-                                            <i class="fa fa-check"></i>
-                                            <img src="./img/files/menuicons/services/20220405-122401468942095.png"
-                                                width="20px">
-                                            <div>
-                                                <p class="title">
-                                                    Planetary Body
-                                                </p>
-                                                <p class="duration">
-                                                    45 minutes
-                                                </p>
-                                            </div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" hidden name="service-selection" id="service-7">
-                                        <label class="service-item" for="service-7">
-                                            <i class="fa fa-check"></i>
-                                            <img src="./img/files/menuicons/services/20220405-122245604724674.png"
-                                                width="20px">
-                                            <div>
-                                                <p class="title">
-                                                    Graha Shanti
-                                                </p>
-                                                <p class="duration">
-                                                    45 minutes
-                                                </p>
-                                            </div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" hidden name="service-selection" id="service-8">
-                                        <label class="service-item" for="service-8">
-                                            <i class="fa fa-check"></i>
-                                            <img src="./img/files/menuicons/services/20220405-122336629894273.png"
-                                                width="20px">
-                                            <div>
-                                                <p class="title">
-                                                    Muhurta Nirdharan
-                                                </p>
-                                                <p class="duration">
-                                                    45 minutes
-                                                </p>
-                                            </div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" hidden name="service-selection" id="service-9">
-                                        <label class="service-item" for="service-9">
-                                            <i class="fa fa-check"></i>
-                                            <img src="./img/files/menuicons/services/20220405-122349121099816.png"
-                                                width="20px">
-                                            <div>
-                                                <p class="title">
-                                                    Online Service
+                                                    Kundali Making (Foreign)
                                                 </p>
                                                 <p class="duration">
                                                     45 minutes
@@ -2911,15 +2909,17 @@
                                             <label for="" class="d-block">Phone Number *</label>
 
                                             <div class="input-div">
-                                                <input type="tel" name="phone" id="phone" value="+977"
+                                                <input type="tel" name="phone" id="phone" value="+977-"
                                                     placeholder="Phone Number" class="form-control" required require />
                                             </div>
 
                                         </div>
                                         <div class="col-sm-6 mb-3">
-                                            <label for="" class="d-block">Landline Number</label>
-                                            <input type="text" class="form-control"
-                                                placeholder="Enter Your LandLine number">
+                                            <label for="" class="d-block">Phone Number (optional)</label>
+                                            <div class="input-div">
+                                                <input type="tel" name="phone" id="phone2" value="+977-"
+                                                    placeholder="Phone Number" class="form-control" required require />
+                                            </div>
                                         </div>
 
                                         <div class="col-sm-4 mb-3">
@@ -3214,110 +3214,31 @@
                                         </select>
                                     </div>
                                     <div class="col-sm-6">
-                                        <label for="" class="d-block">Province</label>
-                                        <select name="province" class="form-control js-example-basic-single js-states ">
-
-                                            <option value="Province1">Province1
-                                            </option>
-                                            <option value="Madhesh Pradesh">
-                                                Madhesh Pradesh</option>
-                                            <option value="Bagmati Pradesh">
-                                                Bagmati Pradesh</option>
-                                            <option value="Gandaki Pradesh">
-                                                Gandaki Pradesh</option>
-                                            <option value="Lumbini Pradesh">
-                                                Lumbini Pradesh</option>
-                                            <option value="Karnali Pradesh">
-                                                Karnali Pradesh</option>
-                                            <option value="Sudurpashchim Pradesh">Sudurpashchim Pradesh</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label for="" class="d-block">City</label>
-                                        <select name="District" class="form-control js-example-basic-single js-states ">
-                                            <option value="" hidden="" selected="selected">
-                                                Select Province First
-                                            </option>
-                                            <option value="Bhaktapur">Bhaktapur
-                                            </option>
-                                            <option value="Chitwan">Chitwan
-                                            </option>
-                                            <option value="Dhading">Dhading
-                                            </option>
-                                            <option value="Dolakha">Dolakha
-                                            </option>
-                                            <option value="Kathmandu">Kathmandu
-                                            </option>
-                                            <option value="Kavrepalanchok">
-                                                Kavrepalanchok</option>
-                                            <option value="Lalitpur">Lalitpur
-                                            </option>
-                                            <option value="Makwanpur">Makwanpur
-                                            </option>
-                                            <option value="Nuwakot">Nuwakot
-                                            </option>
-                                            <option value="Ramechhap">Ramechhap
-                                            </option>
-                                            <option value="Rasuwa">Rasuwa
-                                            </option>
-                                            <option value="Sindhuli">Sindhuli
-                                            </option>
-                                            <option value="Sindhupalchok">
-                                                Sindhupalchok</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label for="" class="d-block">Town</label>
-                                        <select name="Municipality"
-                                            class="form-control js-example-basic-single js-states ">
-
-                                            <option value="Kirtipur Municipality">Kirtipur Municipality</option>
-                                            <option value="Shankharapur Municipality">Shankharapur Municipality</option>
-                                            <option value="	Nagarjun Municipality"> Nagarjun Municipality</option>
-                                            <option value="Kageshwori Manahora Municipality">Kageshwori Manahora
-                                                Municipality
-                                            </option>
-                                            <option value="Dakshinkali Municipality">Dakshinkali Municipality
-                                            </option>
-                                            <option value="Budhanilakantha Municipality">Budhanilakantha Municipality
-                                            </option>
-                                            <option value="Tarakeshwor Municipality">Tarakeshwor Municipality
-                                            </option>
-                                            <option value="Kathmandu Metropolitan City">Kathmandu Metropolitan City
-                                            </option>
-                                            <option value="Tokha Municipality">
-                                                Tokha Municipality</option>
-                                            <option value="Chandragiri Municipality">Chandragiri Municipality
-                                            </option>
-                                            <option value="Gokarneshwor Municipality">Gokarneshwor Municipality
-                                            </option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label for="">City/Town</label>
+                                        <label for="" class="d-block">Address Line 1</label>
                                         <input type="text" class="form-control">
                                     </div>
                                     <div class="col-sm-6">
-                                        <label for="">Ward No:</label>
+                                        <label for="" class="d-block">Address Line 2</label>
                                         <input type="text" class="form-control">
                                     </div>
                                     <div class="col-sm-6">
                                         <label for="">You found us through:</label>
-                                        <select name="" id="" class="form-control">
+                                        <select name="" id="referaloption" class="form-control">
                                             <option value="">Facebook</option>
                                             <option value="">Instagram</option>
                                             <option value="">Twitter</option>
                                             <option value="">Google</option>
-                                            <option value="">Relatives</option>
-                                            <option value="">Friend</option>
+                                            <option value="rel">Relatives</option>
+                                            <option value="fr">Friend</option>
                                             <option value="">Advertisement</option>
-                                            <option value="">Other</option>
+                                            <option value="oth">Other</option>
                                         </select>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <label for="">Coupon Code (if available)</label>
+                                    <div class="col-sm-6 d-none" id="referal-addition">
+                                        <label for="">Referral Person</label>
                                         <input type="text" class="form-control">
                                     </div>
+
                                 </div>
 
                                 <div class="d-flex gap-2 mt-5 ps-2">
@@ -3330,7 +3251,7 @@
                                 </div>
 
                             </div>
-                            <div class="tab-pane tab-pane-navigation" id="tabsNavigationVertSimple5" role="tabpanel">
+                            <div class="tab-pane tab-pane-navigation " id="tabsNavigationVertSimple5" role="tabpanel">
                                 <h4>Payment Options</h4>
                                 <div class="container-fluid">
                                     <div class="row">
@@ -3339,14 +3260,14 @@
                                                 <input class="form-check-input" type="radio" name="payment-options"
                                                     id="cash-on-delivery" value="option1" checked="">
                                                 <label class="form-check-label" for="cash-on-delivery">
-                                                    Cash On Delivery
+                                                    Cash Options
                                                 </label>
                                             </div>
                                             <div class="form-check d-flex align-items-center gap-3">
                                                 <input class="form-check-input" type="radio" name="payment-options"
                                                     id="digital-wallet" value="option2">
                                                 <label class="form-check-label" for="digital-wallet">
-                                                    Digital Wallet
+                                                    Digital Options
                                                 </label>
                                             </div>
                                             <div class="digital-wallet-options ps-3">
@@ -3370,18 +3291,9 @@
                                                         </div>
                                                     </label>
                                                 </div>
-                                            </div>
-                                            <div class="form-check d-flex align-items-center gap-3">
-                                                <input class="form-check-input" type="radio" name="payment-options"
-                                                    id="bank-transfer" value="option3">
-                                                <label class="form-check-label" for="bank-transfer">
-                                                    Bank Transfer
-                                                </label>
-                                            </div>
-                                            <div class="bank-options ps-3">
                                                 <div class="form-check d-flex align-items-center gap-3">
-                                                    <input class="form-check-input" type="radio" name="bank-options"
-                                                        id="global-bank" value="option1">
+                                                    <input class="form-check-input" type="radio" name="digital-options"
+                                                        id="global-bank" value="option3">
                                                     <label class="form-check-label" for="global-bank">
                                                         <div class="d-flex gap-2 align-items-center">
                                                             <img src="./img/files/Global-IME-Bank-4.jpg" height="18px"
@@ -3391,8 +3303,8 @@
                                                     </label>
                                                 </div>
                                                 <div class="form-check d-flex align-items-center gap-3">
-                                                    <input class="form-check-input" type="radio" name="bank-options"
-                                                        id="machapuchre-bank" value="option2">
+                                                    <input class="form-check-input" type="radio" name="digital-options"
+                                                        id="machapuchre-bank" value="option4">
                                                     <label class="form-check-label" for="machapuchre-bank">
                                                         <div class="d-flex gap-2 align-items-center">
                                                             <img src="./img/files/Machhapuchchhre-Bank-Limited-2.jpg"
@@ -3401,6 +3313,8 @@
                                                     </label>
                                                 </div>
                                             </div>
+
+
                                         </div>
                                         <div class="col-sm-8 ps-4">
                                             <div class="esewa-qr qrcode" id="esewaqr">
@@ -3452,13 +3366,199 @@
                                             id="back-address">
                                             <small><i class="fa fa-arrow-left"></i></small> &nbsp;&nbsp; Back
                                         </button>
-                                        <button class="btn btn-alt btn-lg btn-primary">
-                                            Next &nbsp;&nbsp; <small><i class="fa fa-arrow-right"></i></small>
+                                        <button type="button" id="next-confirm" class="btn btn-alt btn-lg btn-primary">
+                                            Confirm Appointment &nbsp;&nbsp; <small><i
+                                                    class="fa fa-arrow-right"></i></small>
                                         </button>
                                     </div>
                                 </div>
                             </div>
+                            <div class="tab-pane tab-pane-navigation active" id="tabsNavigationVertSimple6"
+                                role="tabpanel">
+                                <h4>Confirm Appointment</h4>
+                                <hr>
+                                <div class="container-fluid">
+                                    <div class="row align-items-stretch">
+                                        <div class="col-sm-7">
+                                            <ul
+                                                class="list-unstyled d-flex align-items-stretch justify-content-start flex-wrap service-selector">
+                                                <li style="min-width: 300px;">
+                                                    <input type="radio" hidden name="service-selected" checked disabled
+                                                        id="service-selected">
+                                                    <label class="service-item" for="service-selected">
+                                                        <i class="fa fa-check"></i>
+                                                        <img src="./img/files/menuicons/services/20220405-113419946220549.png"
+                                                            width="20px">
+                                                        <div>
+                                                            <p class="title text-start">
+                                                                Kundali Prediction (Nepal)
+                                                            </p>
+                                                            <p class="duration">
+                                                                45 minutes
+                                                            </p>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                            <hr>
+                                            <h6><strong>Date & Time</strong></h6>
+                                            <ul class="list-unstyled">
+                                                <li style="font-size: 16px;color:#131313;">
+                                                    <strong>Date: </strong> 2023-04-12
+                                                </li>
+                                                <li style="font-size: 16px;color:#131313;">
+                                                    <strong>Time: </strong> 8:45 AM
+                                                </li>
+                                            </ul>
+                                            <hr>
+                                            <h6><strong>Personal Information</strong></h6>
+                                            <ul class="list-unstyled">
+                                                <li style="font-size: 16px;color:#131313;">
+                                                    <strong>Full Name: </strong> Anish Maharjan
+                                                </li>
+                                                <li style="font-size: 16px;color:#131313;">
+                                                    <strong>Email Address: </strong> anishMaharjan@gmail.com
+                                                </li>
+                                                <li style="font-size: 16px;color:#131313;">
+                                                    <strong>Phone Number: </strong>+977-9841000000
+                                                </li>
+                                                <li style="font-size: 16px;color:#131313;">
+                                                    <strong>DOB (in BS): </strong> 2048-11-28
+                                                </li>
+                                                <li style="font-size: 16px;color:#131313;">
+                                                    <strong>DOB (in AD): </strong> 1992-03-13
+                                                </li>
+                                                <li style="font-size: 16px;color:#131313;">
+                                                    <strong>Birth Time: </strong> 02:45 AM
+                                                </li>
+                                                <li style="font-size: 16px;color:#131313;">
+                                                    <strong>Gender: </strong> Male
+                                                </li>
+                                            </ul>
+                                            <hr>
+                                            <h6><strong>Address</strong></h6>
+                                            <ul class="list-unstyled">
+                                                <li style="font-size: 16px;color:#131313;">
+                                                    <strong>Country: </strong> Nepal
+                                                </li>
+                                                <li style="font-size: 16px;color:#131313;">
+                                                    <strong>Address Line 1: </strong> Gyantirtha Marga, Kalimati,
+                                                    Kathmandu
+                                                </li>
+                                                <li style="font-size: 16px;color:#131313;">
+                                                    <strong>Address Line 2: </strong> Gyantirtha Marga, Kalimati,
+                                                    Kathmandu
+                                                </li>
+                                                <li style="font-size: 16px;color:#131313;">
+                                                    <strong>You Found Us Through: </strong> Friends
+                                                </li>
+                                                <li style="font-size: 16px;color:#131313;">
+                                                    <strong>Referal Person: </strong> Sagar Shrestha
+                                                </li>
+                                                <li style="font-size: 16px;color:#131313;">
+                                                    <strong>Birth Time: </strong> 02:45 AM
+                                                </li>
+                                                <li style="font-size: 16px;color:#131313;">
+                                                    <strong>Gender: </strong> Male
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="final-pay-box position-sticky" style="top: 170px;">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h5>Payment Details</h5>
+                                                    </div>
+                                                    <div class="card-body p-3">
+                                                        <ul class="list-unstyled">
+                                                            <li style="font-size: 16px;color:#131313;">
+                                                                <strong>Payment Option: </strong> Digital payment
+                                                            </li>
+                                                            <li style="font-size: 16px;color:#131313;">
+                                                                <strong>Payment Method: </strong> Bank Transfer
+                                                            </li>
+                                                            <li style="font-size: 16px;color:#131313;">
+                                                                <strong>Bank Selected: </strong> Globale IME
+                                                            </li>
+                                                            <li>
+                                                                <hr>
+                                                            </li>
+                                                            <li style="font-size: 18px;color:#131313;"
+                                                                class="d-flex justify-content-between">
+                                                                <strong>Amount: </strong> Rs. 1200
+                                                            </li>
+                                                            <li style="font-size: 18px;color:#131313;"
+                                                                class="d-flex justify-content-between">
+                                                                <strong>Discount: </strong> Rs. 0
+                                                            </li>
+                                                            <li>
+                                                                <hr>
+                                                            </li>
+                                                            <li>
+                                                                <label for="">Discount Code (if any)</label>
+                                                                <div class="input-group mb-3">
+                                                                    <span class="input-group-text" id="basic-addon1"><i
+                                                                            class="fa-solid fa-tags"></i></span>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Coupon Code" aria-label="Username"
+                                                                        aria-describedby="basic-addon1">
+                                                                    <button class="btn btn-dark" type="button"
+                                                                        id="button-addon2">Apply</button>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="d-flex gap-2 mt-5 ps-2">
+                                                            <button class="btn btn-alt btn-lg btn-secondary"
+                                                                type="button" id="back-payment">
+                                                                <small><i class="fa fa-arrow-left"></i></small>
+                                                                &nbsp;&nbsp;
+                                                                Back
+                                                            </button>
+                                                            <button type="button" id="send-appointmet"
+                                                                class="btn btn-alt btn-lg btn-primary">
+                                                                Confirm &nbsp;&nbsp; <small><i
+                                                                        class="fa fa-arrow-right"></i></small>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="submission-success py-5 d-none">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="icon icon--order-success svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="72px" height="72px">
+                                        <g fill="none" stroke="#8EC343" stroke-width="2">
+                                            <circle cx="36" cy="36" r="35"
+                                                style="stroke-dasharray:240px, 240px; stroke-dashoffset: 480px;">
+                                            </circle>
+                                            <path d="M17.417,37.778l9.93,9.909l25.444-25.393"
+                                                style="stroke-dasharray:50px, 50px; stroke-dashoffset: 0px;"></path>
+                                        </g>
+                                    </svg>
+
+                                </div>
+                                <br>
+                                <h4 class="text-center">Your appointment has been successfully.</h4>
+                                <p class="text-center">Thank you for using our services. We will get back to you as soon
+                                    as possible.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -3733,7 +3833,11 @@
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
     <script>
         const input = document.querySelector("#phone");
+        const input2 = document.querySelector("#phone2")
         window.intlTelInput(input, {
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+        });
+        window.intlTelInput(input2, {
             utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
         });
     </script>
@@ -3771,7 +3875,7 @@
         elm2.nepaliDatePicker({
             ndpYear: true,
             ndpMonth: true,
-            ndpYearCount: 100,
+            ndpYearCount: 160,
         });
     </script>
 
@@ -3834,6 +3938,12 @@
             $("#tabsNavigationVertSimple1").removeClass('active')
             $("#tabsNavigationVertSimple2").addClass('active')
         })
+        $(".service-selector li label").on('click', function (e) {
+            $("#service-selection").find("a").removeClass('active')
+            $("#datetime-selector").find("a").addClass('active')
+            $("#tabsNavigationVertSimple1").removeClass('active')
+            $("#tabsNavigationVertSimple2").addClass('active')
+        })
 
         $("#back-serviceselection").on('click', function (e) {
             e.preventDefault();
@@ -3879,7 +3989,7 @@
         $("#next-payment").on('click', function (e) {
             e.preventDefault();
             $("#address-info").find("a").removeClass('active')
-            $("#payment-info").find("a").removeClass('active')
+            $("#payment-info").find("a").addClass('active')
             $("#tabsNavigationVertSimple5").addClass('active')
             $("#tabsNavigationVertSimple4").removeClass('active')
         })
@@ -3890,6 +4000,25 @@
             $("#payment-info").find("a").removeClass('active')
             $("#tabsNavigationVertSimple5").removeClass('active')
             $("#tabsNavigationVertSimple4").addClass('active')
+        })
+
+        $("#next-confirm").on('click', function (e) {
+            e.preventDefault();
+            $("#confirm-info").find("a").addClass('active')
+            $("#payment-info").find("a").removeClass('active')
+            $("#tabsNavigationVertSimple5").removeClass('active')
+            $("#tabsNavigationVertSimple6").addClass('active')
+        })
+
+        $("#referaloption").on('change', function (e) {
+            var rvalue = $(this).val()
+            if (rvalue === 'rel' || rvalue === 'fr' || rvalue === 'oth') {
+                $("#referal-addition").removeClass('d-none')
+            }
+            else {
+                $("#referal-addition").addClass('d-none')
+
+            }
         })
 
         $(document).ready(function () {
@@ -3919,24 +4048,31 @@
                 } else if (this.value === 'option2') {
                     $(".qrcode").hide();
                     $("#khaltiqr").show();
-                } else {
-                    $(".qrcode").hide();
-                }
-            });
-
-            $('input[name="bank-options"]').change(function () {
-                if (this.value === 'option2') {
+                } else if (this.value === 'option4') {
                     $(".qrcode").hide();
                     $("#machabank").show();
-                } else if (this.value === 'option1') {
+                } else if (this.value === 'option3') {
                     $(".qrcode").hide();
                     $("#globalbank").show();
-                } else {
-                    $(".qrcode").hide();
                 }
             });
+        });
 
+        $(document).ready(function () {
+            $("#send-appointmet").on("click", function (event) {
+                // Prevent the default form submission
+                event.preventDefault();
+                // $("#appointmentForm").submit();
+                $(".book-wrapper").hide();
+                $(".submission-success").removeClass('d-none')
+                $(".submission-success").addClass('animate')
+                // Delay the form submission by 5 seconds
+                setTimeout(function () {
+                    // Submit the form programmatically
 
+                    window.location.href = "index.html";
+                }, 3000); // 5000 milliseconds = 5 seconds
+            });
         });
 
     </script>
