@@ -44,7 +44,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
         integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="js/nepali.datepicker.v4.0.1.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+        integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Theme CSS -->
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/theme-elements.css">
@@ -54,6 +58,98 @@
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
     <style>
+        /* animations */
+
+        @-webkit-keyframes checkmark {
+            0% {
+                stroke-dashoffset: 50px
+            }
+
+            100% {
+                stroke-dashoffset: 0
+            }
+        }
+
+        @-ms-keyframes checkmark {
+            0% {
+                stroke-dashoffset: 50px
+            }
+
+            100% {
+                stroke-dashoffset: 0
+            }
+        }
+
+        @keyframes checkmark {
+            0% {
+                stroke-dashoffset: 50px
+            }
+
+            100% {
+                stroke-dashoffset: 0
+            }
+        }
+
+        @-webkit-keyframes checkmark-circle {
+            0% {
+                stroke-dashoffset: 240px
+            }
+
+            100% {
+                stroke-dashoffset: 480px
+            }
+        }
+
+        @-ms-keyframes checkmark-circle {
+            0% {
+                stroke-dashoffset: 240px
+            }
+
+            100% {
+                stroke-dashoffset: 480px
+            }
+        }
+
+        @keyframes checkmark-circle {
+            0% {
+                stroke-dashoffset: 240px
+            }
+
+            100% {
+                stroke-dashoffset: 480px
+            }
+        }
+
+        /* other styles */
+        /* .svg svg {
+    display: none
+}
+ */
+        .inlinesvg .svg svg {
+            display: inline
+        }
+
+        /* .svg img {
+    display: none
+} */
+
+        .animated .icon--order-success svg path {
+            -webkit-animation: checkmark 0.25s ease-in-out 0.7s backwards;
+            animation: checkmark 0.25s ease-in-out 0.7s backwards;
+            -webkit-animation-delay: 3s;
+            /* Safari 4.0 - 8.0 */
+            animation-delay: 3s;
+        }
+
+        .animated .icon--order-success svg circle {
+            -webkit-animation: checkmark-circle 0.6s ease-in-out backwards;
+            animation: checkmark-circle 0.6s ease-in-out backwards;
+            -webkit-animation-delay: 2s;
+            /* Safari 4.0 - 8.0 */
+            animation-delay: 2s;
+        }
+
+
         html.side-header #header.side-header {
             transform: translateX(-150%);
         }
@@ -2624,296 +2720,50 @@
     <div role="main" class="main">
 
         <section class="page-header page-header-modern page-header-lg position-relative mb-0" id="planet-pagetitle">
-            <div class="service-icon ic1">
-                <img src="./img/files/earth.gif" alt="">
+            <!-- <div class="service-icon ic1">
+                <img src="./img/files/phone-ringing.gif" alt="">
             </div>
             <div class="service-icon ic2">
-                <img src="./img/files/earth.gif" alt="">
-            </div>
+                <img src="./img/files/phone-ringing.gif" alt="">
+            </div> -->
             <div class="container">
 
                 <div class="row">
                     <div class="col-md-12 align-self-center p-static order-2 text-center">
-                        <h1 class="text-uppercase text-light"> <strong>About Us</strong></h1>
+                        <h1 class="text-uppercase text-light"> <strong>Events & Holidays</strong></h1>
                     </div>
                     <div class="col-md-12 align-self-center order-1">
                         <ul class="breadcrumb d-block text-center">
                             <li><a href="#" class="text-light">Home</a></li>
-                            <li class="active text-light">About Us</li>
+                            <li class="active text-light">Events & Holidays</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="home-about">
-            <div class="container-fluid custom-container">
-                <div class="row align-items-end">
-
-                    <div class="col-lg-12">
-                        <h2 class="appear-animation astro-main mb-1 animated fadeInUp appear-animation-visible"
-                            data-appear-animation="fadeInUp" data-appear-animation-delay="0"
-                            data-appear-animation-duration="1s"
-                            style="line-height: 1; animation-duration: 1s; animation-delay: 0ms;">
-                            <span>Astrologer</span>
-                        </h2>
-                        <h5 class="appear-animation mb-3 animated fadeInUp appear-animation-visible"
-                            data-appear-animation="fadeInUp" data-appear-animation-delay="0"
-                            data-appear-animation-duration="1s" style="animation-duration: 1s; animation-delay: 0ms;">
-                            Astrologer is Just An Advisor, Not A Magician
-                        </h5>
-                        <!-- <h2 class="word-rotator font-weight-semi-bold letters type mb-2" appear-animation
-							data-appear-animation="fadeInUp" data-appear-animation-delay="0"
-							data-appear-animation-duration="1s">
-							<span>We</span>
-							<span class="word-rotator-words waiting">
-								<b class="is-visible">look into the future.</b>
-								<b>work accordingly</b>
-								<b>believe in it</b>
-							</span>
-						</h2> -->
-
-                        <br>
-                        <p class="appear-animation animated fadeInUp appear-animation-visible"
-                            data-appear-animation="fadeInUp" data-appear-animation-delay="0"
-                            data-appear-animation-duration="1s" style="animation-duration: 1s; animation-delay: 0ms;">
-                            We need to emphasize that astrology isn’t predestination or fate. Man has free will.
-                            Astrology is also not a religion, nor should it be a replacement for religion. What
-                            astrology is, is the study of cycles. We will discover areas of opportunity, luck, and
-                            expansion, and we’ll keep an eye on other areas of your chart where there might be
-                            constriction, challenge or delay. How things play out is going to be up to you. You could
-                            have the most sparkling of planetary activity swirling around you, but if you choose not to
-                            take an active role, success could pass you by, or at the very least you might overlook the
-                            chance at a golden opportunity. Similarly, you might be under stressful rays, but with the
-                            determination to find solutions to the obstacles you face, you could triumph over them and
-                            find an inner strength you never knew you had.
-                            <br><br>
-                            Astrology is the study of astronomical positions of the celestial bodies and their
-                            correlation with the events on earth. Astrologers (and those who follow astrology) believe
-                            that by understanding the influence between the planets and the natural world, they can
-                            predict potential future events.
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-
-        <div id="about-astrologer">
-            <div class="container-fluid custom-container">
-                <div class="row align-items-center">
-                    <div class="col-sm-5">
-                        <div class="image-wrapper-about">
-                            <div class="ribbon-4">
-                                <div class="ribbon-content text-center text-light">
-                                    Astrologer Nabin Upadhaya
-                                </div>
-                            </div>
-                            <img src="./img/files/user.jpg" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-sm-7">
-                        <div class="about-text">
-                            <h3>
-                                <strong>
-                                    About
-                                    ASTROLOGER NABIN UPADHAYA
-                                </strong>
-                            </h3>
-                            <p>
-                                Online Astrologer who is proficient in Kundali Analysis, Kundali Making, through genuine
-                                methods &
-                                calculations, as charted by Vedic Astrology – Astro Nabin Upadhaya studied from guru Sri
-                                Janakiram
-                                Upadhaya. A master in solving Love & Career related problems, Astro Nabin Upadhaya is
-                                well-versed in
-                                Horary Shastra and with his years of expertise, he patiently listens to the problems-
-                                solving them
-                                in a minuscule of time. According to him, the planets don’t mean our harm, all we need
-                                to
-                                focus on
-                                is how to take proper advantage of every situation.
-
-                                <br><br>
-
-                                Excellent problem-solver, Astro Nabin Upadhaya has often been called the best Astrologer
-                                in
-                                Kathmandu valley due to his expertise, calm behavior, good advisory nature, detail and
-                                peacefully
-                                dealing with clints. No matter what issue has been crippling your life, with the
-                                guidance
-                                provided
-                                by best astrologer near me, you can easily deal with them and rise above it.
-                            </p>
-                            <hr>
-                            <ul class="social-icons social-icons-big">
-                                <!-- Facebook -->
-                                <li>
-                                    <a href="#" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false"
-                                        data-bs-placement="top" aria-label="Follow On Facebook"
-                                        data-bs-original-title="Follow On Facebook">
-                                        <img src="./img/files/social icons/facebook.png" alt="" title="" style="">
-                                    </a>
-                                </li>
-                                <!-- Google+ -->
-                                <li>
-                                    <a href="#" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false"
-                                        data-bs-placement="top" aria-label="Follow On Instagram"
-                                        data-bs-original-title="Follow On Instagram">
-                                        <img src="./img/files/social icons/instagram.png" alt="" title="" style="">
-                                    </a>
-                                </li>
-                                <!-- LinkedIn -->
-                                <li>
-                                    <a href="#" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false"
-                                        data-bs-placement="top" aria-label="Follow on Threads"
-                                        data-bs-original-title="Follow on Threads">
-                                        <img src="./img/files/social icons/threads.png" alt="">
-                                    </a>
-                                </li>
-                                <!-- Pinterest -->
-                                <li>
-                                    <a href="#" data-bs-toggle="tooltip" data-bs-animation="false"
-                                        data-bs-placement="top" aria-label="Follow On TikTok"
-                                        data-bs-original-title="Follow On TikTok">
-                                        <img src="./img/files/social icons/tiktok.png" alt="">
-                                    </a>
-                                </li>
-                                <!-- Pinterest -->
-                                <li>
-                                    <a href="#" data-bs-toggle="tooltip" data-bs-animation="false"
-                                        data-bs-placement="top" aria-label="Follow On Youtube"
-                                        data-bs-original-title="Follow On Youtube">
-                                        <img src="./img/files/social icons/youtube.png" alt="">
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div id="why-section">
-
-            <span class="moving-span"></span>
-            <span class="moving-span"></span>
-            <span class="moving-span"></span>
-            <span class="moving-span"></span>
-            <span class="moving-span"></span>
-            <span class="moving-span"></span>
-            <span class="moving-span"></span>
-            <span class="moving-span"></span>
-            <span class="moving-span"></span>
-
-            <div class="container-fluid custom-container position-relative">
+        <div id="main-contents">
+            <div class="container">
                 <div class="row">
-                    <div class="col-sm-12">
-                        <h1>
-                            <span>We are available 24/7</span>
-                            We Are Always
-                            Ready For A
-                            Prediction
-                        </h1>
+                    <div class="col-sm-6">
+                        <!-- Please do not edit this code - https://xeconvert.com/currency-converter-widget starts here --><iframe
+                            src="https://xeconvert.com/widget1?from=usd&to=npr&lang=&theme=blue&font=14" width="100%"
+                            height="300" frameborder="0" scrolling="no"></iframe>
+
                     </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-sm-8">
-                        <div class="row">
-
-
-                            <div class="col-lg-4 mb-4">
-                                <div class="why-box">
-                                    <div class="why-box-icon">
-                                        <img src="./img/files/why-icons/wall-clock.png" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="why-box-icon">
-                                        <h4 class="mb-2"><span>6</span> years of Experience</h4>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mb-4">
-                                <div class="why-box">
-                                    <div class="why-box-icon">
-                                        <img src="./img/files/why-icons/scroll-paper.png" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="why-box-icon">
-                                        <h4 class="mb-2"><span>3500+</span> Kundali Made</h4>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mb-4">
-                                <div class="why-box">
-                                    <div class="why-box-icon">
-                                        <img src="./img/files/why-icons/ruby-logo.png" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="why-box-icon">
-                                        <h4 class="mb-2"><span>Stone</span> Service</h4>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mb-4">
-                                <div class="why-box">
-                                    <div class="why-box-icon">
-                                        <img src="./img/files/why-icons/diploma.png" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="why-box-icon">
-                                        <h4 class="mb-2"><span>Kundali</span> Prediction</h4>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mb-4">
-                                <div class="why-box">
-                                    <div class="why-box-icon">
-                                        <img src="./img/files/why-icons/round-triangle-chain.png" class="img-fluid"
-                                            alt="">
-                                    </div>
-                                    <div class="why-box-icon">
-                                        <h4 class="mb-2"><span>20000+</span> Total services Provided</h4>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mb-4">
-                                <div class="why-box">
-                                    <div class="why-box-icon">
-                                        <img src="./img/files/why-icons/approved-document.png" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="why-box-icon">
-                                        <h4 class="mb-2"><span>1000+ </span> Foreign Clients</h4>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-sm-6">
+                        <iframe
+                            src="https://www.ashesh.com.np/forex/widget2.php?api=440124o396&header_color=38b45e&background_color=faf8ee&header_title=Nepal%20Exchange%20Rates"
+                            frameborder="0" scrolling="no" marginwidth="0" marginheight="0"
+                            style="border:none; overflow:hidden; width:100%; height:583px; border-radius:5px;"
+                            allowtransparency="true">
+                        </iframe>
                     </div>
-                </div>
-                <div class="text-center mt-2">
-                    <a href="" class="neon-button">
-                        <span></span><span></span><span></span><span></span>
-                        <div class="ue-btn">
-
-
-                            <div class="ue-btn-txt">Book An Appointment</div>
-
-                        </div>
-                    </a>
                 </div>
             </div>
         </div>
-
 
     </div>
-
-    <br><br>
 
     <div class="container-fluid custom-container">
         <div class="newsletter-box">
@@ -3178,6 +3028,21 @@
     <!-- Theme Base, Components and Settings -->
     <script src="js/theme.js"></script>
     <script src="vendor/jquery.countdown/jquery.countdown.min.js"></script>
+    <script src="js/nepali.datepicker.v4.0.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+    <script>
+        const input = document.querySelector("#phone");
+        const input2 = document.querySelector("#phone2")
+        window.intlTelInput(input, {
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+        });
+        window.intlTelInput(input2, {
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
+        integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         $("#service-toggle").on('click', function (e) {
             $('#header').toggleClass("show")
@@ -3192,6 +3057,57 @@
 
     <!-- Theme Custom -->
     <script src="js/custom.js"></script>
+
+    <script>
+        var elm = document.getElementById("nepali-appointment-date");
+        var elm2 = document.getElementById("dobpicker");
+
+        var todayIs = NepaliFunctions.GetCurrentBsDate('YYYY-MM-DD')
+        console.log(todayIs)
+        /* Initialize Datepicker with options */
+        elm.nepaliDatePicker({
+            ndpYear: true,
+            ndpMonth: true,
+            ndpYearCount: 2,
+            disableBefore: todayIs,
+        });
+        elm2.nepaliDatePicker({
+            ndpYear: true,
+            ndpMonth: true,
+            ndpYearCount: 160,
+        });
+    </script>
+
+    <script>
+        function format(item, state) {
+            if (!item.id) {
+                return item.text;
+            }
+            var countryUrl = "https://hatscripts.github.io/circle-flags/flags/";
+            var stateUrl = "https://oxguy3.github.io/flags/svg/us/";
+            var url = state ? stateUrl : countryUrl;
+            var img = $("<img>", {
+                class: "img-flag",
+                width: 26,
+                src: url + item.element.value.toLowerCase() + ".svg"
+            });
+            var span = $("<span>", {
+                text: " " + item.text
+            });
+            span.prepend(img);
+            return span;
+        }
+
+        $(document).ready(function () {
+            $("#countries").select2({
+                templateResult: function (item) {
+                    return format(item, false);
+                }
+            });
+
+        });
+
+    </script>
 
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -3211,6 +3127,153 @@
                 swiper: swiper,
             },
         });
+    </script>
+
+    <script>
+        $("#next-datetime").on('click', function (e) {
+            e.preventDefault();
+            $("#service-selection").find("a").removeClass('active')
+            $("#datetime-selector").find("a").addClass('active')
+            $("#tabsNavigationVertSimple1").removeClass('active')
+            $("#tabsNavigationVertSimple2").addClass('active')
+        })
+        $(".service-selector li label").on('click', function (e) {
+            $("#service-selection").find("a").removeClass('active')
+            $("#datetime-selector").find("a").addClass('active')
+            $("#tabsNavigationVertSimple1").removeClass('active')
+            $("#tabsNavigationVertSimple2").addClass('active')
+        })
+
+        $("#back-serviceselection").on('click', function (e) {
+            e.preventDefault();
+            $("#service-selection").find("a").addClass('active')
+            $("#datetime-selector").find("a").removeClass('active')
+            $("#tabsNavigationVertSimple1").addClass('active')
+            $("#tabsNavigationVertSimple2").removeClass('active')
+        })
+
+        $("#next-personalinfo").on('click', function (e) {
+            e.preventDefault();
+            $("#personal-info").find("a").addClass('active')
+            $("#datetime-selector").find("a").removeClass('active')
+            $("#tabsNavigationVertSimple3").addClass('active')
+            $("#tabsNavigationVertSimple2").removeClass('active')
+        })
+
+        $("#back-datetime").on('click', function (e) {
+            e.preventDefault();
+            $("#personal-info").find("a").removeClass('active')
+            $("#datetime-selector").find("a").addClass('active')
+            $("#tabsNavigationVertSimple3").removeClass('active')
+            $("#tabsNavigationVertSimple2").addClass('active')
+        })
+
+
+        $("#next-address").on('click', function (e) {
+            e.preventDefault();
+            $("#address-info").find("a").addClass('active')
+            $("#personal-info").find("a").removeClass('active')
+            $("#tabsNavigationVertSimple4").addClass('active')
+            $("#tabsNavigationVertSimple3").removeClass('active')
+        })
+
+        $("#back-personal").on('click', function (e) {
+            e.preventDefault();
+            $("#address-info").find("a").removeClass('active')
+            $("#personal-info").find("a").addClass('active')
+            $("#tabsNavigationVertSimple4").removeClass('active')
+            $("#tabsNavigationVertSimple3").addClass('active')
+        })
+
+        $("#next-payment").on('click', function (e) {
+            e.preventDefault();
+            $("#address-info").find("a").removeClass('active')
+            $("#payment-info").find("a").addClass('active')
+            $("#tabsNavigationVertSimple5").addClass('active')
+            $("#tabsNavigationVertSimple4").removeClass('active')
+        })
+
+        $("#back-address").on('click', function (e) {
+            e.preventDefault();
+            $("#address-info").find("a").addClass('active')
+            $("#payment-info").find("a").removeClass('active')
+            $("#tabsNavigationVertSimple5").removeClass('active')
+            $("#tabsNavigationVertSimple4").addClass('active')
+        })
+
+        $("#next-confirm").on('click', function (e) {
+            e.preventDefault();
+            $("#confirm-info").find("a").addClass('active')
+            $("#payment-info").find("a").removeClass('active')
+            $("#tabsNavigationVertSimple5").removeClass('active')
+            $("#tabsNavigationVertSimple6").addClass('active')
+        })
+
+        $("#referaloption").on('change', function (e) {
+            var rvalue = $(this).val()
+            if (rvalue === 'rel' || rvalue === 'fr' || rvalue === 'oth') {
+                $("#referal-addition").removeClass('d-none')
+            }
+            else {
+                $("#referal-addition").addClass('d-none')
+
+            }
+        })
+
+        $(document).ready(function () {
+            // Initially hide digital and bank options
+            $(".digital-wallet-options, .bank-options").hide();
+
+            // Show/hide options based on the selected payment option
+            $('input[name="payment-options"]').change(function () {
+                $('input[name="digital-options"]').attr('checked', false)
+                if (this.value === 'option2') {
+                    $(".digital-wallet-options").show();
+                    $(".bank-options").hide();
+                } else if (this.value === 'option3') {
+                    $(".digital-wallet-options").hide();
+                    $(".bank-options").show();
+                    $(".qrcode").hide();
+                } else {
+                    $(".digital-wallet-options, .bank-options").hide();
+                    $(".qrcode").hide();
+                }
+            });
+
+            $('input[name="digital-options"]').change(function () {
+                if (this.value === 'option1') {
+                    $(".qrcode").hide();
+                    $("#esewaqr").show();
+                } else if (this.value === 'option2') {
+                    $(".qrcode").hide();
+                    $("#khaltiqr").show();
+                } else if (this.value === 'option4') {
+                    $(".qrcode").hide();
+                    $("#machabank").show();
+                } else if (this.value === 'option3') {
+                    $(".qrcode").hide();
+                    $("#globalbank").show();
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            $("#send-appointmet").on("click", function (event) {
+                // Prevent the default form submission
+                event.preventDefault();
+                // $("#appointmentForm").submit();
+                $(".book-wrapper").hide();
+                $(".submission-success").removeClass('d-none')
+                $(".submission-success").addClass('animate')
+                // Delay the form submission by 5 seconds
+                setTimeout(function () {
+                    // Submit the form programmatically
+
+                    window.location.href = "index.html";
+                }, 3000); // 5000 milliseconds = 5 seconds
+            });
+        });
+
     </script>
 
 </body>

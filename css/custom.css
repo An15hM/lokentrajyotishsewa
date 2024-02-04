@@ -712,17 +712,17 @@ html .call-to-action.call-to-action-primary p{
     padding:80px 0;
     /* height: 90vh; */
     background: radial-gradient(ellipse at bottom, rgba(0, 0, 0, 0.6), #071461 100%) !important;
-  overflow: hidden;
-  -webkit-filter: drop-shadow(0 0 10px white);
-  filter: drop-shadow(0 0 10px white);
-  position: relative;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-  margin: 0;
+    overflow: hidden;
+    -webkit-filter: drop-shadow(0 0 10px white);
+    filter: drop-shadow(0 0 10px white);
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
 } .moving-span {
     position: relative;
     width: 1px;
@@ -730,14 +730,14 @@ html .call-to-action.call-to-action-primary p{
     background-color: white;
     position: fixed;
     -webkit-animation-name: particleAnimation;
-            animation-name: particleAnimation;
+    animation-name: particleAnimation;
     -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
+    animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-  }
-  
- .moving-span::before {
+    animation-iteration-count: infinite;
+}
+
+.moving-span::before {
     position: absolute;
     display: block;
     content: "";
@@ -747,79 +747,79 @@ html .call-to-action.call-to-action-primary p{
     height: 1px;
     background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(255, 255, 255, 0.4)));
     background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.4) 100%);
-  }
-  
- .moving-span:nth-of-type(1) {
+}
+
+.moving-span:nth-of-type(1) {
     top: 10%;
     -webkit-animation-duration: 10s;
-            animation-duration: 10s;
-  }
-  
- .moving-span:nth-of-type(2) {
+    animation-duration: 10s;
+}
+
+.moving-span:nth-of-type(2) {
     top: 20%;
     -webkit-animation-duration: 5s;
-            animation-duration: 5s;
-  }
-  
- .moving-span:nth-of-type(3) {
+    animation-duration: 5s;
+}
+
+.moving-span:nth-of-type(3) {
     top: 30%;
     -webkit-animation-duration: 20s;
-            animation-duration: 20s;
-  }
-  
- .moving-span:nth-of-type(4) {
+    animation-duration: 20s;
+}
+
+.moving-span:nth-of-type(4) {
     top: 40%;
     -webkit-animation-duration: 10s;
-            animation-duration: 10s;
-  }
-  
- .moving-span:nth-of-type(5) {
+    animation-duration: 10s;
+}
+
+.moving-span:nth-of-type(5) {
     top: 50%;
     -webkit-animation-duration: 25s;
-            animation-duration: 25s;
-  }
-  
- .moving-span:nth-of-type(6) {
+    animation-duration: 25s;
+}
+
+.moving-span:nth-of-type(6) {
     top: 60%;
     -webkit-animation-duration: 7s;
-            animation-duration: 7s;
-  }
-  
- .moving-span:nth-of-type(7) {
+    animation-duration: 7s;
+}
+
+.moving-span:nth-of-type(7) {
     top: 70%;
     -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-  }
-  
- .moving-span:nth-of-type(8) {
+    animation-duration: 3s;
+}
+
+.moving-span:nth-of-type(8) {
     top: 80%;
     -webkit-animation-duration: 12s;
-            animation-duration: 12s;
-  }
-  
- .moving-span:nth-of-type(9) {
+    animation-duration: 12s;
+}
+
+.moving-span:nth-of-type(9) {
     top: 90%;
     -webkit-animation-duration: 30s;
-            animation-duration: 30s;
-  }
-  
-  @-webkit-keyframes particleAnimation {
+    animation-duration: 30s;
+}
+
+@-webkit-keyframes particleAnimation {
     from {
-      left: -100px;
+        left: -100px;
     }
     to {
-      left: calc(100% + 100px);
+        left: calc(100% + 100px);
     }
-  }
-  
-  @keyframes particleAnimation {
+}
+
+@keyframes particleAnimation {
     from {
-      left: -100px;
+        left: -100px;
     }
     to {
-      left: calc(100% + 100px);
+        left: calc(100% + 100px);
     }
-  }
+}
 
 #particles-js{
     position: absolute;
@@ -1840,12 +1840,12 @@ html.side-header #header.side-header .header-nav-main nav > ul > li.dropdown:hov
 .jacket-countdown .countdown > span {
     font-size: 16px;
     color: #fff !important;
-
+    
 }
 .jacket-countdown .countdown > span > span{
     font-size: 28px;
     color: #fff !important;
-
+    
 }
 
 @media only screen and (max-width:600px){
@@ -1869,12 +1869,12 @@ html.side-header #header.side-header .header-nav-main nav > ul > li.dropdown:hov
         padding:0 !important;
         padding:14px 4px;
         background-color: transparent;
-    
+        
     }
     .call-to-action .countdown > span > span{
         font-size: 28px;
         color: #fff !important;
-    
+        
     }
     .parent2 .div11, .parent2 .div12{
         display: none;
@@ -2018,7 +2018,7 @@ html.side-header #header.side-header .header-nav-main nav > ul > li.dropdown:hov
 .service-selector li{
     width: calc(33% - 15px);
     margin-right: 15px;
-   margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 .service-selector li label{
     position: relative;
@@ -2046,8 +2046,8 @@ html.side-header #header.side-header .header-nav-main nav > ul > li.dropdown:hov
     margin-right: 15px;
     background-color: #fff;
     padding: 10px;
-   background-color: #2953a2;
-   border-radius: 50%;
+    background-color: #2953a2;
+    border-radius: 50%;
 }
 .service-selector li label:hover{
     cursor: pointer;
@@ -2080,7 +2080,7 @@ html.side-header #header.side-header .header-nav-main nav > ul > li.dropdown:hov
     color:#fff;
 }
 .service-selector li input:checked ~ label i{
-   opacity: 1;
+    opacity: 1;
 }
 .service-selector li input:checked ~ label p{
     color:#fff;
@@ -2114,8 +2114,184 @@ html.side-header #header.side-header .header-nav-main nav > ul > li.dropdown:hov
 .dream-button-next{
     right: -35px;
 }
- .dream-button-prev{
+.dream-button-prev{
     left: -35px;
+}
+#pricing{
+    padding: 80px 0;
+}
+.plan{
+    position: relative;
+    border-radius: 8px;
+}
+.pricing-table .plan .plan-price .price{
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pricing-table .plan .plan-price .price del{
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+}
+.plan-footer{
+    background-color: #f7f7f7;
+}
+.ribbon {
+    position: absolute;
+    right: -5px; top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px; height: 75px; 
+    text-align: right;
+}
+.ribbon span {
+    font-size: 14px;
+    color: #fff; 
+    text-transform: uppercase; 
+    text-align: center;
+    font-weight: bold; line-height: 20px;
+    transform: rotate(45deg);
+    width: 100px; display: block;
+    background: #79A70A;
+    background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 19px; right: -21px;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
+}
+.ribbon span::before {
+    content: '';
+    position: absolute; 
+    left: 0px; top: 100%;
+    z-index: -1;
+    border-left: 3px solid #79A70A;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #79A70A;
+}
+.ribbon span::after {
+    content: '';
+    position: absolute; 
+    right: 0%; top: 100%;
+    z-index: -1;
+    border-right: 3px solid #79A70A;
+    border-left: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #79A70A;
+}
+.red span {background: linear-gradient(#F70505 0%, #8F0808 100%);}
+.red span::before {border-left-color: #8F0808; border-top-color: #8F0808;}
+.red span::after {border-right-color: #8F0808; border-top-color: #8F0808;}
+.image-wrapper-about{
+    background-color: #234567;
+    padding: 18px;
+    border-radius: 8px;
+    position: relative;
+}
+.image-wrapper-about img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+}
+/* .about-image-floater{
+    width: 500px;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 40px;
+} */
+#about-astrologer{
+    padding: 80px 0;
+}
+.about-text{
+    padding: 0 25px;
+}
+
+.ribbon-3, .ribbon-4 {
+    height: 50px;
+    
+    background: #efb23b;
+    width: calc(100% + 20px);
+    z-index: 2;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ribbon-3:before, .ribbon-4:before {
+    content:'';
+    position: absolute;
+    z-index: -1;
+    height: 0;
+    width: 0;
+    border-top: 10px solid #cd8d11;
+    border-left: 10px solid transparent;
+    bottom: -10px;
+}
+.ribbon-3:after, .ribbon-4:after {
+    content:'';
+    position: absolute;
+    z-index: -1;
+    height: 0;
+    width: 0;
+    border-top: 10px solid #cd8d11;
+    border-right: 10px solid transparent;
+    right: 0;
+    bottom: -10px;
+}
+
+.ribbon-4:before {
+    height: 0;
+    width: 0;
+    border-width: 20px 20px;
+    border-style: solid;
+    border-color: #31a5b3 #31a5b3 #31a5b3 transparent;
+    top: 20px;
+    left: -30px;
+}
+.ribbon-4:after {
+    height: 0;
+    width: 0;
+    border-width: 20px 20px;
+    border-style: solid;
+    border-color: #31a5b3 transparent #31a5b3 #31a5b3;
+    top: 20px;
+    right: -30px;
+}
+
+.ribbon-content {
+    height: inherit;
+    margin-bottom: 0;
+    background: #37b7c7;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ribbon-content:before {
+    height: 0;
+    width: 0;
+    border-top: 10px solid #26808b;
+    border-left: 10px solid transparent;
+    bottom: -10px;
+}
+.ribbon-content:after {
+    height: 0;
+    width: 0;
+    border-top: 10px solid #26808b;
+    border-right: 10px solid transparent;
+    right: 0;
+    bottom: -10px;
+}
+#main-contents{
+    padding: 80px 0;
+}
+.panel-footer .btn {
+    display: none !important;
 }
 @media only screen and (max-width:600px){
     .service-selector li{
@@ -2123,7 +2299,7 @@ html.side-header #header.side-header .header-nav-main nav > ul > li.dropdown:hov
     }
     .service-selector li label{
         flex-direction: column;
-    align-items: flex-start;
+        align-items: flex-start;
     }
     .service-selector li label img{
         margin-bottom: 10px;

@@ -44,7 +44,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
         integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="js/nepali.datepicker.v4.0.1.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+        integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Theme CSS -->
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/theme-elements.css">
@@ -96,6 +100,8 @@
             transform-origin: 60px 60px;
             transform-box: content-box;
         }
+
+
 
         @-webkit-keyframes turnIt {
             100% {
@@ -159,73 +165,6 @@
         p {
             font-size: 20px;
             line-height: 1.8;
-        }
-
-        .filter_dream {
-            overflow-x: scroll;
-            scrollbar-width: thin;
-        }
-
-        .filter_dream::-webkit-scrollbar {
-            width: 14px;
-            /* Set the width of the scrollbar */
-        }
-
-        /* Customize the appearance of the scrollbar handle */
-        .filter_dream::-webkit-scrollbar-thumb {
-            background-color: #eaeaea;
-            /* Set the color of the scrollbar handle */
-            border-radius: 4px;
-            /* Set the border-radius to make it rounded */
-        }
-
-        /* Customize the appearance of the scrollbar track on hover */
-        .filter_dream::-webkit-scrollbar-track {
-            background-color: #f1f1f1;
-            /* Set the background color of the scrollbar track */
-        }
-
-        .swiper-slide button {
-            background: transparent;
-            border-radius: 0;
-            border: 1px solid #eaeaea;
-            transition: none;
-            width: 60px;
-            padding: 0;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            height: 45px;
-        }
-
-        .swiper-slide button:hover {
-            border: 1px solid #eaeaea;
-            background-color: #eaeaea;
-            color: #131313;
-        }
-
-        .swiper-slide-thumb-active button {
-            background-color: #2860ab;
-            color: #fff;
-        }
-
-        .swiper-fade .swiper-slide {
-            opacity: 0 !important;
-        }
-
-        .swiper-fade .swiper-slide-active {
-            opacity: 1 !important;
-        }
-
-        .dream-box {
-            padding: 50px 35px;
-            border: 1px solid #eaeaea;
-            border-radius: 6px;
-            margin: 14px;
-        }
-
-        .dream-box h5 {
-            font-size: 24px;
         }
     </style>
 
@@ -2624,546 +2563,292 @@
     <div role="main" class="main">
 
         <section class="page-header page-header-modern page-header-lg position-relative mb-0" id="planet-pagetitle">
-            <div class="service-icon ic1">
-                <img src="./img/files/earth.gif" alt="">
-            </div>
-            <div class="service-icon ic2">
-                <img src="./img/files/earth.gif" alt="">
-            </div>
+
             <div class="container">
 
                 <div class="row">
                     <div class="col-md-12 align-self-center p-static order-2 text-center">
-                        <h1 class="text-uppercase text-light"> <strong>About Us</strong></h1>
+                        <h1 class="text-uppercase text-light"> <strong>Nepali Calendar</strong></h1>
                     </div>
                     <div class="col-md-12 align-self-center order-1">
                         <ul class="breadcrumb d-block text-center">
                             <li><a href="#" class="text-light">Home</a></li>
-                            <li class="active text-light">About Us</li>
+                            <li class="active text-light">Nepali Calendar</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="home-about">
-            <div class="container-fluid custom-container">
-                <div class="row align-items-end">
+        <div id="main-contents">
+            <div class="container">
+                <div class="content-wrapper d-flex justify-content-center">
+                    <iframe src="https://www.hamropatro.com/widgets/calender-full.php" frameborder="0" scrolling="no"
+                        marginwidth="0" marginheight="0"
+                        style="border:none; overflow:hidden; width:800px; height:840px;"
+                        allowtransparency="true"></iframe>
+                </div>
+            </div>
+        </div>
 
-                    <div class="col-lg-12">
-                        <h2 class="appear-animation astro-main mb-1 animated fadeInUp appear-animation-visible"
-                            data-appear-animation="fadeInUp" data-appear-animation-delay="0"
-                            data-appear-animation-duration="1s"
-                            style="line-height: 1; animation-duration: 1s; animation-delay: 0ms;">
-                            <span>Astrologer</span>
-                        </h2>
-                        <h5 class="appear-animation mb-3 animated fadeInUp appear-animation-visible"
-                            data-appear-animation="fadeInUp" data-appear-animation-delay="0"
-                            data-appear-animation-duration="1s" style="animation-duration: 1s; animation-delay: 0ms;">
-                            Astrologer is Just An Advisor, Not A Magician
-                        </h5>
-                        <!-- <h2 class="word-rotator font-weight-semi-bold letters type mb-2" appear-animation
-							data-appear-animation="fadeInUp" data-appear-animation-delay="0"
-							data-appear-animation-duration="1s">
-							<span>We</span>
-							<span class="word-rotator-words waiting">
-								<b class="is-visible">look into the future.</b>
-								<b>work accordingly</b>
-								<b>believe in it</b>
-							</span>
-						</h2> -->
-
-                        <br>
-                        <p class="appear-animation animated fadeInUp appear-animation-visible"
-                            data-appear-animation="fadeInUp" data-appear-animation-delay="0"
-                            data-appear-animation-duration="1s" style="animation-duration: 1s; animation-delay: 0ms;">
-                            We need to emphasize that astrology isn’t predestination or fate. Man has free will.
-                            Astrology is also not a religion, nor should it be a replacement for religion. What
-                            astrology is, is the study of cycles. We will discover areas of opportunity, luck, and
-                            expansion, and we’ll keep an eye on other areas of your chart where there might be
-                            constriction, challenge or delay. How things play out is going to be up to you. You could
-                            have the most sparkling of planetary activity swirling around you, but if you choose not to
-                            take an active role, success could pass you by, or at the very least you might overlook the
-                            chance at a golden opportunity. Similarly, you might be under stressful rays, but with the
-                            determination to find solutions to the obstacles you face, you could triumph over them and
-                            find an inner strength you never knew you had.
-                            <br><br>
-                            Astrology is the study of astronomical positions of the celestial bodies and their
-                            correlation with the events on earth. Astrologers (and those who follow astrology) believe
-                            that by understanding the influence between the planets and the natural world, they can
-                            predict potential future events.
-                        </p>
-
+        <div class="container-fluid custom-container">
+            <div class="newsletter-box">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>Sign Up for our Newsletter</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="inputs">
+                            <input type="text" placeholder="Enter Your Email Address">
+                            <button>Join</button>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
 
-        <div id="about-astrologer">
-            <div class="container-fluid custom-container">
-                <div class="row align-items-center">
-                    <div class="col-sm-5">
-                        <div class="image-wrapper-about">
-                            <div class="ribbon-4">
-                                <div class="ribbon-content text-center text-light">
-                                    Astrologer Nabin Upadhaya
-                                </div>
-                            </div>
-                            <img src="./img/files/user.jpg" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-sm-7">
-                        <div class="about-text">
-                            <h3>
-                                <strong>
-                                    About
-                                    ASTROLOGER NABIN UPADHAYA
-                                </strong>
-                            </h3>
-                            <p>
-                                Online Astrologer who is proficient in Kundali Analysis, Kundali Making, through genuine
-                                methods &
-                                calculations, as charted by Vedic Astrology – Astro Nabin Upadhaya studied from guru Sri
-                                Janakiram
-                                Upadhaya. A master in solving Love & Career related problems, Astro Nabin Upadhaya is
-                                well-versed in
-                                Horary Shastra and with his years of expertise, he patiently listens to the problems-
-                                solving them
-                                in a minuscule of time. According to him, the planets don’t mean our harm, all we need
-                                to
-                                focus on
-                                is how to take proper advantage of every situation.
 
-                                <br><br>
+        <footer id="footer">
+            <div class="container-fluid custom-container my-4">
 
-                                Excellent problem-solver, Astro Nabin Upadhaya has often been called the best Astrologer
-                                in
-                                Kathmandu valley due to his expertise, calm behavior, good advisory nature, detail and
-                                peacefully
-                                dealing with clints. No matter what issue has been crippling your life, with the
-                                guidance
-                                provided
-                                by best astrologer near me, you can easily deal with them and rise above it.
-                            </p>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                        <h5 class="text-5 text-dark mb-0">CONTACT INFO</h5>
+                        <hr>
+                        <ul class="list list-unstyled">
+                            <li class="pb-1 mb-2">
+                                <span class="d-block font-weight-normal line-height-1 text-dark"><strong>Address
+                                    </strong></span>
+                                <a href="" target="_blank">Satdobato-23, Lalitpur, Nepal</a>
+                            </li>
+
+
+                            <li class="pb-1 mb-2">
+                                <span class="d-block font-weight-normal line-height-1 text-dark"><strong>Email
+                                        Address
+                                    </strong></span>
+                                <a href="mailto:mail@example.com">mail@example.com</a>
+                            </li>
+
+                            <li class="pb-1 mb-2">
+                                <span class="d-block font-weight-normal line-height-1 text-dark"><strong>Phone
+                                        Number
+                                    </strong></span>
+                                <a href="tel:+977-9844700093"><small><i class="fa fa-phone"></i>&nbsp;</small>
+                                    +977-9844700093</a>
+                                <a href="tel: +977-9801775055"><small><i class="fa fa-phone"></i>&nbsp;</small>
+                                    +977-9801775055</a>
+                            </li>
+
                             <hr>
-                            <ul class="social-icons social-icons-big">
-                                <!-- Facebook -->
-                                <li>
-                                    <a href="#" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false"
-                                        data-bs-placement="top" aria-label="Follow On Facebook"
-                                        data-bs-original-title="Follow On Facebook">
-                                        <img src="./img/files/social icons/facebook.png" alt="" title="" style="">
-                                    </a>
-                                </li>
-                                <!-- Google+ -->
-                                <li>
-                                    <a href="#" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false"
-                                        data-bs-placement="top" aria-label="Follow On Instagram"
-                                        data-bs-original-title="Follow On Instagram">
-                                        <img src="./img/files/social icons/instagram.png" alt="" title="" style="">
-                                    </a>
-                                </li>
-                                <!-- LinkedIn -->
-                                <li>
-                                    <a href="#" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false"
-                                        data-bs-placement="top" aria-label="Follow on Threads"
-                                        data-bs-original-title="Follow on Threads">
-                                        <img src="./img/files/social icons/threads.png" alt="">
-                                    </a>
-                                </li>
-                                <!-- Pinterest -->
-                                <li>
-                                    <a href="#" data-bs-toggle="tooltip" data-bs-animation="false"
-                                        data-bs-placement="top" aria-label="Follow On TikTok"
-                                        data-bs-original-title="Follow On TikTok">
-                                        <img src="./img/files/social icons/tiktok.png" alt="">
-                                    </a>
-                                </li>
-                                <!-- Pinterest -->
-                                <li>
-                                    <a href="#" data-bs-toggle="tooltip" data-bs-animation="false"
-                                        data-bs-placement="top" aria-label="Follow On Youtube"
-                                        data-bs-original-title="Follow On Youtube">
-                                        <img src="./img/files/social icons/youtube.png" alt="">
-                                    </a>
-                                </li>
 
-                            </ul>
+                            <li class="pb-1 mb-2">
+                                <span class="d-block font-weight-normal line-height-1 text-dark"><strong>Hotline
+                                        Number
+                                        Number
+                                    </strong></span>
+                                <a href="tel:+977-9844700093"><small><i class="fa fa-phone"></i>&nbsp;</small>
+                                    +977-9844700093</a>
+                                <a href="tel: +977-9801775055"><small><i class="fa fa-phone"></i>&nbsp;</small>
+                                    +977-9801775055</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <div class="col-md-6 col-lg-5 mb-5 mb-lg-0">
+                        <h5 class="text-5 text-dark mb-0">QUICK LINKS</h5>
+                        <hr>
+                        <div class="row">
+                            <div class="col-6 col-md-4">
+                                <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Services</a></p>
+                                <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">GemStones</a></p>
+                                <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Planets</a></p>
+                                <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Horoscope</a>
+                                </p>
+                                <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Constellations</a></p>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Dreams</a></p>
+                                <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Mantra</a></p>
+                                <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Aarati</a>
+                                </p>
+                                <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Chalisa</a></p>
+                                <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Gotra</a></p>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">About Us</a></p>
+                                <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Contact Us</a></p>
+                                <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Blogs</a>
+                                </p>
+                                <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Our Policy</a></p>
+                                <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Log In</a></p>
+                            </div>
                         </div>
+                        <hr>
+                        <p>Total No of Visitors: <strong>4475</strong></p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <h5 class="text-5 text-dark mb-0">Follow us On Facebook</h5>
+                        <hr>
+                        <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Floknetrajyotishsewa1&tabs&width=500px&height=330px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=401226964046862"
+                            width="500px" height="140px" style="border:none;overflow:hidden" scrolling="no"
+                            frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <hr>
+                        <ul class="social-icons social-icons-big">
+                            <!-- Facebook -->
+                            <li>
+                                <a href="#" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false"
+                                    data-bs-placement="top" aria-label="Follow On Facebook"
+                                    data-bs-original-title="Follow On Facebook">
+                                    <img src="./img/files/social icons/facebook.png" alt="">
+                                </a>
+                            </li>
+                            <!-- Google+ -->
+                            <li>
+                                <a href="#" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false"
+                                    data-bs-placement="top" aria-label="Follow On Instagram"
+                                    data-bs-original-title="Follow On Instagram">
+                                    <img src="./img/files/social icons/instagram.png" alt="">
+                                </a>
+                            </li>
+                            <!-- LinkedIn -->
+                            <li>
+                                <a href="#" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false"
+                                    data-bs-placement="top" aria-label="Follow on Threads"
+                                    data-bs-original-title="Follow on Threads">
+                                    <img src="./img/files/social icons/threads.png" alt="">
+                                </a>
+                            </li>
+                            <!-- Pinterest -->
+                            <li>
+                                <a href="#" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="top"
+                                    aria-label="Follow On TikTok" data-bs-original-title="Follow On TikTok">
+                                    <img src="./img/files/social icons/tiktok.png" alt="">
+                                </a>
+                            </li>
+                            <!-- Pinterest -->
+                            <li>
+                                <a href="#" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="top"
+                                    aria-label="Follow On Youtube" data-bs-original-title="Follow On Youtube">
+                                    <img src="./img/files/social icons/youtube.png" alt="">
+                                </a>
+                            </li>
+
+                        </ul>
                     </div>
                 </div>
-
-            </div>
-        </div>
-
-        <div id="why-section">
-
-            <span class="moving-span"></span>
-            <span class="moving-span"></span>
-            <span class="moving-span"></span>
-            <span class="moving-span"></span>
-            <span class="moving-span"></span>
-            <span class="moving-span"></span>
-            <span class="moving-span"></span>
-            <span class="moving-span"></span>
-            <span class="moving-span"></span>
-
-            <div class="container-fluid custom-container position-relative">
+                <hr>
                 <div class="row">
                     <div class="col-sm-12">
-                        <h1>
-                            <span>We are available 24/7</span>
-                            We Are Always
-                            Ready For A
-                            Prediction
+                        <h5 class="text-5 text-dark  text-center mb-4">We Accept</h5>
+                        <ul class="we-accept justify-content-center">
+                            <li>
+                                <a href="#" title="E-sewa" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <img src="./img/files/Esewa-2.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Khalti" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <img src="./img/files/Khalti-2.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Global IME Bank" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    <img src="./img/files/Global-IME-Bank-4.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Machhapuchchhre Bank" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    <img src="./img/files/Machhapuchchhre-Bank-Limited-2.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright footer-copyright-style-2">
+                <div class="container py-2">
+                    <div class="row ">
+                        <div class="col text-center mb-4 mb-lg-0">
+                            <p class="text-white text-center">Copyright © 2023 Jyotish Nepal. All Rights Reserved
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="mylink">
+            <div class="connect-us d-flex">
+                <h6 class="bg-primary"> Connect with us
+                </h6>
+                <div class="call-number pt-1">
+                    <a href="tel:+977-9801775055"><small><i class="fa fa-phone"></i></small>&nbsp;+977-9801775055</a>
+                    <br>
+                    <a href="tel:+977-9844700093"><small><i class="fa fa-phone"></i></small>&nbsp;+977-9844700093</a>
+                </div>
+                <div class="d-flex flex-column gap-4 social-number">
+                    <div>
+                        <a href="https://www.instagram.com/loknetra/">
+                            <img src="./img/files/social icons/facebook.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/loknetra/">
+                            <img src="./img/files/social icons/instagram.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/loknetra/">
+                            <img src="./img/files/social icons/tiktok.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/loknetra/">
+                            <img src="./img/files/social icons/youtube.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/loknetra/">
+                            <img src="./img/files/social icons/whatsapp.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/loknetra/">
+                            <img src="./img/files/social icons/viber.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title text-center fs-5" id="exampleModalLabel"><strong>Pay to
+                                Esewa</strong>
                         </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-sm-8">
-                        <div class="row">
-
-
-                            <div class="col-lg-4 mb-4">
-                                <div class="why-box">
-                                    <div class="why-box-icon">
-                                        <img src="./img/files/why-icons/wall-clock.png" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="why-box-icon">
-                                        <h4 class="mb-2"><span>6</span> years of Experience</h4>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mb-4">
-                                <div class="why-box">
-                                    <div class="why-box-icon">
-                                        <img src="./img/files/why-icons/scroll-paper.png" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="why-box-icon">
-                                        <h4 class="mb-2"><span>3500+</span> Kundali Made</h4>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mb-4">
-                                <div class="why-box">
-                                    <div class="why-box-icon">
-                                        <img src="./img/files/why-icons/ruby-logo.png" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="why-box-icon">
-                                        <h4 class="mb-2"><span>Stone</span> Service</h4>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mb-4">
-                                <div class="why-box">
-                                    <div class="why-box-icon">
-                                        <img src="./img/files/why-icons/diploma.png" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="why-box-icon">
-                                        <h4 class="mb-2"><span>Kundali</span> Prediction</h4>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mb-4">
-                                <div class="why-box">
-                                    <div class="why-box-icon">
-                                        <img src="./img/files/why-icons/round-triangle-chain.png" class="img-fluid"
-                                            alt="">
-                                    </div>
-                                    <div class="why-box-icon">
-                                        <h4 class="mb-2"><span>20000+</span> Total services Provided</h4>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mb-4">
-                                <div class="why-box">
-                                    <div class="why-box-icon">
-                                        <img src="./img/files/why-icons/approved-document.png" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="why-box-icon">
-                                        <h4 class="mb-2"><span>1000+ </span> Foreign Clients</h4>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="modal-body">
+                        <img src="./img/files/download.png" alt="" class="d-block mx-auto">
+                        <p class="text-center">
+                            Lokentra Jyotish Sewa
+                        </p>
                     </div>
-                </div>
-                <div class="text-center mt-2">
-                    <a href="" class="neon-button">
-                        <span></span><span></span><span></span><span></span>
-                        <div class="ue-btn">
 
-
-                            <div class="ue-btn-txt">Book An Appointment</div>
-
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-
-    <br><br>
-
-    <div class="container-fluid custom-container">
-        <div class="newsletter-box">
-            <div class="row">
-                <div class="col-sm-6">
-                    <p>Sign Up for our Newsletter</p>
-                </div>
-                <div class="col-sm-6">
-                    <div class="inputs">
-                        <input type="text" placeholder="Enter Your Email Address">
-                        <button>Join</button>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <footer id="footer">
-        <div class="container-fluid custom-container my-4">
-
-            <div class="row">
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                    <h5 class="text-5 text-dark mb-0">CONTACT INFO</h5>
-                    <hr>
-                    <ul class="list list-unstyled">
-                        <li class="pb-1 mb-2">
-                            <span class="d-block font-weight-normal line-height-1 text-dark"><strong>Address
-                                </strong></span>
-                            <a href="" target="_blank">Satdobato-23, Lalitpur, Nepal</a>
-                        </li>
-
-
-                        <li class="pb-1 mb-2">
-                            <span class="d-block font-weight-normal line-height-1 text-dark"><strong>Email Address
-                                </strong></span>
-                            <a href="mailto:mail@example.com">mail@example.com</a>
-                        </li>
-
-                        <li class="pb-1 mb-2">
-                            <span class="d-block font-weight-normal line-height-1 text-dark"><strong>Phone Number
-                                </strong></span>
-                            <a href="tel:+977-9844700093"><small><i class="fa fa-phone"></i>&nbsp;</small>
-                                +977-9844700093</a>
-                            <a href="tel: +977-9801775055"><small><i class="fa fa-phone"></i>&nbsp;</small>
-                                +977-9801775055</a>
-                        </li>
-
-                        <hr>
-
-                        <li class="pb-1 mb-2">
-                            <span class="d-block font-weight-normal line-height-1 text-dark"><strong>Hotline Number
-                                    Number
-                                </strong></span>
-                            <a href="tel:+977-9844700093"><small><i class="fa fa-phone"></i>&nbsp;</small>
-                                +977-9844700093</a>
-                            <a href="tel: +977-9801775055"><small><i class="fa fa-phone"></i>&nbsp;</small>
-                                +977-9801775055</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-                <div class="col-md-6 col-lg-5 mb-5 mb-lg-0">
-                    <h5 class="text-5 text-dark mb-0">QUICK LINKS</h5>
-                    <hr>
-                    <div class="row">
-                        <div class="col-6 col-md-4">
-                            <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Services</a></p>
-                            <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">GemStones</a></p>
-                            <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Planets</a></p>
-                            <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Horoscope</a>
-                            </p>
-                            <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Constellations</a></p>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Dreams</a></p>
-                            <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Mantra</a></p>
-                            <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Aarati</a>
-                            </p>
-                            <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Chalisa</a></p>
-                            <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Gotra</a></p>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">About Us</a></p>
-                            <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Contact Us</a></p>
-                            <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Blogs</a>
-                            </p>
-                            <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Our Policy</a></p>
-                            <p class="mb-1"><a href="#" class="text-4 link-hover-style-1">Log In</a></p>
-                        </div>
-                    </div>
-                    <hr>
-                    <p>Total No of Visitors: <strong>4475</strong></p>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                    <h5 class="text-5 text-dark mb-0">Follow us On Facebook</h5>
-                    <hr>
-                    <iframe
-                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Floknetrajyotishsewa1&tabs&width=500px&height=330px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=401226964046862"
-                        width="500px" height="140px" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                        allowfullscreen="true"
-                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                    <hr>
-                    <ul class="social-icons social-icons-big">
-                        <!-- Facebook -->
-                        <li>
-                            <a href="#" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false"
-                                data-bs-placement="top" aria-label="Follow On Facebook"
-                                data-bs-original-title="Follow On Facebook">
-                                <img src="./img/files/social icons/facebook.png" alt="">
-                            </a>
-                        </li>
-                        <!-- Google+ -->
-                        <li>
-                            <a href="#" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false"
-                                data-bs-placement="top" aria-label="Follow On Instagram"
-                                data-bs-original-title="Follow On Instagram">
-                                <img src="./img/files/social icons/instagram.png" alt="">
-                            </a>
-                        </li>
-                        <!-- LinkedIn -->
-                        <li>
-                            <a href="#" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false"
-                                data-bs-placement="top" aria-label="Follow on Threads"
-                                data-bs-original-title="Follow on Threads">
-                                <img src="./img/files/social icons/threads.png" alt="">
-                            </a>
-                        </li>
-                        <!-- Pinterest -->
-                        <li>
-                            <a href="#" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="top"
-                                aria-label="Follow On TikTok" data-bs-original-title="Follow On TikTok">
-                                <img src="./img/files/social icons/tiktok.png" alt="">
-                            </a>
-                        </li>
-                        <!-- Pinterest -->
-                        <li>
-                            <a href="#" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="top"
-                                aria-label="Follow On Youtube" data-bs-original-title="Follow On Youtube">
-                                <img src="./img/files/social icons/youtube.png" alt="">
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-sm-12">
-                    <h5 class="text-5 text-dark  text-center mb-4">We Accept</h5>
-                    <ul class="we-accept justify-content-center">
-                        <li>
-                            <a href="#" title="E-sewa" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <img src="./img/files/Esewa-2.jpg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Khalti" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <img src="./img/files/Khalti-2.jpg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Global IME Bank" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <img src="./img/files/Global-IME-Bank-4.jpg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Machhapuchchhre Bank" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                <img src="./img/files/Machhapuchchhre-Bank-Limited-2.jpg" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright footer-copyright-style-2">
-            <div class="container py-2">
-                <div class="row ">
-                    <div class="col text-center mb-4 mb-lg-0">
-                        <p class="text-white text-center">Copyright © 2023 Jyotish Nepal. All Rights Reserved</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <div class="mylink">
-        <div class="connect-us d-flex">
-            <h6 class="bg-primary"> Connect with us
-            </h6>
-            <div class="call-number pt-1">
-                <a href="tel:+977-9801775055"><small><i class="fa fa-phone"></i></small>&nbsp;+977-9801775055</a>
-                <br>
-                <a href="tel:+977-9844700093"><small><i class="fa fa-phone"></i></small>&nbsp;+977-9844700093</a>
-            </div>
-            <div class="d-flex flex-column gap-4 social-number">
-                <div>
-                    <a href="https://www.instagram.com/loknetra/">
-                        <img src="./img/files/social icons/facebook.png" alt="">
-                    </a>
-                </div>
-                <div>
-                    <a href="https://www.instagram.com/loknetra/">
-                        <img src="./img/files/social icons/instagram.png" alt="">
-                    </a>
-                </div>
-                <div>
-                    <a href="https://www.instagram.com/loknetra/">
-                        <img src="./img/files/social icons/tiktok.png" alt="">
-                    </a>
-                </div>
-                <div>
-                    <a href="https://www.instagram.com/loknetra/">
-                        <img src="./img/files/social icons/youtube.png" alt="">
-                    </a>
-                </div>
-                <div>
-                    <a href="https://www.instagram.com/loknetra/">
-                        <img src="./img/files/social icons/whatsapp.png" alt="">
-                    </a>
-                </div>
-                <div>
-                    <a href="https://www.instagram.com/loknetra/">
-                        <img src="./img/files/social icons/viber.png" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title text-center fs-5" id="exampleModalLabel"><strong>Pay to Esewa</strong></h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="./img/files/download.png" alt="" class="d-block mx-auto">
-                    <p class="text-center">
-                        Lokentra Jyotish Sewa
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </div>
 
 
     <!-- Vendor -->
@@ -3178,6 +2863,12 @@
     <!-- Theme Base, Components and Settings -->
     <script src="js/theme.js"></script>
     <script src="vendor/jquery.countdown/jquery.countdown.min.js"></script>
+    <script src="js/nepali.datepicker.v4.0.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
+        integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         $("#service-toggle").on('click', function (e) {
             $('#header').toggleClass("show")
@@ -3193,25 +2884,7 @@
     <!-- Theme Custom -->
     <script src="js/custom.js"></script>
 
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 0,
-            slidesPerView: 25,
 
-            watchSlidesProgress: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-        var swiper2 = new Swiper(".mySwiper2", {
-            spaceBetween: 0,
-            effect: "fade",
-            thumbs: {
-                swiper: swiper,
-            },
-        });
-    </script>
 
 </body>
 
