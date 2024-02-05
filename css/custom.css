@@ -2293,6 +2293,72 @@ html.side-header #header.side-header .header-nav-main nav > ul > li.dropdown:hov
 .panel-footer .btn {
     display: none !important;
 }
+
+.aside{
+    position: sticky;
+    top:140px;
+}
+.side-bar > p{
+    padding: 10px 25px;
+    background-color: #234567;
+    color:#fff;
+    margin-bottom: 0;
+}
+.side-bar ul{
+    list-style-type: none;
+    margin-bottom: 25px;
+    padding: 0;
+}
+#page-list{
+    padding: 15px 25px 15px 25px;
+    border: 1px solid #eaeaea;
+}
+#page-list > li{
+    padding: 8px 0;
+}
+#page-list > li:hover{
+    cursor:pointer;
+}
+#page-list > li > small{
+    float: right;
+}
+#page-list li .page-inner-list{
+    padding-left: 10px;
+    margin-top: 15px;
+    display: none;
+    border-bottom: 1px solid #eaeaea;
+}
+#page-list li .page-inner-list.is-showing{
+    display: block;
+}
+#page-list li .page-inner-list li a{
+    padding: 8px 12px;
+    display: block;
+}
+#page-list li .page-inner-list li a:hover{
+    background-color: #f7f7f7;
+    color:#000;
+}
+.side-bar .other-list{
+    padding: 15px 25px;
+    border: 1px solid #eaeaea;
+}
+.side-bar .other-list li a{
+    padding: 8px 12px;
+    display: block;
+}
+#scroller-container{
+    padding: 0 50px;
+}
+.scroll-content .text{
+    background-color: #234567;
+    padding: 8px 25px;
+    color:#fff;
+    
+}
+.text-bodys{
+    padding: 0 25px;
+}
 @media only screen and (max-width:600px){
     .service-selector li{
         width: calc(50% - 15px);
