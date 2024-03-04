@@ -420,11 +420,12 @@
                                 <li><a href="">Date Convertor</a></li>
                                 <li><a href="">Panchanga</a></li>
                                 <li><a href="">Daily Horoscope</a></li>
-                                <li><a href="">Nepal Weather</a></li>
+
                                 <li><a href="">Upcoming Event</a></li>
                                 <li><a href="">Calendar</a></li>
                                 <li><a href="">Unicode</a></li>
                                 <li><a href="">Currency Converter</a></li>
+                                <li><a href="">Pricing list</a></li>
                             </ul>
                         </div>
                         <div class="d-none d-md-block col-6 col-lg-2">
@@ -488,12 +489,7 @@
                                                                                         width="20px">
                                                                                     Vastu Shastra</a>
                                                                             </li>
-                                                                            <li>
-                                                                                <a href="#" class="dropdown-item"><img
-                                                                                        src="./img/files/menuicons/services/20220405-083928815629887.png"
-                                                                                        width="20px">
-                                                                                    Yantra Service</a>
-                                                                            </li>
+
                                                                             <li>
                                                                                 <a href="#" class="dropdown-item"><img
                                                                                         src="./img/files/menuicons/services/20220405-122401468942095.png"
@@ -2774,6 +2770,7 @@
                             <div class="tab-pane tab-pane-navigation active" id="tabsNavigationVertSimple1"
                                 role="tabpanel">
                                 <h4 class="mb-4">Select the service you want to book</h4>
+
                                 <ul
                                     class="list-unstyled d-flex align-items-stretch justify-content-start flex-wrap service-selector">
                                     <li>
@@ -2845,7 +2842,7 @@
                                     Next &nbsp;&nbsp; <small><i class="fa fa-arrow-right"></i></small>
                                 </button>
                             </div>
-                            <div class="tab-pane tab-pane-navigation" id="tabsNavigationVertSimple2" role="tabpanel">
+                            <div class="tab-pane tab-pane-navigation " id="tabsNavigationVertSimple2" role="tabpanel">
                                 <h4>Date & Time Selector</h4>
                                 <div class="container-fluid">
                                     <div class="row">
@@ -2959,7 +2956,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane tab-pane-navigation" id="tabsNavigationVertSimple4" role="tabpanel">
+                            <div class="tab-pane tab-pane-navigation " id="tabsNavigationVertSimple4" role="tabpanel">
                                 <h4>Address Details</h4>
                                 <div class="row">
                                     <div class="col-sm-6">
@@ -3222,23 +3219,25 @@
                                         <label for="" class="d-block">Address Line 2</label>
                                         <input type="text" class="form-control">
                                     </div>
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-6 position-relative">
                                         <label for="">You found us through:</label>
                                         <select name="" id="referaloption" class="form-control">
                                             <option value="">Facebook</option>
                                             <option value="">Instagram</option>
                                             <option value="">Twitter</option>
                                             <option value="">Google</option>
-                                            <option value="rel">Relatives</option>
-                                            <option value="fr">Friend</option>
+                                            <option value="Relatives">Relatives</option>
+                                            <option value="Friend">Friend</option>
                                             <option value="">Advertisement</option>
-                                            <option value="oth">Other</option>
+                                            <option value="Others">Other</option>
                                         </select>
+                                        <div class="d-none" id="referal-addition">
+                                            <span></span>
+                                            <input type="text" class="form-control" placeholder="">
+                                            <!-- <small><i class="fa fa-times"></i></small> -->
+                                        </div>
                                     </div>
-                                    <div class="col-sm-6 d-none" id="referal-addition">
-                                        <label for="">Referral Person</label>
-                                        <input type="text" class="form-control">
-                                    </div>
+
 
                                 </div>
 
@@ -3617,7 +3616,6 @@
 
                         <li class="pb-1 mb-2">
                             <span class="d-block font-weight-normal line-height-1 text-dark"><strong>Hotline Number
-                                    Number
                                 </strong></span>
                             <a href="tel:+977-9844700093"><small><i class="fa fa-phone"></i>&nbsp;</small>
                                 +977-9844700093</a>
@@ -4012,13 +4010,24 @@
 
         $("#referaloption").on('change', function (e) {
             var rvalue = $(this).val()
-            if (rvalue === 'rel' || rvalue === 'fr' || rvalue === 'oth') {
+            if (rvalue === 'Relatives' || rvalue === 'Friend' || rvalue === 'Others') {
+                $(this).addClass('hidden')
                 $("#referal-addition").removeClass('d-none')
+                $("#referal-addition").addClass('d-pad')
+                $("#referal-addition span").text(rvalue)
             }
             else {
+                $(this).removeClass('hidden')
                 $("#referal-addition").addClass('d-none')
+                $("#referal-addition").removeClass('d-pad')
 
             }
+        })
+
+        $("#referal-addition small").on('click', function (e) {
+            e.preventDefault();
+            $("#referal-addition").addClass('d-none')
+            $("#referaloption").removeClass('hidden')
         })
 
         $(document).ready(function () {

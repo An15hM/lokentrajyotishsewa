@@ -1695,7 +1695,7 @@ html.side-header #header.side-header .header-nav-main nav > ul > li.dropdown:hov
 
 .mylink {
     position: fixed;
-    right: -100px;
+    right: -120px;
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -1711,16 +1711,24 @@ html.side-header #header.side-header .header-nav-main nav > ul > li.dropdown:hov
     position: relative;
 }
 
-.mylink .connect-us:before {
-    content: "";
+.mylink .show-menu {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b4c9d ;
+    color: #fff;
     position: absolute;
-    right: 90%;
-    top: 10px;
-    width: 0;
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent #fff transparent transparent;
-    z-index: 99999;
+    top: 50%;
+    left: -40px;
+    z-index: 99;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.mylink .show-menu:hover{
+    cursor: pointer;
 }
 
 .mylink .connect-us h6 {
@@ -2358,6 +2366,41 @@ html.side-header #header.side-header .header-nav-main nav > ul > li.dropdown:hov
 }
 .text-bodys{
     padding: 0 25px;
+}
+#referal-addition{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    z-index: 6;
+    padding: 0 15px;
+}
+#referal-addition span{
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    z-index: 2;
+    color: #000;
+    border-right: 1px solid rgba(0, 0, 0, .6);
+    transform: translateY(-50%);
+    padding-right: 15px;
+}
+#referal-addition small{
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    z-index: 2;
+    color: #000;
+    transform: translateY(-50%);
+    padding-right: 15px;
+}
+#referal-addition.d-pad input{
+    padding-left: 125px;
+    padding-right: 50px;
+}
+.hidden{
+    opacity: 0;
+    visibility: hidden;
 }
 @media only screen and (max-width:600px){
     .service-selector li{

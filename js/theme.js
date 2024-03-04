@@ -2529,6 +2529,7 @@ window.theme.fn = {
 
 }).apply(this, [window.theme, jQuery]);
 
+
 // Countdown
 (function(theme, $) {
 
@@ -2639,6 +2640,7 @@ window.theme.fn = {
 	}
 
 }).apply(this, [window.theme, jQuery]);
+
 
 // Counter
 (function(theme, $) {
