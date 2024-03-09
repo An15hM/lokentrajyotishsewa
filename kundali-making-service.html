@@ -323,14 +323,15 @@
         .dream-box h5 {
             font-size: 24px;
         }
+    </style>
 
-        #ev_nciframe .event {
-            overflow-y: auto !important;
-        }
-
-        #ev_nciframe .ev_left {
-            height: 22px !important;
-            font-size: 20px !important;
+    <style>
+        #kundali-nepal-born,
+        #kundali-foreign-born,
+        #nepal-born,
+        #foreign-born,
+        .current-residency {
+            display: none;
         }
     </style>
 
@@ -2725,22 +2726,17 @@
     <div role="main" class="main">
 
         <section class="page-header page-header-modern page-header-lg position-relative mb-0" id="planet-pagetitle">
-            <!-- <div class="service-icon ic1">
-                <img src="./img/files/phone-ringing.gif" alt="">
-            </div>
-            <div class="service-icon ic2">
-                <img src="./img/files/phone-ringing.gif" alt="">
-            </div> -->
+
             <div class="container">
 
                 <div class="row">
                     <div class="col-md-12 align-self-center p-static order-2 text-center">
-                        <h1 class="text-uppercase text-light"> <strong>Events & Holidays</strong></h1>
+                        <h1 class="text-uppercase text-light"> <strong>Book A Service</strong></h1>
                     </div>
                     <div class="col-md-12 align-self-center order-1">
                         <ul class="breadcrumb d-block text-center">
                             <li><a href="#" class="text-light">Home</a></li>
-                            <li class="active text-light">Events & Holidays</li>
+                            <li class="active text-light">Book A Service</li>
                         </ul>
                     </div>
                 </div>
@@ -2750,37 +2746,264 @@
         <div id="main-contents">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-sm-4">
-                        <!-- Start of nepali patro badge -->
-                        <script type="text/javascript">
-                            var nc_cb_width = 'responsive';
-                            var nc_cb_height = 220;
-                            var nc_cb_shadow = 'true';
-                            var nc_cb_api_id = 7412024024579; 
-                        </script>
-                        <script type="text/javascript"
-                            src="https://www.ashesh.com.np/nepali-calendar/widget/cb.js"></script>
-                        <div id="ncwidgetlink">© <a href="https://www.ashesh.com.np/nepali-calendar/" id="nclink"
-                                title="Nepali calendar" target="_blank">nepali calendar</a></div>
-                        <!-- End of nepali patro badge -->
-                    </div>
-                    <br>
-                    <hr>
-                    <div class="col-sm-10">
-                        <!-- Start of upcoming event widget -->
-                        <!-- Start of upcoming event widget -->
-                        <script type="text/javascript">
-                            var nc_ev_width = 'responsive';
-                            var nc_ev_height = 450;
-                            var nc_ev_def_lan = 'np';
-                            var nc_ev_api_id = 7522024039744; 
-                        </script>
-                        <script type="text/javascript" src="https://www.ashesh.com.np/calendar-event/ev.js"></script>
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-title px-4 pt-4 mb-0">
+                                <h4><small>Please fill the below form with the correct information to the best of your
+                                        knowledge</small></h4>
+                                <hr>
+                            </div>
+                            <div class="card-body pt-0">
+                                <form action="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="form-group col-lg-4 main-birth-country">
+                                                <label class="form-label mb-1 text-2">Select Birth Country</label>
 
-                        <!-- End of upcoming event widget -->
+                                                <select name="" id="birth-country" class="form-control">
+                                                    <option value="default" disabled selected>Select Your Birth Country
+                                                    </option>
+                                                    <option value="nepal">Nepal</option>
+                                                    <option value="others">Foreign Country</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-lg-4 nepal-born">
+                                                <label class="form-label mb-1 text-2">Your Full Name</label>
+                                                <input type="text" value="" class="form-control text-3" name="name">
+                                            </div>
+
+                                            <div class="form-group col-lg-4 nepal-born">
+                                                <label class="form-label mb-1 text-2">Identification Full
+                                                    Name</label>
+                                                <input type="text" value="" class="form-control text-3"
+                                                    name="identification_full_name">
+                                            </div>
+
+                                            <div class="form-group col-lg-4 nepal-born">
+                                                <label class="form-label mb-1 text-2">Father's Name</label>
+                                                <input type="text" value="" class="form-control text-3"
+                                                    name="father_name">
+                                            </div>
+
+                                            <div class="form-group col-lg-4 nepal-born">
+                                                <label class="form-label mb-1 text-2">Mother's Name</label>
+                                                <input type="text" value="" class="form-control text-3"
+                                                    name="mother_name">
+                                            </div>
+
+                                            <div class="form-group col-lg-4 nepal-born">
+                                                <label class="form-label mb-1 text-2">Date of Birth</label>
+                                                <input type="date" value="" class="form-control text-3"
+                                                    name="date_of_birth">
+                                            </div>
+
+                                            <div class="form-group col-lg-4 nepal-born">
+                                                <label class="form-label mb-1 text-2">Time of Birth</label>
+                                                <input type="time" value="" class="form-control text-3"
+                                                    name="time_of_birth">
+                                            </div>
+
+                                            <div class="form-group col-lg-4 nepal-born">
+                                                <label class="form-label mb-1 text-2">State of Birth</label>
+                                                <input type="text" value="" class="form-control text-3"
+                                                    name="state_of_birth">
+                                            </div>
+
+                                            <div class="form-group col-lg-4 nepal-born">
+                                                <label class="form-label mb-1 text-2">District of Birth</label>
+                                                <input type="text" value="" class="form-control text-3"
+                                                    name="district_of_birth">
+                                            </div>
+
+                                            <div class="form-group col-lg-4 nepal-born">
+                                                <label class="form-label mb-1 text-2">Municipality of Birth</label>
+                                                <select class="form-control text-3" name="municipality_of_birth">
+                                                    <option value="">Select Municipality</option>
+                                                    <option value="Gaunpalika">Gaunpalika</option>
+                                                    <option value="Nagarpalika">Nagarpalika</option>
+                                                    <option value="Up-Mahanagarpalika">Up-Mahanagarpalika</option>
+                                                    <option value="Mahanagarpalika">Mahanagarpalika</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-lg-4 nepal-born">
+                                                <label class="form-label mb-1 text-2">Ward Number</label>
+                                                <input type="text" value="" class="form-control text-3"
+                                                    name="ward_number">
+                                            </div>
+
+                                            <div class="form-group col-lg-4 nepal-born">
+                                                <label class="form-label mb-1 text-2">Place of Birth</label>
+                                                <input type="text" value="" class="form-control text-3"
+                                                    name="place_of_birth">
+                                            </div>
+
+                                            <div class="form-group col-lg-4 nepal-born">
+                                                <label class="form-label mb-1 text-2">Residential Address</label>
+                                                <input type="text" value="" class="form-control text-3"
+                                                    name="residential_address">
+                                            </div>
+
+                                            <div class="form-group col-lg-4 nepal-born">
+                                                <label class="form-label mb-1 text-2">Locality</label>
+                                                <input type="text" value="" class="form-control text-3" name="locality">
+                                            </div>
+
+                                            <div class="form-group col-lg-4 nepal-born">
+                                                <label class="form-label mb-1 text-2">Gender</label>
+                                                <select class="form-control text-3" name="gender">
+                                                    <option value="">Select Gender</option>
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-lg-4 nepal-born">
+                                                <label class="form-label mb-1 text-2">Gotra</label>
+                                                <input type="text" value="" class="form-control text-3" name="gotra">
+                                            </div>
+
+                                            <div class="form-group col-lg-12 nepal-born">
+                                                <label class="form-label mb-1 text-2">Number of Siblings</label><br>
+                                                <div class="d-flex gap-4">
+                                                    <div class="d-flex gap-2 flex-column">
+                                                        <label for="" class="d-inline-block"><small>Elder
+                                                                Brother</small></label>
+                                                        <input type="number" value="" class="form-control text-3"
+                                                            name="number_of_siblings">
+                                                    </div>
+                                                    <div class="d-flex gap-2 flex-column">
+                                                        <label for="" class="d-inline-block"><small>Little
+                                                                Brother</small></label>
+                                                        <input type="number" value="" class="form-control text-3"
+                                                            name="number_of_siblings">
+                                                    </div>
+                                                    <div class="d-flex gap-2 flex-column">
+                                                        <label for="" class="d-inline-block"><small>Elder
+                                                                Sister</small></label>
+                                                        <input type="number" value="" class="form-control text-3"
+                                                            name="number_of_siblings">
+                                                    </div>
+                                                    <div class="d-flex gap-2 flex-column">
+                                                        <label for="" class="d-inline-block"><small>Little
+                                                                Sister</small></label>
+                                                        <input type="number" value="" class="form-control text-3"
+                                                            name="number_of_siblings">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="form-group col-lg-12 nepal-born">
+                                                <label class="form-label mb-1 text-2">Note</label>
+                                                <textarea class="form-control text-3" name="note"></textarea>
+                                            </div>
+
+
+                                            <div class="form-group col-lg-4 foreign-born">
+                                                <label class="form-label mb-1 text-2">Your Full Name</label>
+                                                <input type="text" value="" class="form-control text-3" name="name"
+                                                    required="">
+                                            </div>
+
+                                            <div class="form-group col-lg-4 foreign-born">
+                                                <label class="form-label mb-1 text-2">Identification Full
+                                                    Name</label>
+                                                <input type="text" value="" class="form-control text-3"
+                                                    name="identification_full_name" required="">
+                                            </div>
+
+                                            <div class="form-group col-lg-4 foreign-born">
+                                                <label class="form-label mb-1 text-2">Father's Name</label>
+                                                <input type="text" value="" class="form-control text-3"
+                                                    name="father_name" required="">
+                                            </div>
+
+                                            <div class="form-group col-lg-4 foreign-born">
+                                                <label class="form-label mb-1 text-2">Mother's Name</label>
+                                                <input type="text" value="" class="form-control text-3"
+                                                    name="mother_name" required="">
+                                            </div>
+
+                                            <div class="form-group col-lg-4 foreign-born">
+                                                <label class="form-label mb-1 text-2">Date of Birth</label>
+                                                <input type="date" value="" class="form-control text-3"
+                                                    name="date_of_birth" required="">
+                                            </div>
+
+                                            <div class="form-group col-lg-4 foreign-born">
+                                                <label class="form-label mb-1 text-2">Time of Birth</label>
+                                                <input type="time" value="" class="form-control text-3"
+                                                    name="time_of_birth" required="">
+                                            </div>
+
+                                            <div class="form-group col-lg-4 foreign-born">
+                                                <label class="form-label mb-1 text-2">Country of Birth</label>
+                                                <input type="text" value="" class="form-control text-3"
+                                                    name="country_of_birth" required="">
+                                            </div>
+
+                                            <div class="form-group col-lg-4 foreign-born">
+                                                <label class="form-label mb-1 text-2">Full Address</label>
+                                                <input type="text" value="" class="form-control text-3"
+                                                    name="full_address" required="">
+                                            </div>
+
+                                            <div class="form-group col-lg-4 foreign-born">
+                                                <label class="form-label mb-1 text-2">Gender</label>
+                                                <select class="form-control text-3" name="gender">
+                                                    <option value="">Select Gender</option>
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-lg-4 foreign-born">
+                                                <label class="form-label mb-1 text-2">Gotra</label>
+                                                <input type="text" value="" class="form-control text-3" name="gotra">
+                                            </div>
+
+                                            <div class="form-group col-lg-12 foreign-born">
+                                                <label class="form-label mb-1 text-2">Number of Siblings</label><br>
+                                                <div class="d-flex gap-4">
+                                                    <div class="d-flex gap-2 flex-column">
+                                                        <label for="" class="d-inline-block"><small>Elder
+                                                                Brother</small></label>
+                                                        <input type="number" value="" class="form-control text-3"
+                                                            name="number_of_siblings">
+                                                    </div>
+                                                    <div class="d-flex gap-2 flex-column">
+                                                        <label for="" class="d-inline-block"><small>Little
+                                                                Brother</small></label>
+                                                        <input type="number" value="" class="form-control text-3"
+                                                            name="number_of_siblings">
+                                                    </div>
+                                                    <div class="d-flex gap-2 flex-column">
+                                                        <label for="" class="d-inline-block"><small>Elder
+                                                                Sister</small></label>
+                                                        <input type="number" value="" class="form-control text-3"
+                                                            name="number_of_siblings">
+                                                    </div>
+                                                    <div class="d-flex gap-2 flex-column">
+                                                        <label for="" class="d-inline-block"><small>Little
+                                                                Sister</small></label>
+                                                        <input type="number" value="" class="form-control text-3"
+                                                            name="number_of_siblings">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -3021,7 +3244,8 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title text-center fs-5" id="exampleModalLabel"><strong>Pay to Esewa</strong></h1>
+                    <h1 class="modal-title text-center fs-5" id="exampleModalLabel"><strong>Pay to Esewa</strong>
+                    </h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -3036,7 +3260,6 @@
     </div>
 
 
-    <!-- Vendor -->
     <script src="vendor/plugins/js/plugins.min.js"></script>
     <script src="vendor/bootstrap-star-rating/js/star-rating.min.js"></script>
     <script src="vendor/bootstrap-star-rating/themes/krajee-fas/theme.min.js"></script>
@@ -3048,18 +3271,6 @@
     <!-- Theme Base, Components and Settings -->
     <script src="js/theme.js"></script>
     <script src="vendor/jquery.countdown/jquery.countdown.min.js"></script>
-    <script src="js/nepali.datepicker.v4.0.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
-    <script>
-        const input = document.querySelector("#phone");
-        const input2 = document.querySelector("#phone2")
-        window.intlTelInput(input, {
-            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
-        });
-        window.intlTelInput(input2, {
-            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
-        });
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
         integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -3069,232 +3280,56 @@
         })
         $(".mobile-menu-toggle").on('click', function (e) {
             $('#header').toggleClass("show")
-        })
+        })  
     </script>
 
     <!-- Theme Initialization Files -->
     <script src="js/theme.init.js"></script>
 
-    <!-- Theme Custom -->
-    <script src="js/custom.js"></script>
-
     <script>
-        var elm = document.getElementById("nepali-appointment-date");
-        var elm2 = document.getElementById("dobpicker");
-
-        var todayIs = NepaliFunctions.GetCurrentBsDate('YYYY-MM-DD')
-        console.log(todayIs)
-        /* Initialize Datepicker with options */
-        elm.nepaliDatePicker({
-            ndpYear: true,
-            ndpMonth: true,
-            ndpYearCount: 2,
-            disableBefore: todayIs,
-        });
-        elm2.nepaliDatePicker({
-            ndpYear: true,
-            ndpMonth: true,
-            ndpYearCount: 160,
-        });
-    </script>
-
-    <script>
-        function format(item, state) {
-            if (!item.id) {
-                return item.text;
-            }
-            var countryUrl = "https://hatscripts.github.io/circle-flags/flags/";
-            var stateUrl = "https://oxguy3.github.io/flags/svg/us/";
-            var url = state ? stateUrl : countryUrl;
-            var img = $("<img>", {
-                class: "img-flag",
-                width: 26,
-                src: url + item.element.value.toLowerCase() + ".svg"
-            });
-            var span = $("<span>", {
-                text: " " + item.text
-            });
-            span.prepend(img);
-            return span;
-        }
-
         $(document).ready(function () {
-            $("#countries").select2({
-                templateResult: function (item) {
-                    return format(item, false);
+            $('input, select').prop('disabled', true)
+            $(".nepal-born, .foreign-born, .current-residency-field, .residency-nepal, .residency-foreign").hide();
+            $("#birth-country").prop('disabled', false)
+            $("#birth-country").on('change', function (e) {
+                if ($(this).val() === "nepal") {
+                    $(".nepal-born").show();
+                    $(".nepal-born").find('input, select').prop('disabled', false);
+                    $(".foreign-born").hide();
+                    $(".foreign-born").find('input, select').prop('disabled', true);
+                    $(".current-residency-field").show();
+                    $(".current-residency-field").find('input, select').prop('disabled', false);
                 }
-            });
+                else {
+                    $(".nepal-born").hide();
+                    $(".nepal-born").find('input, select').prop('disabled', true);
+                    $(".foreign-born").show();
+                    $(".foreign-born").find('input, select').prop('disabled', false);
+                    $(".current-residency-field").show();
+                    $(".current-residency-field").find('input, select').prop('disabled', false);
 
-        });
+                }
+            })
+            $(".current-residency-field select").on('change', function (e) {
+                if ($(this).val() === "Nepal") {
+                    $(".residency-nepal").show();
+                    $(".residency-nepal").find('input, select').prop('disabled', false);
+                    $(".residency-foreign").hide();
+                    $(".residency-foreign").find('input, select').prop('disabled', true);
+                }
+                else {
+                    $(".residency-nepal").hide();
+                    $(".residency-nepal").find('input, select').prop('disabled', true);
+                    $(".residency-foreign").show();
+                    $(".residency-foreign").find('input, select').prop('disabled', false);
+
+                }
+            })
+        })
 
     </script>
 
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 0,
-            slidesPerView: 25,
 
-            watchSlidesProgress: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-        var swiper2 = new Swiper(".mySwiper2", {
-            spaceBetween: 0,
-            effect: "fade",
-            thumbs: {
-                swiper: swiper,
-            },
-        });
-    </script>
-
-    <script>
-        $("#next-datetime").on('click', function (e) {
-            e.preventDefault();
-            $("#service-selection").find("a").removeClass('active')
-            $("#datetime-selector").find("a").addClass('active')
-            $("#tabsNavigationVertSimple1").removeClass('active')
-            $("#tabsNavigationVertSimple2").addClass('active')
-        })
-        $(".service-selector li label").on('click', function (e) {
-            $("#service-selection").find("a").removeClass('active')
-            $("#datetime-selector").find("a").addClass('active')
-            $("#tabsNavigationVertSimple1").removeClass('active')
-            $("#tabsNavigationVertSimple2").addClass('active')
-        })
-
-        $("#back-serviceselection").on('click', function (e) {
-            e.preventDefault();
-            $("#service-selection").find("a").addClass('active')
-            $("#datetime-selector").find("a").removeClass('active')
-            $("#tabsNavigationVertSimple1").addClass('active')
-            $("#tabsNavigationVertSimple2").removeClass('active')
-        })
-
-        $("#next-personalinfo").on('click', function (e) {
-            e.preventDefault();
-            $("#personal-info").find("a").addClass('active')
-            $("#datetime-selector").find("a").removeClass('active')
-            $("#tabsNavigationVertSimple3").addClass('active')
-            $("#tabsNavigationVertSimple2").removeClass('active')
-        })
-
-        $("#back-datetime").on('click', function (e) {
-            e.preventDefault();
-            $("#personal-info").find("a").removeClass('active')
-            $("#datetime-selector").find("a").addClass('active')
-            $("#tabsNavigationVertSimple3").removeClass('active')
-            $("#tabsNavigationVertSimple2").addClass('active')
-        })
-
-
-        $("#next-address").on('click', function (e) {
-            e.preventDefault();
-            $("#address-info").find("a").addClass('active')
-            $("#personal-info").find("a").removeClass('active')
-            $("#tabsNavigationVertSimple4").addClass('active')
-            $("#tabsNavigationVertSimple3").removeClass('active')
-        })
-
-        $("#back-personal").on('click', function (e) {
-            e.preventDefault();
-            $("#address-info").find("a").removeClass('active')
-            $("#personal-info").find("a").addClass('active')
-            $("#tabsNavigationVertSimple4").removeClass('active')
-            $("#tabsNavigationVertSimple3").addClass('active')
-        })
-
-        $("#next-payment").on('click', function (e) {
-            e.preventDefault();
-            $("#address-info").find("a").removeClass('active')
-            $("#payment-info").find("a").addClass('active')
-            $("#tabsNavigationVertSimple5").addClass('active')
-            $("#tabsNavigationVertSimple4").removeClass('active')
-        })
-
-        $("#back-address").on('click', function (e) {
-            e.preventDefault();
-            $("#address-info").find("a").addClass('active')
-            $("#payment-info").find("a").removeClass('active')
-            $("#tabsNavigationVertSimple5").removeClass('active')
-            $("#tabsNavigationVertSimple4").addClass('active')
-        })
-
-        $("#next-confirm").on('click', function (e) {
-            e.preventDefault();
-            $("#confirm-info").find("a").addClass('active')
-            $("#payment-info").find("a").removeClass('active')
-            $("#tabsNavigationVertSimple5").removeClass('active')
-            $("#tabsNavigationVertSimple6").addClass('active')
-        })
-
-        $("#referaloption").on('change', function (e) {
-            var rvalue = $(this).val()
-            if (rvalue === 'rel' || rvalue === 'fr' || rvalue === 'oth') {
-                $("#referal-addition").removeClass('d-none')
-            }
-            else {
-                $("#referal-addition").addClass('d-none')
-
-            }
-        })
-
-        $(document).ready(function () {
-            // Initially hide digital and bank options
-            $(".digital-wallet-options, .bank-options").hide();
-
-            // Show/hide options based on the selected payment option
-            $('input[name="payment-options"]').change(function () {
-                $('input[name="digital-options"]').attr('checked', false)
-                if (this.value === 'option2') {
-                    $(".digital-wallet-options").show();
-                    $(".bank-options").hide();
-                } else if (this.value === 'option3') {
-                    $(".digital-wallet-options").hide();
-                    $(".bank-options").show();
-                    $(".qrcode").hide();
-                } else {
-                    $(".digital-wallet-options, .bank-options").hide();
-                    $(".qrcode").hide();
-                }
-            });
-
-            $('input[name="digital-options"]').change(function () {
-                if (this.value === 'option1') {
-                    $(".qrcode").hide();
-                    $("#esewaqr").show();
-                } else if (this.value === 'option2') {
-                    $(".qrcode").hide();
-                    $("#khaltiqr").show();
-                } else if (this.value === 'option4') {
-                    $(".qrcode").hide();
-                    $("#machabank").show();
-                } else if (this.value === 'option3') {
-                    $(".qrcode").hide();
-                    $("#globalbank").show();
-                }
-            });
-        });
-
-        $(document).ready(function () {
-            $("#send-appointmet").on("click", function (event) {
-                // Prevent the default form submission
-                event.preventDefault();
-                // $("#appointmentForm").submit();
-                $(".book-wrapper").hide();
-                $(".submission-success").removeClass('d-none')
-                $(".submission-success").addClass('animate')
-                // Delay the form submission by 5 seconds
-                setTimeout(function () {
-                    // Submit the form programmatically
-
-                    window.location.href = "index.html";
-                }, 3000); // 5000 milliseconds = 5 seconds
-            });
-        });
-
-    </script>
 
 </body>
 
